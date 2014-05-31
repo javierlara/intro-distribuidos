@@ -1,10 +1,10 @@
 autostart = False
-version = 0.8.4
+version = 0.8.6
 [127.0.0.1:7202]
     workingdir = /tmp
     udp = 10200
     [[3640]]
-        image = /home/lali/Documentos/75.43 Introduccion a los sistemas distribuidos/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        image = /media/mariano/9157fded-6e37-416a-b9bc-3091437ac8b2/FIUBA/[75.43] Intro. a los sistemas distribuidos/Programas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x604b99e8
         sparsemem = True
         ghostios = True
@@ -16,9 +16,10 @@ version = 0.8.4
         cnfg = configs/HostRedS.cfg
         slot0 = NM-1FE-TX
         f0/0 = SWTelServer 4
+        slot1 = NM-1FE-TX
         symbol = computer
-        x = -436.050865277
-        y = -53.1126983723
+        x = -424.678282275
+        y = -117.774603256
         z = 1.0
     [[ROUTER HostRedD]]
         model = 3640
@@ -28,17 +29,32 @@ version = 0.8.4
         slot0 = NM-1FE-TX
         f0/0 = SWRedD 4
         symbol = computer
-        x = 239.943217539
-        y = -307.6711396
+        x = 251.315800541
+        y = -372.333044484
         z = 1.0
 [127.0.0.1:7203]
-    workingdir = /root
+    workingdir = /tmp
     udp = 10300
     [[3640]]
-        image = /root/ios/IOS/c3640-js-mz.124-10.bin
+        image = /media/mariano/9157fded-6e37-416a-b9bc-3091437ac8b2/FIUBA/[75.43] Intro. a los sistemas distribuidos/Programas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         sparsemem = True
         ghostios = True
         chassis = 3640
+    [[ROUTER R11]]
+        model = 3640
+        console = 2112
+        aux = 2512
+        cnfg = configs/R11.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = SWRedJ 1
+        slot1 = NM-1FE-TX
+        f1/0 = Rinternet f1/0
+        slot2 = NM-1FE-TX
+        x = 702.56262531
+        y = 62.5441558775
+        z = 1.0
+        hx = 18.7401153701
+        hy = 3.6568542496
     [[ROUTER Rinternet]]
         model = 3640
         console = 2110
@@ -49,8 +65,25 @@ version = 0.8.4
         f0/0 = R10 f1/0
         slot1 = NM-1FE-TX
         f1/0 = R11 f1/0
-        x = 566.626550447
-        y = -343.026478659
+        x = 522.999133449
+        y = -146.688383542
+        z = 1.0
+        hx = -4.56249999999
+        hy = 7.00000000007
+    [[ETHSW SWRedJ]]
+        1 = access 1 R11 f0/0
+        2 = access 1 R9 f1/0
+        3 = access 1 R8 f1/0
+        x = 192.351588253
+        y = 180.6711396
+        z = 1.0
+        hx = -2.93765106238
+        hy = -3.30151519012
+    [[ETHSW SWRedI]]
+        1 = access 1 R10 f3/0
+        2 = access 1 R9 f0/0
+        x = 209.671572875
+        y = 54.0121933085
         z = 1.0
     [[ROUTER R10]]
         model = 3640
@@ -58,39 +91,42 @@ version = 0.8.4
         aux = 2511
         cnfg = configs/R10.cfg
         slot0 = NM-1FE-TX
+        f0/0 = SWDnsRoot 2
         slot1 = NM-1FE-TX
         f1/0 = Rinternet f0/0
         slot2 = NM-1FE-TX
-        f2/0 = R11 f2/0
-        x = 443.589970521
-        y = -125.237590053
+        slot3 = NM-1FE-TX
+        f3/0 = SWRedI 1
+        x = 421.962553523
+        y = 59.1005050645
         z = 1.0
-        hx = -31.6690475584
-        hy = -13.686291501
-    [[ROUTER R11]]
-        model = 3640
-        console = 2112
-        aux = 2512
-        cnfg = configs/R11.cfg
-        slot0 = NM-1FE-TX
-        slot1 = NM-1FE-TX
-        f1/0 = Rinternet f1/0
-        slot2 = NM-1FE-TX
-        f2/0 = R10 f2/0
-        x = 727.846896558
-        y = -132.308657865
-        z = 1.0
-        hx = 65.9116882455
-        hy = -16.5147186257
+        hx = 14.3309524417
+        hy = 4.31370849904
 [127.0.0.1:7200]
     workingdir = /tmp
     udp = 10000
     [[3640]]
-        image = /home/lali/Documentos/75.43 Introduccion a los sistemas distribuidos/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        image = /media/mariano/9157fded-6e37-416a-b9bc-3091437ac8b2/FIUBA/[75.43] Intro. a los sistemas distribuidos/Programas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x604b99e8
         sparsemem = True
         ghostios = True
         chassis = 3640
+    [[ETHSW SWTelServer]]
+        1 = access 1 R3 f2/0
+        2 = access 1 R5 f0/0
+        3 = access 1 R6 f0/0
+        4 = access 1 HostRedS f0/0
+        x = -278.555915911
+        y = -231.107647739
+        z = 1.0
+        hx = -9.21093749998
+        hy = -39.0
+    [[ETHSW SWDnsRoot]]
+        1 = access 1 R6 f2/0
+        2 = access 1 R10 f0/0
+        x = 124.872583002
+        y = -141.661904884
+        z = 1.0
     [[ROUTER R4]]
         model = 3640
         console = 2123
@@ -100,8 +136,8 @@ version = 0.8.4
         f0/0 = SWRedD 2
         slot1 = NM-1FE-TX
         f1/0 = SWRedC 1
-        x = -45.7279220614
-        y = -372.724963469
+        x = -34.3553390593
+        y = -437.386868353
         z = 1.0
     [[ROUTER R5]]
         model = 3640
@@ -112,8 +148,8 @@ version = 0.8.4
         f0/0 = SWTelServer 2
         slot1 = NM-1FE-TX
         f1/0 = SWRedD 1
-        x = -133.409162929
-        y = -242.617315731
+        x = -122.036579927
+        y = -307.279220615
         z = 1.0
     [[ROUTER R6]]
         model = 3640
@@ -126,13 +162,10 @@ version = 0.8.4
         f1/0 = SWRedD 3
         slot2 = NM-1FE-TX
         f2/0 = SWDnsRoot 1
-        x = -55.627416998
-        y = -82.8111831822
-        z = 1.0
-    [[ETHSW SWDnsRoot]]
-        1 = access 1 R6 f2/0
-        x = 113.5
-        y = -77.0000000001
+        slot3 = NM-1FE-TX
+        f3/0 = SWRedH 2
+        x = -44.2548339959
+        y = -147.473088066
         z = 1.0
     [[ROUTER R2]]
         model = 3640
@@ -143,33 +176,8 @@ version = 0.8.4
         f0/0 = SWDns2 2
         slot1 = NM-1FE-TX
         f1/0 = SWRedA 1
-        x = -762.734198186
-        y = -328.884343036
-        z = 1.0
-    [[ETHSW SWDns2]]
-        1 = access 1 R1 f0/0
-        2 = access 1 R2 f0/0
-        3 = access 1 R3 f0/0
-        x = -688.386435077
-        y = -194.291413923
-        z = 1.0
-        hx = 1.9921875
-        hy = -41.0
-    [[ETHSW SWTelServer]]
-        1 = access 1 R3 f2/0
-        2 = access 1 R5 f0/0
-        3 = access 1 R6 f0/0
-        4 = access 1 HostRedS f0/0
-        x = -289.928498913
-        y = -166.445742855
-        z = 1.0
-        hx = -9.21093749998
-        hy = -39.0
-    [[ETHSW SWRedC]]
-        1 = access 1 R4 f1/0
-        2 = access 1 R3 f1/0
-        x = -202.37720036
-        y = -358.239682095
+        x = -751.361615184
+        y = -393.54624792
         z = 1.0
     [[ROUTER R3]]
         model = 3640
@@ -182,29 +190,44 @@ version = 0.8.4
         f1/0 = SWRedC 2
         slot2 = NM-1FE-TX
         f2/0 = SWTelServer 1
-        x = -404.938166905
-        y = -393.10973978
+        x = -393.565583903
+        y = -457.771644664
         z = 1.0
+    [[ETHSW SWDns2]]
+        1 = access 1 R1 f0/0
+        2 = access 1 R2 f0/0
+        3 = access 1 R3 f0/0
+        x = -677.013852075
+        y = -258.953318807
+        z = 1.0
+        hx = 2.69929428119
+        hy = 4.96194077723
     [[ETHSW SWRedD]]
         1 = access 1 R5 f1/0
         2 = access 1 R4 f0/0
         3 = access 1 R6 f1/0
         4 = access 1 HostRedD f0/0
-        x = 52.1812408673
-        y = -255.002092042
+        x = 63.5538238694
+        y = -319.663996926
         z = 1.0
         hx = 24.9218750001
         hy = -36.0
+    [[ETHSW SWRedC]]
+        1 = access 1 R4 f1/0
+        2 = access 1 R3 f1/0
+        x = -191.004617358
+        y = -422.901586979
+        z = 1.0
     [[ETHSW SWRedA]]
         1 = access 1 R2 f1/0
-        x = -754.779220615
-        y = -446.242640688
+        x = -743.406637613
+        y = -510.904545572
         z = 1.0
 [127.0.0.1:7201]
     workingdir = /tmp
     udp = 10100
     [[3640]]
-        image = /home/lali/Documentos/75.43 Introduccion a los sistemas distribuidos/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        image = /media/mariano/9157fded-6e37-416a-b9bc-3091437ac8b2/FIUBA/[75.43] Intro. a los sistemas distribuidos/Programas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x604b99e8
         sparsemem = True
         ghostios = True
@@ -216,300 +239,947 @@ version = 0.8.4
         cnfg = configs/R1.cfg
         slot0 = NM-1FE-TX
         f0/0 = SWDns2 1
-        x = -929.653029107
-        y = -195.865007051
+        slot1 = NM-1FE-TX
+        f1/0 = SWRedE 1
+        x = -918.280446105
+        y = -260.526911935
         z = 1.0
+    [[ETHSW SWRedE]]
+        1 = access 1 R1 f1/0
+        x = -876.898195111
+        y = -135.816233816
+        z = 1.0
+        hx = 3.40625000001
+        hy = 3.00000000006
+[127.0.0.1:7204]
+    workingdir = /tmp
+    udp = 10400
+    [[3640]]
+        image = /media/mariano/9157fded-6e37-416a-b9bc-3091437ac8b2/FIUBA/[75.43] Intro. a los sistemas distribuidos/Programas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        sparsemem = True
+        ghostios = True
+        chassis = 3640
+    [[ROUTER R16]]
+        model = 3640
+        console = 2019
+        aux = 2519
+        cnfg = configs/R16.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = SWRedN 1
+        slot1 = NM-1FE-TX
+        f1/0 = SWRedO 1
+        slot2 = NM-1FE-TX
+        f2/0 = SWRedQ 1
+        x = -832.704760935
+        y = 426.229580828
+        z = 1.0
+        hx = 16.5235885624
+        hy = 6.11269837228
+    [[ROUTER R14]]
+        model = 3640
+        console = 2017
+        aux = 2517
+        cnfg = configs/R14.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = SWRedG 3
+        slot1 = NM-1FE-TX
+        f1/0 = SWRedL 1
+        x = -547.007755421
+        y = 207.494516091
+        z = 1.0
+        hx = 19.0591224683
+        hy = 11.7695526218
+    [[ROUTER R15]]
+        model = 3640
+        console = 2018
+        aux = 2518
+        cnfg = configs/R15.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = SWRedP 2
+        slot1 = NM-1FE-TX
+        f1/0 = SWRedM 1
+        slot2 = NM-1FE-TX
+        f2/0 = SWRedN 2
+        x = -695.196572239
+        y = 216.037192672
+        z = 1.0
+        hx = 12.6951614376
+        hy = 6.11269837228
+    [[ROUTER R12]]
+        model = 3640
+        console = 2023
+        aux = 2523
+        cnfg = configs/R12.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = SWRedP 1
+        slot1 = NM-1FE-TX
+        f1/0 = SWRedK 2
+        x = -114.965512115
+        y = 438.011326758
+        z = 1.0
+        hx = 16.2306953436
+        hy = 8.23401871584
+    [[ROUTER R13]]
+        model = 3640
+        console = 2022
+        aux = 2522
+        cnfg = configs/R13.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = SWRedG 4
+        slot1 = NM-1FE-TX
+        f1/0 = SWRedL 2
+        slot2 = NM-1FE-TX
+        f2/0 = SWRedK 1
+        x = -155.270598642
+        y = 218.80822459
+        z = 1.0
+        hx = 18.3520156871
+        hy = 10.3553390594
+    [[ROUTER R7]]
+        model = 3640
+        console = 2020
+        aux = 2520
+        cnfg = configs/R7.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = SWRedG 2
+        slot1 = NM-1FE-TX
+        f1/0 = SWRedF 1
+        x = -540.64379439
+        y = 32.1320343561
+        z = 1.0
+    [[ROUTER R8]]
+        model = 3640
+        console = 2013
+        aux = 2513
+        cnfg = configs/R8.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = SWRedH 1
+        slot1 = NM-1FE-TX
+        f1/0 = SWRedJ 3
+        slot2 = NM-1FE-TX
+        f2/0 = SWRedG 1
+        x = -208.303607232
+        y = 36.3746750432
+        z = 1.0
+    [[ROUTER R9]]
+        model = 3640
+        console = 2015
+        aux = 2515
+        cnfg = configs/R9.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = SWRedI 2
+        slot1 = NM-1FE-TX
+        f1/0 = SWRedJ 2
+        x = 48.7989898734
+        y = -13.1572875254
+        z = 1.0
+        hx = 11.7421875
+        hy = -20.0
+    [[ETHSW SWRedO]]
+        1 = access 1 R16 f1/0
+        x = -670.500000001
+        y = 332.000000001
+        z = 1.0
+    [[ETHSW SWRedN]]
+        1 = access 1 R16 f0/0
+        2 = access 1 R15 f2/0
+        x = -835.500000002
+        y = 316.000000001
+        z = 1.0
+    [[ETHSW SWRedM]]
+        1 = access 1 R15 f1/0
+        x = -847.865186522
+        y = 173.081781825
+        z = 1.0
+    [[ETHSW SWRedL]]
+        1 = access 1 R14 f1/0
+        2 = access 1 R13 f1/0
+        x = -347.982322782
+        y = 231.879292402
+        z = 1.0
+    [[ETHSW SWRedK]]
+        1 = access 1 R13 f2/0
+        2 = access 1 R12 f1/0
+        x = -213.690908859
+        y = 313.511760034
+        z = 1.0
+        hx = 18.5958648733
+        hy = 20.254833996
+    [[ETHSW SWRedH]]
+        1 = access 1 R8 f0/0
+        2 = access 1 R6 f3/0
+        x = -117.465512115
+        y = -39.6497115746
+        z = 1.0
+        hx = 14.2265625
+        hy = -26.4142135624
+    [[ETHSW SWRedG]]
+        1 = access 1 R8 f2/0
+        2 = access 1 R7 f0/0
+        3 = access 1 R14 f0/0
+        4 = access 1 R13 f0/0
+        x = -353.639177032
+        y = 122.984848099
+        z = 1.0
+        hx = 3.48437500001
+        hy = 4.00000000006
+    [[ETHSW SWRedF]]
+        1 = access 1 R7 f1/0
+        x = -732.648411748
+        y = 18.3330444828
+        z = 1.0
+        hx = -3.83639068713
+        hy = -26.4142135624
+    [[ETHSW SWRedQ]]
+        1 = access 1 R16 f2/0
+        2 = access 1 R17 f1/0
+        x = -629.500000001
+        y = 420.000000001
+        z = 1.0
+    [[ETHSW SWRedP]]
+        1 = access 1 R12 f0/0
+        2 = access 1 R15 f0/0
+        3 = access 1 R17 f0/0
+        x = -320.966558136
+        y = 346.48589412
+        z = 1.0
+        hx = 7.57031250002
+        hy = -21.0
+[127.0.0.1:7205]
+    workingdir = /tmp
+    udp = 10500
+    [[3640]]
+        image = /media/mariano/9157fded-6e37-416a-b9bc-3091437ac8b2/FIUBA/[75.43] Intro. a los sistemas distribuidos/Programas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        sparsemem = True
+        ghostios = True
+        chassis = 3640
+    [[ROUTER R17]]
+        model = 3640
+        console = 2024
+        aux = 2524
+        cnfg = configs/R17.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = SWRedP 3
+        slot1 = NM-1FE-TX
+        f1/0 = SWRedQ 2
+        x = -455.734198185
+        y = 445.447834897
+        z = 1.0
+        hx = 11.2809478752
+        hy = 7.52691193465
 [GNS3-DATA]
     configs = configs
     m11 = 0.707106781185
     m22 = 0.707106781185
     [[NOTE 1]]
-        text = "183.44.30.6/30"
-        x = 728.319984624
-        y = -168.477705424
-    [[NOTE 2]]
-        text = "183.44.30.5/30"
-        x = 649.124025131
-        y = -284.443217539
-    [[NOTE 3]]
-        text = "183.44.30.5/30"
-        x = 429.920922962
-        y = -291.51428535
-    [[NOTE 4]]
-        text = "183.44.30.1/30"
-        x = 379.009234717
-        y = -167.063491861
-    [[NOTE 5]]
-        text = "Tunnel GRE"
-        x = 564.271211388
-        y = -138.779220614
-    [[NOTE 6]]
-        text = "10.15.65.56/27"
-        x = 411.536146651
-        y = -59.5832611208
-    [[NOTE 7]]
-        text = "LAN"
-        x = 451.134126398
-        y = -79.3822509941
-    [[NOTE 8]]
-        text = "LAN"
-        x = 743.87633381
-        y = -90.6959594931
-    [[NOTE 9]]
-        text = "10.43.9.25/28"
-        x = 711.349421875
-        y = -66.6543289327
-    [[NOTE 10]]
-        text = ".72"
-        x = -100.409162929
-        y = -72.2989898733
-    [[NOTE 11]]
-        text = "10.94.5.128/25"
-        x = -212.343145751
-        y = -410.742640688
-    [[NOTE 12]]
-        text = "10.94.6.192/26"
-        x = 95.1665222416
-        y = -41.3873016277
-    [[NOTE 13]]
-        text = ".192"
-        x = -83.4386001802
-        y = -385.852380467
-    [[NOTE 14]]
-        text = ".177"
-        x = 36.7695526218
-        y = -342.011760034
-    [[NOTE 15]]
-        text = ".178"
-        x = 11.313708499
-        y = -113.110173055
-    [[NOTE 16]]
-        text = ".224"
-        x = 11.313708499
-        y = -41.3873016277
-    [[NOTE 17]]
-        text = ".179"
-        x = -69.2964645564
-        y = -258.573159853
-    [[NOTE 18]]
-        text = ".71"
-        x = -169.705627485
-        y = -234.531529293
-    [[NOTE 19]]
-        text = "10.43.9.64/28"
-        x = -302.612265097
-        y = -123.039105244
-    [[NOTE 20]]
-        text = "10.15.65.64/26"
-        x = -715.592062562
-        y = -221.803607232
-    [[NOTE 21]]
-        text = ".25"
-        x = -721.248916812
-        y = -363.224963469
-    [[NOTE 22]]
-        text = ".104"
-        x = -700.035713376
-        y = -296.756926038
-    [[NOTE 23]]
-        text = ".103"
-        x = -864.084486612
-        y = -211.904112295
-    [[NOTE 24]]
-        text = ".105"
-        x = -441.234631461
-        y = -385.852380467
-    [[NOTE 25]]
-        text = "10.94.6.128/26"
-        x = 49.1665222415
-        y = -301.387301628
-    [[NOTE 26]]
-        text = "10.15.65.0/27"
-        x = -776.403245745
-        y = -487.065583903
-    [[NOTE 27]]
-        text = ".74"
-        x = -354.967604156
-        y = -50.6837661842
-    [[NOTE 28]]
-        text = ".181"
-        x = 189.504617358
-        y = -303.827993849
-    [[NOTE 29]]
-        text = ".193"
-        x = -323.854905784
-        y = -404.237156778
-    [[NOTE 30]]
         text = ".70"
-        x = -381.837661842
-        y = -350.497041408
+        x = -370.46507884
+        y = -415.158946292
+    [[NOTE 2]]
+        text = "10.43.9.64/28"
+        x = -326.582827846
+        y = -230.077164467
+    [[NOTE 3]]
+        text = ".225"
+        x = 394.372583003
+        y = 18.8380951167
+    [[NOTE 4]]
+        text = ".71"
+        x = -158.333044483
+        y = -299.193434177
+    [[NOTE 5]]
+        text = "10.15.65.0/27"
+        x = -765.030662743
+        y = -551.727488787
+    [[NOTE 6]]
+        text = "183.44.30.6/30"
+        x = 669.692567626
+        y = 34.8603896931
+    [[NOTE 7]]
+        text = ".45"
+        x = -839.000000002
+        y = 398.500000001
+    [[NOTE 8]]
+        text = ".181"
+        x = -484.000000001
+        y = 433.500000001
+    [[NOTE 9]]
+        text = ".81"
+        x = -729.000000002
+        y = 217.500000001
+    [[NOTE 10]]
+        text = "10.43.9.32/28"
+        x = -856.000000002
+        y = 320.500000001
+    [[NOTE 11]]
+        text = ".25"
+        x = -709.87633381
+        y = -427.886868353
+    [[NOTE 12]]
+        text = ".104"
+        x = -688.663130374
+        y = -361.418830922
+    [[NOTE 13]]
+        text = "10.15.65.32/27"
+        x = 187.755880017
+        y = 80.6944801963
+    [[NOTE 14]]
+        text = ".178"
+        x = 22.6862915011
+        y = -177.772077939
+    [[NOTE 15]]
+        text = ".177"
+        x = 48.1421356239
+        y = -406.673664918
+    [[NOTE 16]]
+        text = ".181"
+        x = 200.87720036
+        y = -368.489898733
+    [[NOTE 17]]
+        text = ".193"
+        x = -312.482322782
+        y = -468.899061662
+    [[NOTE 18]]
+        text = "10.15.65.64/26"
+        x = -707.047906685
+        y = -227.775649277
+    [[NOTE 19]]
+        text = ".103"
+        x = -852.71190361
+        y = -276.566017179
+    [[NOTE 20]]
+        text = ".25"
+        x = 668.665655691
+        y = 100.499566724
+    [[NOTE 21]]
+        text = "10.94.5.128/25"
+        x = -200.970562749
+        y = -475.404545572
+    [[NOTE 22]]
+        text = ".74"
+        x = -317.595021154
+        y = -122.345671068
+    [[NOTE 23]]
+        text = "183.44.30.5/30"
+        x = 590.496608133
+        y = -81.1051224219
+    [[NOTE 24]]
+        text = "10.94.6.128/26"
+        x = 60.5391052436
+        y = -366.049206512
+    [[NOTE 25]]
+        text = ".105"
+        x = -429.862048459
+        y = -450.514285351
+    [[NOTE 26]]
+        text = "10.94.6.192/26"
+        x = 103.539105244
+        y = -179.049206512
+    [[NOTE 27]]
+        text = ".192"
+        x = -72.0660171781
+        y = -450.514285351
+    [[NOTE 28]]
+        text = ".224"
+        x = 22.6862915011
+        y = -106.049206511
+    [[NOTE 29]]
+        text = ".179"
+        x = -57.9238815543
+        y = -323.235064737
+    [[NOTE 30]]
+        text = "183.44.30.1/30"
+        x = 441.381817719
+        y = 2.27460325598
     [[NOTE 31]]
-        text = "f0/0"
-        x = -6.63034864415
-        y = 37.7955298196
-        interface = HostRedD f0/0
+        text = ".56"
+        x = 384.957502888
+        y = 77.5624458405
     [[NOTE 32]]
-        text = "3"
-        x = 14.4458154154
-        y = 50.0106058675
-        interface = SWRedD 3
+        text = "10.43.9.0/30"
+        x = -892.368757859
+        y = -107.252308679
     [[NOTE 33]]
-        text = "1"
-        x = -4.31027916004
-        y = 19.8912302939
-        interface = SWRedD 1
+        text = ".1"
+        x = -897.500000002
+        y = -216.0
     [[NOTE 34]]
-        text = "2"
-        x = 8.76222327613
-        y = -13.7504839602
-        interface = SWRedD 2
+        text = "10.43.9.16/28"
+        x = 174.104689145
+        y = 213.909162929
     [[NOTE 35]]
-        text = "4"
-        x = 74.6303486441
-        y = 7.70447018042
-        interface = SWRedD 4
+        text = "183.44.30.5/30"
+        x = 420.790980647
+        y = -83.9335495458
     [[NOTE 36]]
-        text = "f0/0"
-        x = 0.0200514075457
-        y = 44.6345530294
-        interface = R3 f0/0
+        text = ".10"
+        x = -160.0
+        y = 9.50000000005
     [[NOTE 37]]
-        text = "f2/0"
-        x = 51.8013781769
-        y = 57.3059227135
-        interface = R3 f2/0
+        text = ".26"
+        x = 65.0000000001
+        y = 30.5000000001
     [[NOTE 38]]
-        text = "f1/0"
-        x = 72.609374084
-        y = 27.5765118732
-        interface = R3 f1/0
+        text = "10.43.9.8/30"
+        x = -134.0
+        y = -34.5
     [[NOTE 39]]
+        text = ".9"
+        x = -59.0000000001
+        y = -110.5
+    [[NOTE 40]]
+        text = ".72"
+        x = -89.0365799269
+        y = -136.960894757
+    [[NOTE 41]]
+        text = ".27"
+        x = -127.0
+        y = 55.5000000001
+    [[NOTE 42]]
+        text = ".57"
+        x = 120.0
+        y = 3.50000000003
+    [[NOTE 43]]
+        text = "10.15.65.192/27"
+        x = -370.000000001
+        y = 262.500000001
+    [[NOTE 44]]
+        text = ".248"
+        x = -459.000000001
+        y = 45.5000000001
+    [[NOTE 45]]
+        text = ".209"
+        x = -468.000000001
+        y = 209.5
+    [[NOTE 46]]
+        text = ".208"
+        x = -193.0
+        y = 222.500000001
+    [[NOTE 47]]
+        text = ".245"
+        x = -212.0
+        y = 79.5000000002
+    [[NOTE 48]]
+        text = "205.129.31.0/24"
+        x = -384.000000001
+        y = 76.5000000002
+    [[NOTE 49]]
+        text = ".247"
+        x = -489.000000001
+        y = 162.5
+    [[NOTE 50]]
+        text = ".246"
+        x = -157.0
+        y = 197.5
+    [[NOTE 51]]
+        text = "10.43.9.12/30"
+        x = -149.0
+        y = 312.500000001
+    [[NOTE 52]]
+        text = ".13"
+        x = -113.0
+        y = 258.500000001
+    [[NOTE 53]]
+        text = ".14"
+        x = -92.0000000002
+        y = 406.500000001
+    [[NOTE 54]]
+        text = "10.15.65.224/27"
+        x = -355.000000001
+        y = 351.500000001
+    [[NOTE 55]]
+        text = ".242"
+        x = -138.0
+        y = 439.500000001
+    [[NOTE 56]]
+        text = ".243"
+        x = -400.000000001
+        y = 415.500000001
+    [[NOTE 57]]
+        text = ".244"
+        x = -621.000000001
+        y = 219.500000001
+    [[NOTE 58]]
+        text = "10.43.9.80/30"
+        x = -865.000000002
+        y = 172.5
+    [[NOTE 59]]
+        text = "10.43.9.4/30"
+        x = -755.000000002
+        y = 47.5000000001
+    [[NOTE 60]]
+        text = ".5"
+        x = -567.000000001
+        y = 48.5000000001
+    [[NOTE 61]]
+        text = "10.43.9.48/28"
+        x = -690.000000002
+        y = 333.500000001
+    [[NOTE 62]]
+        text = ".55"
+        x = -770.000000002
+        y = 395.500000001
+    [[NOTE 63]]
+        text = ".44"
+        x = -709.000000002
+        y = 243.500000001
+    [[NOTE 64]]
+        text = "10.15.65.128/26"
+        x = -655.000000001
+        y = 418.500000001
+    [[NOTE 65]]
+        text = ".180"
+        x = -752.000000002
+        y = 425.500000001
+    [[NOTE 66]]
+        text = "1"
+        x = 74.9125699846
+        y = 22.8300312746
+        interface = SWRedP 1
+    [[NOTE 67]]
+        text = "2"
+        x = -8.92431067886
+        y = -21.1216489906
+        interface = SWRedP 2
+    [[NOTE 68]]
+        text = "3"
+        x = -2.11679478869
+        y = 29.6006157885
+        interface = SWRedP 3
+    [[NOTE 69]]
+        text = "2"
+        x = 74.0744849243
+        y = 26.5834357761
+        interface = SWRedQ 2
+    [[NOTE 70]]
+        text = "1"
+        x = -4.43820841536
+        y = 18.2225005222
+        interface = SWRedQ 1
+    [[NOTE 71]]
+        text = "f3/0"
+        x = -1.26830959631
+        y = -26.3579864011
+        interface = R10 f3/0
+    [[NOTE 72]]
+        text = "f0/0"
+        x = -30.7405636879
+        y = 38.0205420125
+        interface = R10 f0/0
+    [[NOTE 73]]
+        text = "f1/0"
+        x = 50.6287474396
+        y = -13.905811002
+        interface = R10 f1/0
+    [[NOTE 74]]
+        text = "1"
+        x = 32.1219931723
+        y = 55.8571081474
+        interface = SWRedA 1
+    [[NOTE 75]]
         text = "2"
         x = -4.10937408402
         y = 10.4234881268
         interface = SWRedC 2
-    [[NOTE 40]]
+    [[NOTE 76]]
         text = "1"
         x = 75.4395364115
         y = 13.8014934086
         interface = SWRedC 1
-    [[NOTE 41]]
-        text = "1"
-        x = 16.6986218231
-        y = -19.3059227135
-        interface = SWTelServer 1
-    [[NOTE 42]]
-        text = "4"
-        x = 5.03039752492
-        y = 41.9153106293
-        interface = SWTelServer 4
-    [[NOTE 43]]
-        text = "2"
-        x = 71.9001524518
-        y = -0.583995341545
-        interface = SWTelServer 2
-    [[NOTE 44]]
+    [[NOTE 77]]
         text = "3"
-        x = 72.8078630965
-        y = 30.4264809006
-        interface = SWTelServer 3
-    [[NOTE 45]]
+        x = 14.4458154154
+        y = 50.0106058675
+        interface = SWRedD 3
+    [[NOTE 78]]
+        text = "1"
+        x = -4.31027916004
+        y = 19.8912302939
+        interface = SWRedD 1
+    [[NOTE 79]]
+        text = "2"
+        x = 8.76222327613
+        y = -13.7504839602
+        interface = SWRedD 2
+    [[NOTE 80]]
+        text = "4"
+        x = 74.6303486441
+        y = 7.70447018042
+        interface = SWRedD 4
+    [[NOTE 81]]
+        text = "1"
+        x = 21.6309596857
+        y = -21.5186583017
+        interface = SWRedE 1
+    [[NOTE 82]]
+        text = "1"
+        x = 60.6433289153
+        y = 18.6553375707
+        interface = SWRedF 1
+    [[NOTE 83]]
+        text = "1"
+        x = 74.2480378105
+        y = 7.73174617434
+        interface = SWRedG 1
+    [[NOTE 84]]
+        text = "2"
+        x = -23.3553866377
+        y = -1.87098700911
+        interface = SWRedG 2
+    [[NOTE 85]]
+        text = "4"
+        x = 59.2582287415
+        y = 35.0353414604
+        interface = SWRedG 4
+    [[NOTE 86]]
+        text = "3"
+        x = -21.6386818389
+        y = 32.3997633243
+        interface = SWRedG 3
+    [[NOTE 87]]
+        text = "1"
+        x = 5.453404062
+        y = 42.4045843091
+        interface = SWRedH 1
+    [[NOTE 88]]
+        text = "2"
+        x = 58.3158323798
+        y = -16.8547986269
+        interface = SWRedH 2
+    [[NOTE 89]]
+        text = "1"
+        x = 73.7683095963
+        y = 4.35798640095
+        interface = SWRedI 1
+    [[NOTE 90]]
+        text = "2"
+        x = -4.49911734936
+        y = 15.7342721837
+        interface = SWRedI 2
+    [[NOTE 91]]
+        text = "2"
+        x = 41.4122731935
+        y = -43.7367335225
+        interface = SWRedJ 2
+    [[NOTE 92]]
+        text = "3"
+        x = -6.80025038468
+        y = -21.2069094133
+        interface = SWRedJ 3
+    [[NOTE 93]]
+        text = "1"
+        x = 66.6516682207
+        y = -9.09130461073
+        interface = SWRedJ 1
+    [[NOTE 94]]
+        text = "1"
+        x = 32.4235458748
+        y = -23.8815173986
+        interface = SWRedK 1
+    [[NOTE 95]]
+        text = "2"
+        x = 38.6223205297
+        y = 55.8779527372
+        interface = SWRedK 2
+    [[NOTE 96]]
+        text = "2"
+        x = 68.3097887293
+        y = -6.8805105612
+        interface = SWRedL 2
+    [[NOTE 97]]
+        text = "1"
+        x = -0.199983979589
+        y = -2.04192738753
+        interface = SWRedL 1
+    [[NOTE 98]]
+        text = "1"
+        x = 52.8950443514
+        y = 25.0730571108
+        interface = SWRedM 1
+    [[NOTE 99]]
+        text = "1"
+        x = 36.2830103124
+        y = 55.9923354513
+        interface = SWRedN 1
+    [[NOTE 100]]
+        text = "2"
+        x = 68.5484323508
+        y = -6.53444295197
+        interface = SWRedN 2
+    [[NOTE 101]]
+        text = "1"
+        x = 1.49267397819
+        y = 37.0594818751
+        interface = SWRedO 1
+    [[NOTE 102]]
+        text = "f1/0"
+        x = 37.5069910028
+        y = 52.6362284591
+        interface = R9 f1/0
+    [[NOTE 103]]
         text = "f0/0"
-        x = 70.5870030939
-        y = -2.89413828656
-        interface = HostRedS f0/0
-    [[NOTE 46]]
+        x = 78.6559715989
+        y = -0.361689181681
+        interface = R9 f0/0
+    [[NOTE 104]]
+        text = "f2/0"
+        x = -4.33382424812
+        y = 7.64083682765
+        interface = R8 f2/0
+    [[NOTE 105]]
+        text = "f1/0"
+        x = 55.3002503846
+        y = 55.2069094133
+        interface = R8 f1/0
+    [[NOTE 106]]
+        text = "f0/0"
+        x = 63.046595938
+        y = -4.40458430915
+        interface = R8 f0/0
+    [[NOTE 107]]
         text = "3"
         x = 68.4799485925
         y = -6.63455302936
         interface = SWDns2 3
-    [[NOTE 47]]
-        text = "f2/0"
-        x = -47.9998231183
-        y = 30.0657849713
-        interface = R11 f2/0
-    [[NOTE 48]]
-        text = "f1/0"
-        x = -2.91656984157
-        y = -55.3946666054
-        interface = R11 f1/0
-    [[NOTE 49]]
-        text = "f2/0"
-        x = 72.9876298094
-        y = 21.0052828405
-        interface = R10 f2/0
-    [[NOTE 50]]
-        text = "f1/0"
-        x = -2.7589061195
-        y = -60.2736561524
-        interface = R10 f1/0
-    [[NOTE 51]]
-        text = "f1/0"
-        x = 77.4018512158
-        y = 35.7550562985
-        interface = Rinternet f1/0
-    [[NOTE 52]]
-        text = "f0/0"
-        x = -54.2776738072
-        y = 36.3914051583
-        interface = Rinternet f0/0
-    [[NOTE 53]]
+    [[NOTE 108]]
+        text = "2"
+        x = 14.9806711807
+        y = -18.3359453751
+        interface = SWDns2 2
+    [[NOTE 109]]
         text = "1"
-        x = -4.49997579319
-        y = 16.0440061866
-        interface = SWDnsRoot 1
-    [[NOTE 54]]
-        text = "f0/0"
-        x = -4.30786309647
-        y = 7.5735190994
-        interface = R6 f0/0
-    [[NOTE 55]]
+        x = -4.49340709379
+        y = 16.7262155534
+        interface = SWDns2 1
+    [[NOTE 110]]
         text = "f1/0"
-        x = 54.0541845846
-        y = -12.0106058675
-        interface = R6 f1/0
-    [[NOTE 56]]
+        x = 72.609374084
+        y = 27.5765118732
+        interface = R3 f1/0
+    [[NOTE 111]]
+        text = "f2/0"
+        x = 51.8013781769
+        y = 57.3059227135
+        interface = R3 f2/0
+    [[NOTE 112]]
+        text = "f0/0"
+        x = 0.0200514075457
+        y = 44.6345530294
+        interface = R3 f0/0
+    [[NOTE 113]]
+        text = "f1/0"
+        x = 36.3780068277
+        y = -17.8571081474
+        interface = R2 f1/0
+    [[NOTE 114]]
+        text = "f0/0"
+        x = 53.5193288193
+        y = 56.3359453751
+        interface = R2 f0/0
+    [[NOTE 115]]
+        text = "f1/0"
+        x = 46.8690403143
+        y = 59.5186583017
+        interface = R1 f1/0
+    [[NOTE 116]]
+        text = "f0/0"
+        x = 72.9934070938
+        y = 21.2737844466
+        interface = R1 f0/0
+    [[NOTE 117]]
+        text = "f0/0"
+        x = 15.3712525604
+        y = 57.905811002
+        interface = Rinternet f0/0
+    [[NOTE 118]]
+        text = "f1/0"
+        x = 59.0501590105
+        y = 52.3543936775
+        interface = Rinternet f1/0
+    [[NOTE 119]]
+        text = "f1/0"
+        x = -38.8123764737
+        y = -1.86854100639
+        interface = R7 f1/0
+    [[NOTE 120]]
+        text = "f0/0"
+        x = 62.1569018278
+        y = -5.38384698693
+        interface = R7 f0/0
+    [[NOTE 121]]
+        text = "f3/0"
+        x = 10.1841676202
+        y = 54.8547986269
+        interface = R6 f3/0
+    [[NOTE 122]]
         text = "f2/0"
         x = 72.9999757932
         y = 21.9559938134
         interface = R6 f2/0
-    [[NOTE 57]]
+    [[NOTE 123]]
+        text = "f1/0"
+        x = 54.0541845846
+        y = -12.0106058675
+        interface = R6 f1/0
+    [[NOTE 124]]
         text = "f0/0"
-        x = -3.40015245176
-        y = 38.5839953415
-        interface = R5 f0/0
-    [[NOTE 58]]
+        x = -4.30786309647
+        y = 7.5735190994
+        interface = R6 f0/0
+    [[NOTE 125]]
         text = "f1/0"
         x = 72.81027916
         y = 18.1087697061
         interface = R5 f1/0
-    [[NOTE 59]]
+    [[NOTE 126]]
+        text = "f0/0"
+        x = -3.40015245176
+        y = 38.5839953415
+        interface = R5 f0/0
+    [[NOTE 127]]
         text = "f1/0"
         x = -6.93953641153
         y = 24.1985065914
         interface = R4 f1/0
-    [[NOTE 60]]
+    [[NOTE 128]]
         text = "f0/0"
         x = 59.7377767239
         y = 51.7504839602
         interface = R4 f0/0
-    [[Cloud TelNetServer]]
-        x = -530.342406103
-        y = -178.558134855
-        z = 1.0
+    [[NOTE 129]]
+        text = "f0/0"
+        x = -6.63034864415
+        y = 37.7955298196
+        interface = HostRedD f0/0
+    [[NOTE 130]]
+        text = "f0/0"
+        x = 70.5870030939
+        y = -2.89413828656
+        interface = HostRedS f0/0
+    [[NOTE 131]]
+        text = "f1/0"
+        x = 6.94984098948
+        y = -8.35439367747
+        interface = R11 f1/0
+    [[NOTE 132]]
+        text = "f0/0"
+        x = 1.84833177932
+        y = 47.0913046107
+        interface = R11 f0/0
+    [[NOTE 133]]
+        text = "2"
+        x = 68.2405636878
+        y = 38.9794579876
+        interface = SWDnsRoot 2
+    [[NOTE 134]]
+        text = "1"
+        x = -4.49997579319
+        y = 16.0440061866
+        interface = SWDnsRoot 1
+    [[NOTE 135]]
+        text = "f2/0"
+        x = 6.37796931527
+        y = 47.7393817748
+        interface = R13 f2/0
+    [[NOTE 136]]
+        text = "f1/0"
+        x = -36.579341351
+        y = 27.2028410315
+        interface = R13 f1/0
+    [[NOTE 137]]
+        text = "f0/0"
+        x = 10.6559848208
+        y = -11.1774770842
+        interface = R13 f0/0
+    [[NOTE 138]]
+        text = "f1/0"
+        x = 29.8776794703
+        y = -17.8779527372
+        interface = R12 f1/0
+    [[NOTE 139]]
+        text = "f0/0"
+        x = -6.41256998456
+        y = 15.1699687254
+        interface = R12 f0/0
+    [[NOTE 140]]
+        text = "f2/0"
+        x = -0.0484323507856
+        y = 44.534442952
+        interface = R15 f2/0
+    [[NOTE 141]]
+        text = "f1/0"
+        x = -14.8458378403
+        y = -26.9050555731
+        interface = R15 f1/0
+    [[NOTE 142]]
+        text = "f0/0"
+        x = 70.4243106788
+        y = 36.1216489906
+        interface = R15 f0/0
+    [[NOTE 143]]
+        text = "f1/0"
+        x = 65.1644500736
+        y = 28.0211121073
+        interface = R14 f1/0
+    [[NOTE 144]]
+        text = "f0/0"
+        x = 52.662022436
+        y = -23.391141353
+        interface = R14 f0/0
+    [[NOTE 145]]
+        text = "f1/0"
+        x = -29.5744849243
+        y = 18.4165642239
+        interface = R17 f1/0
+    [[NOTE 146]]
+        text = "f0/0"
+        x = 70.6167947887
+        y = 8.39938421154
+        interface = R17 f0/0
+    [[NOTE 147]]
+        text = "f2/0"
+        x = 72.9382084154
+        y = 19.7774994778
+        interface = R16 f2/0
+    [[NOTE 148]]
+        text = "f0/0"
+        x = -5.78301031251
+        y = -11.9923354513
+        interface = R16 f0/0
+    [[NOTE 149]]
+        text = "f1/0"
+        x = 47.0073260218
+        y = -15.0594818751
+        interface = R16 f1/0
+    [[NOTE 150]]
+        text = "1"
+        x = 16.6986218231
+        y = -19.3059227135
+        interface = SWTelServer 1
+    [[NOTE 151]]
+        text = "3"
+        x = 72.8078630965
+        y = 30.4264809006
+        interface = SWTelServer 3
+    [[NOTE 152]]
+        text = "2"
+        x = 71.9001524518
+        y = -0.583995341545
+        interface = SWTelServer 2
+    [[NOTE 153]]
+        text = "4"
+        x = 5.03039752492
+        y = 41.9153106293
+        interface = SWTelServer 4
     [[Cloud DNSRoot]]
-        x = 173.644227665
-        y = -189.149278299
+        x = 185.016810667
+        y = -253.811183183
         z = 1.0
-    [[Cloud C5]]
-        x = 678.518469433
-        y = -95.8111831821
-        z = 1.0
-    [[Cloud C4]]
-        x = 384.362048459
-        y = -90.1543289327
+    [[Cloud TelNetServer]]
+        x = -518.969823101
+        y = -244.634253301
         z = 1.0
     [[Cloud DNS2]]
-        x = -734.28087938
-        y = -97.2253967446
+        x = -722.908296378
+        y = -161.887301628
         z = 1.0
