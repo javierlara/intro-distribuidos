@@ -1,22 +1,22 @@
 #!/bin/sh
 
 interfaces="tap1 tap2 tap3"
-IPhost=192.168.0.28
-#config host 1
+IPhost=192.168.0.21
+#config host 1 sub red D
 IPhost1=$IPhost
 miIPVirtual1=10.94.6.131
 IPVirtualHost1=10.94.6.130
 mask1=255.255.255.192
 portHost1=26000
 
-#config host 2
+#config host 2 sub red J
 IPhost2=$IPhost
-miIPVirtual2=10.15.65.199
-IPVirtualHost2=10.15.65.198
+miIPVirtual2=10.43.9.20
+IPVirtualHost2=10.43.9.21
 mask2=255.255.255.224
 portHost2=27000
 
-#config host 3
+#config host 3 sub red P
 IPhost3=$IPhost
 miIPVirtual3=10.15.65.228
 IPVirtualHost3=10.15.65.227
