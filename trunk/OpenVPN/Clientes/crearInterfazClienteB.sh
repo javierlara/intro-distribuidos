@@ -2,10 +2,11 @@
 
 interfaces="tap2"
 
-serverIp=`cat ../serverIP.conf`
+BASEDIR=$(dirname $0)
+serverIp=`cat ${BASEDIR}/../serverIp.conf`
 size=${#serverIp} 
 
-echo "$serverIp el count es  $size"
+echo "conectado a server $serverIp"
 if [ "$size" -lt 16 ] && [ "$size" -ge 7 ]; then
 	echo "bien"
 else
@@ -13,11 +14,10 @@ else
 	exit 1
 fi
 
-miIPVirtualB=10.15.65.198
-miIPVirtualDestinoB=10.15.65.199
+miIPVirtualB=10.43.9.21
+miIPVirtualDestinoB=10.43.9.20
 maskB=255.255.255.224
 miPortB=27000
-
 
 sudo openvpn --rmtun --dev $interfaces
 

@@ -2,10 +2,11 @@
 
 interfaces="tap3"
 
-serverIp=`cat ../serverIP.conf`
+BASEDIR=$(dirname $0)
+serverIp=`cat ${BASEDIR}/../serverIp.conf`
 size=${#serverIp} 
 
-echo "$serverIp el count es  $size"
+echo "conectado a server $serverIp"
 if [ "$size" -lt 16 ] && [ "$size" -ge 7 ]; then
 	echo "bien"
 else
@@ -13,7 +14,6 @@ else
 	exit 1
 fi
 
-serverIp=192.168.0.46
 miIPVirtualC=10.15.65.227
 miIPVirtualDestinoC=10.15.65.228
 maskC=255.255.255.224
