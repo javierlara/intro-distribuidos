@@ -1,7 +1,15 @@
 #!/bin/sh
-
 interfaces="tap1 tap2 tap3"
-IPhost=192.168.0.21
+IPhost=`cat hosts.conf`
+size=${#IPhost} 
+
+echo "$IPhost el count es  $size"
+if [ "$size" -lt 16 ] && [ "$size" -ge 7 ]; then
+	echo "bien"
+else
+	echo "La IP del Host esta mal."
+	exit 1
+fi
 #config host 1 sub red D
 IPhost1=$IPhost
 miIPVirtual1=10.94.6.131
