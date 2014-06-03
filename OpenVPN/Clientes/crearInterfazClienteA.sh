@@ -1,7 +1,18 @@
 #!/bin/sh
 
 interfaces="tap1"
-serverIpA=192.168.0.46
+
+serverIpA=`cat ../serverIP.conf`
+size=${#serverIpA} 
+
+echo "$serverIpA el count es  $size"
+if [ "$size" -lt 16 ] && [ "$size" -ge 7 ]; then
+	echo "bien"
+else
+	echo "La IP del Host esta mal."
+	exit 1
+fi
+
 miIPVirtualA=10.94.6.130
 miIPVirtualDestinoA=10.94.6.131
 maskA=255.255.255.192
