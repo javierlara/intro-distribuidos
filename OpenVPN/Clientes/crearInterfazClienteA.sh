@@ -1,11 +1,11 @@
 #!/bin/sh
 
 interfaces="tap1"
-
-serverIpA=`cat ../serverIP.conf`
+BASEDIR=$(dirname $0)
+serverIpA=`cat ${BASEDIR}/../serverIp.conf`
 size=${#serverIpA} 
 
-echo "$serverIpA el count es  $size"
+echo "conectado a server $serverIpA"
 if [ "$size" -lt 16 ] && [ "$size" -ge 7 ]; then
 	echo "bien"
 else
