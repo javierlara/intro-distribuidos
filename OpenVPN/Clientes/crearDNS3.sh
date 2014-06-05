@@ -1,6 +1,6 @@
 #!/bin/sh
 
-interfaces="tap1"
+interfaces="tap6"
 
 BASEDIR=$(dirname $0)
 serverIp=`cat ${BASEDIR}/../serverIp.conf`
@@ -10,18 +10,18 @@ echo "conectado a server $serverIp"
 if [ "$size" -lt 16 ] && [ "$size" -ge 7 ]; then
 	echo "bien"
 else
-	echo "La IP del Host esta mal."
+	echo "La IP del DNS esta mal."
 	exit 1
 fi
 
-miIPVirtualA=10.94.6.130
-miIPVirtualDestinoA=10.94.6.131
-maskA=255.255.255.192
-miPortA=26000
+miIPVirtual=10.94.6.193
+miIPVirtualDestino=10.94.6.194
+mask=255.255.255.192
+miPort=31000
 
 sudo openvpn --rmtun --dev $interfaces
 
 
 sudo tunctl -t $interfaces
 sudo ifconfig $interfaces promisc
-sudo  openvpn --remote $serverIp --port $miPortA --dev $interfaces --ifconfig $miIPVirtualA $maskA $miIPVirtualDestinoA 
+sudo  openvpn --remote $serverIp --port $miPort --dev $interfaces --ifconfig $miIPVirtual $mask $miIPVirtualDestino 

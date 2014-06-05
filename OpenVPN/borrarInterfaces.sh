@@ -1,10 +1,13 @@
 #!/bin/sh
+if [ "$(id -u)" != "0" ]; then
+   echo "Debe ejecutar como administrador"
+   exit 1
+fi
 
-interfaces="tap1 tap2 tap3"
+interfaces="tap1 tap2 tap3 tap4 tap5 tap6"
 
 for interfaz in $interfaces; do
     sudo openvpn --rmtun --dev $interfaz
 done
-sleep 5
+
 sudo pkill openvpn
-sleep 5
