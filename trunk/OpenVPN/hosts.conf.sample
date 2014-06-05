@@ -1,1 +1,1 @@
-192.168.2.12
+192.168.2.12 # solo una linea sin espacio ni enter al final con la ip fisica del host al que se conecta el modelo. SACAR el comentario en el archivos sin sample

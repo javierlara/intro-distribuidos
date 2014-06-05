@@ -1,1 +1,3 @@
-157.92.50.251
+157.92.50.251 #DNS1 Estos comentarios sacarlos en el config real  SACAR el comentario en el archivos sin sample
+157.92.50.251 #DNS2
+157.92.50.251 #DNSRoot
