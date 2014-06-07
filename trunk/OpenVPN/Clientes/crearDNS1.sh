@@ -15,7 +15,7 @@ else
 fi
 
 miIPVirtual=10.94.5.161
-miIPVirtualDestino=10.43.9.46
+miIPVirtualDestino=10.94.5.171
 mask=255.255.255.240
 miPort=29000
 
