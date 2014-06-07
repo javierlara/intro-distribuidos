@@ -68,36 +68,36 @@ chequeoIPValida $servers "los servers FTP telNet y webServer"
 
 #config host 1 sub red D
 IPhost1=$IPhost
-miIPVirtual1=10.94.6.131
-IPVirtualHost1=10.94.6.130
+miIPVirtual1=10.94.5.195
+IPVirtualHost1=10.94.5.194
 mask1=255.255.255.192
 portHost1=26000
 
 #config host 2 sub red J
 IPhost2=$IPhost
-miIPVirtual2=10.43.9.20
-IPVirtualHost2=10.43.9.21
+miIPVirtual2=10.94.5.148
+IPVirtualHost2=10.94.5.149
 mask2=255.255.255.224
 portHost2=27000
 
 #config host 3 sub red P
 IPhost3=$IPhost
-miIPVirtual3=10.15.65.228
-IPVirtualHost3=10.15.65.227
+miIPVirtual3=10.15.65.100
+IPVirtualHost3=10.15.65.99
 mask3=255.255.255.224
 portHost3=28000
 
 #config dns 1
 IPFisicaDNS1=$IPDNS1
 miIPVirtualDNS1=10.43.9.46
-IPVirtualDNS1=10.43.9.33
+IPVirtualDNS1=10.94.5.161
 maskDNS1=255.255.255.240
 portDNS1=29000
 
 #config dns 2
 IPFisicaDNS2=$IPDNS2
-miIPVirtualDNS2=10.15.65.66
-IPVirtualDNS2=10.15.65.65
+miIPVirtualDNS2=__10.94.5.194__
+IPVirtualDNS2=10.94.6.129
 maskDNS2=255.255.255.192
 portDNS2=30000
 
@@ -110,7 +110,7 @@ portDNSRoot=31000
 
 #config telServer
 IPFisicaTelServer=$servers
-miIPVirtualTelServer=10.43.9.64
+miIPVirtualTelServer=10.94.5.128
 IPVirtualTelServer=10.43.9.65
 maskTelServer=255.255.255.240
 portTelServer=32000

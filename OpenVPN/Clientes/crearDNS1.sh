@@ -14,7 +14,7 @@ else
 	exit 1
 fi
 
-miIPVirtual=10.43.9.33
+miIPVirtual=10.94.5.161
 miIPVirtualDestino=10.43.9.46
 mask=255.255.255.240
 miPort=29000

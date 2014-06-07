@@ -2,17 +2,17 @@
 	#magia
 
 	# path de inicio
-	path="intro-distribuidos"
+	path="intro-distribuidos/OpenVPN"
 	# archivo con listado de ips
 	cambiosIps="cambioips.list"
 
 	procesar(){
 		file=${1}
-		cat $file | sed "s/\(.*[^_][^_]\|^\)\($viejaIpAux\)\([^_][^_].*\|$\)/\1$nuevaIPAux\3/g" > "$file.back" ; mv "$file.back" $file
+		cat "$file" | sed "s/\(.*[^0-9]\|^\)\($viejaIpAux\)\([^0-9].*\|\n\|$\)/\1$nuevaIPAux\3/g" > "$file.back" ; mv "$file.back" "$file"
 	}
 	procesarTemp(){
 		file=${1}
-		cat $file | sed "s/\(.*\)\($viejaIpAux\)\(.*\)/\1$nuevaIPAux\3/g" > "$file.back" ; mv "$file.back" $file;
+		cat "$file" | sed "s/\(.*\)\($viejaIpAux\)\(.*\)/\1$nuevaIPAux\3/g" > "$file.back" ; mv "$file.back" "$file";
 	}
 
 
@@ -27,8 +27,8 @@
 			if [ -s "$elemento" ]; then
 			echo "Processing $elemento"
 			#procesar $elemento
-			cambioATempIp $elemento
-			cambioANuevaIp $elemento
+			cambioATempIp "$elemento"
+			cambioANuevaIp "$elemento"
 			fi
 		fi
 	done
@@ -47,7 +47,7 @@
 			viejaIpAux=$viejaIp
 			nuevaIPAux="$vieja$nuevaIP$vieja"
 
-			procesar $file
+			procesar "$file"
 		done < $cambiosIps
 	}
 	cambioANuevaIp(){
@@ -61,7 +61,7 @@
 			nuevaIP=$nuevo
 			viejaIpAux=$vieja$nuevaIP$vieja
 			nuevaIPAux="$nuevaIP"
-			procesarTemp $file
+			procesarTemp "$file"
 		done < $cambiosIps
 	}
 	vieja="__"
