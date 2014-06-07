@@ -14,8 +14,8 @@ else
 	exit 1
 fi
 
-miIPVirtualC=10.15.65.227
-miIPVirtualDestinoC=10.15.65.228
+miIPVirtualC=10.15.65.99
+miIPVirtualDestinoC=10.15.65.100
 maskC=255.255.255.224
 miPortC=28000
 
