@@ -7,7 +7,6 @@ version = 0.8.6
         image = /media/mariano/9157fded-6e37-416a-b9bc-3091437ac8b2/FIUBA/[75.43] Intro. a los sistemas distribuidos/Programas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x6041f914
         sparsemem = True
-        ghostios = True
         chassis = 3640
     [[ROUTER HostRedS]]
         model = 3640
@@ -39,7 +38,6 @@ version = 0.8.6
         image = /media/mariano/9157fded-6e37-416a-b9bc-3091437ac8b2/FIUBA/[75.43] Intro. a los sistemas distribuidos/Programas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x6041f914
         sparsemem = True
-        ghostios = True
         chassis = 3640
     [[ROUTER R11]]
         model = 3640
@@ -75,7 +73,6 @@ version = 0.8.6
         1 = access 1 R11 f0/0
         2 = access 1 R9 f1/0
         3 = access 1 R8 f1/0
-        4 = access 1 nio_linux_eth:tap2
         x = 192.351588253
         y = 180.6711396
         z = 1.0
@@ -111,7 +108,6 @@ version = 0.8.6
         image = /media/mariano/9157fded-6e37-416a-b9bc-3091437ac8b2/FIUBA/[75.43] Intro. a los sistemas distribuidos/Programas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x6041f914
         sparsemem = True
-        ghostios = True
         chassis = 3640
     [[ETHSW SWTelServer]]
         1 = access 1 R3 f2/0
@@ -209,7 +205,6 @@ version = 0.8.6
         2 = access 1 R4 f0/0
         3 = access 1 R6 f1/0
         4 = access 1 HostRedD f0/0
-        5 = access 1 nio_linux_eth:tap1
         x = 63.5538238694
         y = -319.663996926
         z = 1.0
@@ -233,8 +228,20 @@ version = 0.8.6
         image = /media/mariano/9157fded-6e37-416a-b9bc-3091437ac8b2/FIUBA/[75.43] Intro. a los sistemas distribuidos/Programas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x6041f914
         sparsemem = True
-        ghostios = True
         chassis = 3640
+    [[FRSW FR1]]
+        1:102 = 2:201
+        1:113 = 3:311
+        2:201 = 1:102
+        2:223 = 3:322
+        3:311 = 1:113
+        3:322 = 2:223
+        1 = R1 s1/0
+        2 = R7 s1/0
+        3 = R15 s1/0
+        x = -927.768252795
+        y = -23.5
+        z = 1.0
     [[ROUTER R1]]
         model = 3640
         console = 2043
@@ -244,8 +251,8 @@ version = 0.8.6
         f0/0 = SWDns2 1
         slot1 = NM-4T
         s1/0 = FR1 1
-        x = -918.280446105
-        y = -260.526911935
+        x = -919.694659667
+        y = -261.941125497
         z = 1.0
 [127.0.0.1:7204]
     workingdir = /tmp
@@ -254,7 +261,6 @@ version = 0.8.6
         image = /media/mariano/9157fded-6e37-416a-b9bc-3091437ac8b2/FIUBA/[75.43] Intro. a los sistemas distribuidos/Programas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x6041f914
         sparsemem = True
-        ghostios = True
         chassis = 3640
     [[ROUTER R16]]
         model = 3640
@@ -342,7 +348,7 @@ version = 0.8.6
         slot1 = NM-4T
         s1/0 = FR1 2
         x = -540.64379439
-        y = 32.1320343561
+        y = 30.7178207937
         z = 1.0
         hx = 54.0975265594
         hy = -20.7573593129
@@ -427,7 +433,6 @@ version = 0.8.6
         1 = access 1 R12 f0/0
         2 = access 1 R15 f0/0
         3 = access 1 R17 f0/0
-        4 = access 1 nio_linux_eth:tap3
         x = -320.966558136
         y = 346.48589412
         z = 1.0
@@ -440,7 +445,6 @@ version = 0.8.6
         image = /media/mariano/9157fded-6e37-416a-b9bc-3091437ac8b2/FIUBA/[75.43] Intro. a los sistemas distribuidos/Programas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x6041f914
         sparsemem = True
-        ghostios = True
         chassis = 3640
     [[ROUTER R17]]
         model = 3640
@@ -458,854 +462,244 @@ version = 0.8.6
         hy = 7.52691193465
 [GNS3-DATA]
     configs = configs
-    m11 = 0.353553390593
-    m22 = 0.353553390593
+    m11 = 0.707106781187
+    m22 = 0.707106781187
     [[NOTE 1]]
-        text = "10.94.5.144/28"
-        x = 174.104689145
-        y = 213.909162929
-    [[NOTE 2]]
-        text = "10.94.5.192/26"
-        x = 53.8215908223
-        y = -370.291847199
-    [[NOTE 3]]
-        text = ".53"
-        x = -484.000000001
-        y = 433.500000001
-    [[NOTE 4]]
-        text = "183.44.30.5/30"
-        x = 590.496608133
-        y = -81.1051224219
-    [[NOTE 5]]
-        text = ".246"
-        x = -157.0
-        y = 197.5
-    [[NOTE 6]]
-        text = ".52"
-        x = -756.000000002
-        y = 434.500000001
-    [[NOTE 7]]
-        text = "10.15.65.0/27"
-        x = -765.030662743
-        y = -551.727488787
-    [[NOTE 8]]
-        text = "205.129.31.132/30"
-        x = -149.0
-        y = 312.500000001
-    [[NOTE 9]]
-        text = "205.129.31.0/26"
-        x = -655.000000001
-        y = 418.500000001
-    [[NOTE 10]]
-        text = ".183"
-        x = -773.000000002
-        y = 402.500000001
-    [[NOTE 11]]
-        text = ".133"
-        x = -113.0
-        y = 258.500000001
-    [[NOTE 12]]
-        text = ".56"
-        x = 384.957502888
-        y = 77.5624458405
-    [[NOTE 13]]
-        text = "205.129.31.128/30"
-        x = -134.0
-        y = -34.5
-    [[NOTE 14]]
-        text = "10.94.6.128/26"
-        x = -707.047906685
-        y = -227.775649277
-    [[NOTE 15]]
-        text = "10.94.65.128/25"
-        x = -200.970562749
-        y = -475.404545572
-    [[NOTE 16]]
-        text = ".155"
-        x = -127.0
-        y = 54.5000000001
-    [[NOTE 17]]
-        text = ".134"
-        x = -92.0000000002
-        y = 406.500000001
-    [[NOTE 18]]
-        text = ".135"
-        x = -158.333044483
-        y = -299.193434177
-    [[NOTE 19]]
-        text = ".173"
-        x = -839.000000002
-        y = 398.500000001
-    [[NOTE 20]]
-        text = "10.15.65.64/27"
-        x = -370.000000001
-        y = 262.500000001
-    [[NOTE 21]]
-        text = ".116"
-        x = -610.000000001
-        y = 228.500000001
-    [[NOTE 22]]
-        text = ".134"
-        x = -370.46507884
-        y = -414.158946292
-    [[NOTE 23]]
-        text = ".245"
-        x = -202.0
-        y = 88.5000000002
-    [[NOTE 24]]
-        text = "183.44.30.5/30"
-        x = 420.790980647
-        y = -83.9335495458
-    [[NOTE 25]]
-        text = ".247"
-        x = -489.000000001
-        y = 162.5
-    [[NOTE 26]]
-        text = "10.94.5.128/28"
-        x = -326.582827846
-        y = -230.077164467
-    [[NOTE 27]]
-        text = "10.43.9.0/24"
-        x = -367.029437252
-        y = 84.9852813745
-    [[NOTE 28]]
-        text = "10.94.6.192/26"
-        x = 103.539105244
-        y = -179.049206512
-    [[NOTE 29]]
-        text = ".172"
-        x = -731.000000002
-        y = 237.500000001
-    [[NOTE 30]]
-        text = "10.15.65.96/27"
-        x = -357.828427126
-        y = 379.784271249
-    [[NOTE 31]]
-        text = ".168"
-        x = -852.71190361
-        y = -276.566017179
-    [[NOTE 32]]
-        text = ".154"
-        x = 65.0000000001
-        y = 30.5000000001
-    [[NOTE 33]]
-        text = ".130"
-        x = -160.0
-        y = 9.50000000005
-    [[NOTE 34]]
-        text = ".225"
-        x = 394.372583003
-        y = 18.8380951167
-    [[NOTE 35]]
-        text = ".192"
-        x = -72.0660171781
-        y = -450.514285351
-    [[NOTE 36]]
-        text = ".81"
-        x = -471.000000001
-        y = 214.5
-    [[NOTE 37]]
-        text = ".242"
-        x = 23.6862915011
-        y = -177.772077939
-    [[NOTE 38]]
-        text = "10.15.65.32/27"
-        x = 187.755880017
-        y = 80.6944801963
-    [[NOTE 39]]
-        text = ".243"
-        x = -57.9238815543
-        y = -323.235064737
-    [[NOTE 40]]
-        text = ".74"
-        x = -317.595021154
-        y = -122.345671068
-    [[NOTE 41]]
-        text = "10.94.5.160/28"
-        x = -856.000000002
-        y = 320.500000001
-    [[NOTE 42]]
-        text = "183.44.30.1/30"
-        x = 441.381817719
-        y = 2.27460325598
-    [[NOTE 43]]
-        text = ".153"
-        x = 668.665655691
-        y = 100.499566724
-    [[NOTE 44]]
-        text = "183.44.30.6/30"
-        x = 669.692567626
-        y = 34.8603896931
-    [[NOTE 45]]
         text = ".136"
         x = -89.0365799269
         y = -136.960894757
-    [[NOTE 46]]
-        text = ".181"
-        x = 223.504617358
-        y = -451.928498913
-    [[NOTE 47]]
-        text = ".114"
-        x = -159.0
-        y = 418.500000001
-    [[NOTE 48]]
+    [[NOTE 2]]
+        text = "205.129.31.128/30"
+        x = -134.0
+        y = -34.5
+    [[NOTE 3]]
+        text = ".243"
+        x = -57.9238815543
+        y = -323.235064737
+    [[NOTE 4]]
+        text = ".225"
+        x = 394.372583003
+        y = 18.8380951167
+    [[NOTE 5]]
+        text = ".130"
+        x = -160.0
+        y = 9.50000000005
+    [[NOTE 6]]
+        text = ".154"
+        x = 65.0000000001
+        y = 30.5000000001
+    [[NOTE 7]]
         text = ".170"
         x = -428.862048459
         y = -450.514285351
-    [[NOTE 49]]
-        text = ".241"
-        x = 48.1421356239
-        y = -406.673664918
-    [[NOTE 50]]
-        text = ".248"
-        x = -459.000000001
-        y = 45.5000000001
-    [[NOTE 51]]
-        text = ".115"
-        x = -400.000000001
-        y = 415.500000001
-    [[NOTE 52]]
-        text = ".193"
-        x = -312.482322782
-        y = -468.899061662
-    [[NOTE 53]]
-        text = ".169"
-        x = -688.663130374
-        y = -361.418830922
-    [[NOTE 54]]
+    [[NOTE 8]]
+        text = "10.94.6.192/26"
+        x = 103.539105244
+        y = -179.049206512
+    [[NOTE 9]]
+        text = ".245"
+        x = -202.0
+        y = 88.5000000002
+    [[NOTE 10]]
+        text = "10.15.65.64/27"
+        x = -370.000000001
+        y = 262.500000001
+    [[NOTE 11]]
+        text = ".168"
+        x = -852.71190361
+        y = -276.566017179
+    [[NOTE 12]]
+        text = "10.15.65.96/27"
+        x = -357.828427126
+        y = 379.784271249
+    [[NOTE 13]]
+        text = ".172"
+        x = -731.000000002
+        y = 237.500000001
+    [[NOTE 14]]
+        text = ".134"
+        x = -370.46507884
+        y = -414.158946292
+    [[NOTE 15]]
+        text = "10.94.5.160/28"
+        x = -856.000000002
+        y = 320.500000001
+    [[NOTE 16]]
+        text = ".135"
+        x = -158.333044483
+        y = -299.193434177
+    [[NOTE 17]]
+        text = "10.43.9.0/24"
+        x = -367.029437252
+        y = 84.9852813745
+    [[NOTE 18]]
+        text = "183.44.30.5/30"
+        x = 420.790980647
+        y = -83.9335495458
+    [[NOTE 19]]
+        text = ".247"
+        x = -489.000000001
+        y = 162.5
+    [[NOTE 20]]
+        text = ".134"
+        x = -92.0000000002
+        y = 406.500000001
+    [[NOTE 21]]
+        text = ".155"
+        x = -127.0
+        y = 54.5000000001
+    [[NOTE 22]]
+        text = "10.94.65.128/25"
+        x = -200.970562749
+        y = -475.404545572
+    [[NOTE 23]]
+        text = "10.94.5.192/26"
+        x = 53.8215908223
+        y = -370.291847199
+    [[NOTE 24]]
+        text = ".53"
+        x = -484.000000001
+        y = 433.500000001
+    [[NOTE 25]]
+        text = "10.94.5.128/28"
+        x = -326.582827846
+        y = -230.077164467
+    [[NOTE 26]]
+        text = ".116"
+        x = -610.000000001
+        y = 228.500000001
+    [[NOTE 27]]
+        text = ".173"
+        x = -839.000000002
+        y = 398.500000001
+    [[NOTE 28]]
+        text = "183.44.30.1/30"
+        x = 441.381817719
+        y = 2.27460325598
+    [[NOTE 29]]
+        text = "10.94.6.128/26"
+        x = -707.047906685
+        y = -227.775649277
+    [[NOTE 30]]
+        text = ".242"
+        x = 23.6862915011
+        y = -177.772077939
+    [[NOTE 31]]
+        text = ".56"
+        x = 384.957502888
+        y = 77.5624458405
+    [[NOTE 32]]
+        text = ".133"
+        x = -113.0
+        y = 258.500000001
+    [[NOTE 33]]
+        text = ".246"
+        x = -157.0
+        y = 197.5
+    [[NOTE 34]]
+        text = "183.44.30.5/30"
+        x = 590.496608133
+        y = -81.1051224219
+    [[NOTE 35]]
+        text = "183.44.30.6/30"
+        x = 669.692567626
+        y = 34.8603896931
+    [[NOTE 36]]
+        text = ".183"
+        x = -773.000000002
+        y = 402.500000001
+    [[NOTE 37]]
         text = ".224"
         x = 22.6862915011
         y = -106.049206511
-    [[NOTE 55]]
+    [[NOTE 38]]
         text = ".57"
         x = 120.0
         y = 3.50000000003
-    [[NOTE 56]]
+    [[NOTE 39]]
+        text = ".74"
+        x = -317.595021154
+        y = -122.345671068
+    [[NOTE 40]]
+        text = ".241"
+        x = 48.1421356239
+        y = -406.673664918
+    [[NOTE 41]]
+        text = ".248"
+        x = -459.000000001
+        y = 45.5000000001
+    [[NOTE 42]]
+        text = ".115"
+        x = -400.000000001
+        y = 415.500000001
+    [[NOTE 43]]
         text = ".129"
         x = -59.0000000001
         y = -110.5
-    [[NOTE 57]]
+    [[NOTE 44]]
         text = ".25"
         x = -709.87633381
         y = -427.886868353
-    [[NOTE 58]]
-        text = "10.94.5.176/28"
-        x = -690.000000002
-        y = 333.500000001
-    [[NOTE 59]]
+    [[NOTE 45]]
+        text = ".52"
+        x = -756.000000002
+        y = 434.500000001
+    [[NOTE 46]]
         text = ".80"
         x = -193.0
         y = 221.500000001
-    [[NOTE 60]]
-        text = "f0/0"
-        x = 72.9934070938
-        y = 21.2737844466
-        interface = R1 f0/0
-    [[NOTE 61]]
-        text = "s1/0"
-        x = 38.4819813672
-        y = 61.6225678154
-        interface = R1 s1/0
-    [[NOTE 62]]
-        text = "f0/0"
-        x = 72.9934070938
-        y = 21.2737844466
-        interface = R1 f0/0
-    [[NOTE 63]]
-        text = "2"
-        x = -2.48130992998
-        y = 3.45328345729
-        interface = SWRedP 2
-    [[NOTE 64]]
-        text = "1"
-        x = 71.5716384798
-        y = 33.2868995884
-        interface = SWRedP 1
-    [[NOTE 65]]
-        text = "3"
-        x = 3.72485666737
-        y = 40.2969188621
-        interface = SWRedP 3
-    [[NOTE 66]]
-        text = "4"
-        x = 54.5009532063
-        y = 51.1989172738
-        interface = SWRedP 4
-    [[NOTE 67]]
-        text = "2"
-        x = -2.48130992998
-        y = 3.45328345729
-        interface = SWRedP 2
-    [[NOTE 68]]
-        text = "1"
-        x = -4.31027916004
-        y = 19.8912302939
-        interface = SWRedD 1
-    [[NOTE 69]]
-        text = "2"
-        x = 8.76222327613
-        y = -13.7504839602
-        interface = SWRedD 2
-    [[NOTE 70]]
-        text = "4"
-        x = 68.6822695852
-        y = -6.33689739369
-        interface = SWRedD 4
-    [[NOTE 71]]
-        text = "5"
-        x = 75.1986673584
-        y = 11.0994071821
-        interface = SWRedD 5
-    [[NOTE 72]]
-        text = "3"
-        x = 14.4458154154
-        y = 50.0106058675
-        interface = SWRedD 3
-    [[NOTE 73]]
-        text = "3"
-        x = 14.4458154154
-        y = 50.0106058675
-        interface = SWRedD 3
-    [[NOTE 74]]
-        text = "1"
-        x = 70.3353535755
-        y = -3.65955597837
-        interface = SWRedG 1
-    [[NOTE 75]]
-        text = "2"
-        x = -1.00738301572
-        y = -0.346589410124
-        interface = SWRedG 2
-    [[NOTE 76]]
-        text = "4"
-        x = 70.9907695932
-        y = 34.4500751675
-        interface = SWRedG 4
-    [[NOTE 77]]
-        text = "3"
-        x = -0.810698274008
-        y = 32.778950827
-        interface = SWRedG 3
-    [[NOTE 78]]
-        text = "4"
-        x = 70.9907695932
-        y = 34.4500751675
-        interface = SWRedG 4
-    [[NOTE 79]]
-        text = "3"
-        x = -0.810698274008
-        y = 32.778950827
-        interface = SWRedG 3
-    [[NOTE 80]]
-        text = "1"
-        x = 70.3353535755
-        y = -3.65955597837
-        interface = SWRedG 1
-    [[NOTE 81]]
-        text = "2"
-        x = -1.00738301572
-        y = -0.346589410124
-        interface = SWRedG 2
-    [[NOTE 82]]
-        text = "2"
-        x = 58.3158323798
-        y = -16.8547986269
-        interface = SWRedH 2
-    [[NOTE 83]]
-        text = "1"
-        x = 5.45340406198
-        y = 42.4045843091
-        interface = SWRedH 1
-    [[NOTE 84]]
-        text = "1"
-        x = 5.45340406198
-        y = 42.4045843091
-        interface = SWRedH 1
-    [[NOTE 85]]
-        text = "2"
-        x = 58.3158323798
-        y = -16.8547986269
-        interface = SWRedH 2
-    [[NOTE 86]]
-        text = "2"
-        x = -1.9603416443
-        y = 1.97420933095
-        interface = SWRedI 2
-    [[NOTE 87]]
-        text = "2"
-        x = -1.9603416443
-        y = 1.97420933095
-        interface = SWRedI 2
-    [[NOTE 88]]
-        text = "2"
-        x = 10.9461652902
-        y = -15.5770359762
-        interface = SWRedJ 2
-    [[NOTE 89]]
-        text = "3"
-        x = -2.33576931931
-        y = 3.02099541505
-        interface = SWRedJ 3
-    [[NOTE 90]]
-        text = "2"
-        x = 10.9461652902
-        y = -15.5770359762
-        interface = SWRedJ 2
-    [[NOTE 91]]
-        text = "3"
-        x = -2.33576931931
-        y = 3.02099541505
-        interface = SWRedJ 3
-    [[NOTE 92]]
-        text = "1"
-        x = 56.8316318786
-        y = -17.8372794621
-        interface = SWRedK 1
-    [[NOTE 93]]
-        text = "2"
-        x = 59.2388041142
-        y = 48.1942413986
-        interface = SWRedK 2
-    [[NOTE 94]]
-        text = "2"
-        x = 59.2388041142
-        y = 48.1942413986
-        interface = SWRedK 2
-    [[NOTE 95]]
-        text = "1"
-        x = 56.8316318786
-        y = -17.8372794621
-        interface = SWRedK 1
-    [[NOTE 96]]
-        text = "2"
-        x = 75.4723894163
-        y = 14.5140375681
-        interface = SWRedL 2
-    [[NOTE 97]]
-        text = "1"
-        x = -4.33458060582
-        y = 12.3659680851
-        interface = SWRedL 1
-    [[NOTE 98]]
-        text = "2"
-        x = 75.4723894163
-        y = 14.5140375681
-        interface = SWRedL 2
-    [[NOTE 99]]
-        text = "1"
-        x = -4.33458060582
-        y = 12.3659680851
-        interface = SWRedL 1
-    [[NOTE 100]]
-        text = "2"
-        x = 68.5484323508
-        y = -6.53444295193
-        interface = SWRedN 2
-    [[NOTE 101]]
-        text = "1"
-        x = 35.601605155
-        y = 55.9998709547
-        interface = SWRedN 1
-    [[NOTE 102]]
-        text = "1"
-        x = 35.601605155
-        y = 55.9998709547
-        interface = SWRedN 1
-    [[NOTE 103]]
-        text = "2"
-        x = 68.5484323508
-        y = -6.53444295193
-        interface = SWRedN 2
-    [[NOTE 104]]
-        text = "1"
-        x = 1.32970918248
-        y = 36.7940189825
-        interface = SWRedO 1
-    [[NOTE 105]]
-        text = "1"
-        x = 1.32970918248
-        y = 36.7940189825
-        interface = SWRedO 1
-    [[NOTE 106]]
-        text = "f1/0"
-        x = 57.5538347098
-        y = 53.5770359762
-        interface = R9 f1/0
-    [[NOTE 107]]
-        text = "f0/0"
-        x = 70.4603416443
-        y = 36.0257906691
-        interface = R9 f0/0
-    [[NOTE 108]]
-        text = "f1/0"
-        x = 57.5538347098
-        y = 53.5770359762
-        interface = R9 f1/0
-    [[NOTE 109]]
-        text = "f0/0"
-        x = 70.4603416443
-        y = 36.0257906691
-        interface = R9 f0/0
-    [[NOTE 110]]
-        text = "f2/0"
-        x = -1.83535357555
-        y = 41.6595559784
-        interface = R8 f2/0
-    [[NOTE 111]]
-        text = "f1/0"
-        x = 70.8357693193
-        y = 34.979004585
-        interface = R8 f1/0
-    [[NOTE 112]]
-        text = "f0/0"
-        x = 63.046595938
-        y = -4.40458430912
-        interface = R8 f0/0
-    [[NOTE 113]]
-        text = "f2/0"
-        x = -45.8353535756
-        y = 16.6595559783
-        interface = R8 f2/0
-    [[NOTE 114]]
-        text = "f1/0"
-        x = 70.8357693193
-        y = 34.979004585
-        interface = R8 f1/0
-    [[NOTE 115]]
-        text = "f0/0"
-        x = 63.046595938
-        y = -4.40458430912
-        interface = R8 f0/0
-    [[NOTE 116]]
-        text = "1"
-        x = -4.49340709379
-        y = 16.7262155534
-        interface = SWDns2 1
-    [[NOTE 117]]
-        text = "3"
-        x = 68.4799485925
-        y = -6.63455302936
-        interface = SWDns2 3
-    [[NOTE 118]]
-        text = "2"
-        x = 14.9806711807
-        y = -18.3359453751
-        interface = SWDns2 2
-    [[NOTE 119]]
-        text = "1"
-        x = -4.49340709379
-        y = 16.7262155534
-        interface = SWDns2 1
-    [[NOTE 120]]
-        text = "3"
-        x = 68.4799485925
-        y = -6.63455302936
-        interface = SWDns2 3
-    [[NOTE 121]]
-        text = "2"
-        x = 14.9806711807
-        y = -18.3359453751
-        interface = SWDns2 2
-    [[NOTE 122]]
-        text = "f0/0"
-        x = 0.0200514075456
-        y = 44.6345530294
-        interface = R3 f0/0
-    [[NOTE 123]]
-        text = "f2/0"
-        x = 51.8013781769
-        y = 57.3059227135
-        interface = R3 f2/0
-    [[NOTE 124]]
-        text = "f2/0"
-        x = 51.8013781769
-        y = 57.3059227135
-        interface = R3 f2/0
-    [[NOTE 125]]
-        text = "f0/0"
-        x = -9.47994859248
-        y = 52.6345530294
-        interface = R3 f0/0
-    [[NOTE 126]]
-        text = "f0/0"
-        x = 53.5193288193
-        y = 56.3359453751
-        interface = R2 f0/0
-    [[NOTE 127]]
-        text = "f0/0"
-        x = 53.5193288193
-        y = 56.3359453751
-        interface = R2 f0/0
-    [[NOTE 128]]
-        text = "s1/0"
-        x = -6.49298422343
-        y = 28.3485586654
-        interface = R7 s1/0
-    [[NOTE 129]]
-        text = "f0/0"
-        x = 69.5073830157
-        y = 38.3465894101
-        interface = R7 f0/0
-    [[NOTE 130]]
-        text = "f0/0"
-        x = 69.5073830157
-        y = 38.3465894101
-        interface = R7 f0/0
-    [[NOTE 131]]
-        text = "f1/0"
-        x = 54.0541845846
-        y = -12.0106058675
-        interface = R6 f1/0
-    [[NOTE 132]]
-        text = "f0/0"
-        x = -4.30786309646
-        y = 7.57351909938
-        interface = R6 f0/0
-    [[NOTE 133]]
-        text = "f2/0"
-        x = 72.9999757932
-        y = 21.9559938133
-        interface = R6 f2/0
-    [[NOTE 134]]
-        text = "f3/0"
-        x = 10.1841676202
-        y = 54.8547986269
-        interface = R6 f3/0
-    [[NOTE 135]]
-        text = "f3/0"
-        x = 10.1841676202
-        y = 54.8547986269
-        interface = R6 f3/0
-    [[NOTE 136]]
-        text = "f2/0"
-        x = 72.9999757932
-        y = 21.9559938133
-        interface = R6 f2/0
-    [[NOTE 137]]
-        text = "f1/0"
-        x = 54.0541845846
-        y = -12.0106058675
-        interface = R6 f1/0
-    [[NOTE 138]]
-        text = "f0/0"
-        x = -4.30786309646
-        y = 7.57351909938
-        interface = R6 f0/0
-    [[NOTE 139]]
-        text = "f1/0"
-        x = 72.81027916
-        y = 18.1087697061
-        interface = R5 f1/0
-    [[NOTE 140]]
-        text = "f0/0"
-        x = -3.40015245176
-        y = 38.5839953415
-        interface = R5 f0/0
-    [[NOTE 141]]
-        text = "f0/0"
-        x = -3.40015245176
-        y = 38.5839953415
-        interface = R5 f0/0
-    [[NOTE 142]]
-        text = "f0/0"
-        x = 59.7377767239
-        y = 51.7504839602
-        interface = R4 f0/0
-    [[NOTE 143]]
-        text = "f0/0"
-        x = -0.682269585184
-        y = 51.8368973937
-        interface = HostRedD f0/0
-    [[NOTE 144]]
-        text = "3"
-        x = 59.3438991435
-        y = 44.8211278023
-        interface = FR1 3
-    [[NOTE 145]]
-        text = "2"
-        x = 64.9929842234
-        y = 17.1514413346
-        interface = FR1 2
-    [[NOTE 146]]
-        text = "1"
-        x = 20.0180186328
-        y = -16.1225678154
-        interface = FR1 1
-    [[NOTE 147]]
-        text = "f0/0"
-        x = 70.5870030938
-        y = -2.89413828661
-        interface = HostRedS f0/0
-    [[NOTE 148]]
-        text = "f0/0"
-        x = 70.5870030938
-        y = -2.89413828661
-        interface = HostRedS f0/0
-    [[NOTE 149]]
-        text = "1"
-        x = -4.49997579319
-        y = 16.0440061867
-        interface = SWDnsRoot 1
-    [[NOTE 150]]
-        text = "1"
-        x = -4.49997579319
-        y = 16.0440061867
-        interface = SWDnsRoot 1
-    [[NOTE 151]]
-        text = "f2/0"
-        x = 11.6683681214
-        y = 55.8372794621
-        interface = R13 f2/0
-    [[NOTE 152]]
-        text = "f1/0"
-        x = -6.97238941633
-        y = 23.4859624319
-        interface = R13 f1/0
-    [[NOTE 153]]
-        text = "f0/0"
-        x = -2.49076959316
-        y = 3.54992483254
-        interface = R13 f0/0
-    [[NOTE 154]]
-        text = "f2/0"
-        x = 11.6683681214
-        y = 55.8372794621
-        interface = R13 f2/0
-    [[NOTE 155]]
-        text = "f1/0"
-        x = -6.97238941633
-        y = 23.4859624319
-        interface = R13 f1/0
-    [[NOTE 156]]
-        text = "f0/0"
-        x = -2.49076959316
-        y = 3.54992483254
-        interface = R13 f0/0
-    [[NOTE 157]]
-        text = "f1/0"
-        x = 9.26119588581
-        y = -10.1942413986
-        interface = R12 f1/0
-    [[NOTE 158]]
-        text = "f0/0"
-        x = -3.07163847983
-        y = 4.71310041156
-        interface = R12 f0/0
-    [[NOTE 159]]
-        text = "f1/0"
-        x = 9.26119588581
-        y = -10.1942413986
-        interface = R12 f1/0
-    [[NOTE 160]]
-        text = "s1/0"
-        x = -0.843899143541
-        y = 0.678872197704
-        interface = R15 s1/0
-    [[NOTE 161]]
-        text = "f2/0"
-        x = -0.0484323508151
-        y = 44.5344429519
-        interface = R15 f2/0
-    [[NOTE 162]]
-        text = "f0/0"
-        x = 70.98130993
-        y = 34.5467165427
-        interface = R15 f0/0
-    [[NOTE 163]]
-        text = "f2/0"
-        x = -0.0484323508151
-        y = 44.5344429519
-        interface = R15 f2/0
-    [[NOTE 164]]
-        text = "f0/0"
-        x = 70.98130993
-        y = 34.5467165427
-        interface = R15 f0/0
-    [[NOTE 165]]
-        text = "f1/0"
-        x = 72.8345806058
-        y = 25.6340319149
-        interface = R14 f1/0
-    [[NOTE 166]]
-        text = "f0/0"
-        x = 69.310698274
-        y = 5.22104917303
-        interface = R14 f0/0
-    [[NOTE 167]]
-        text = "f1/0"
-        x = 63.8345806058
-        y = 28.6340319149
-        interface = R14 f1/0
-    [[NOTE 168]]
-        text = "f0/0"
-        x = 40.3106982739
-        y = -22.778950827
-        interface = R14 f0/0
-    [[NOTE 169]]
-        text = "f0/0"
-        x = 64.7751433326
-        y = -2.29691886208
-        interface = R17 f0/0
-    [[NOTE 170]]
-        text = "f1/0"
-        x = 67.1702908175
-        y = 1.20598101746
-        interface = R16 f1/0
-    [[NOTE 171]]
-        text = "f0/0"
-        x = 32.898394845
-        y = -17.9998709547
-        interface = R16 f0/0
-    [[NOTE 172]]
-        text = "f1/0"
-        x = 38.1702908175
-        y = -5.79401898256
-        interface = R16 f1/0
-    [[NOTE 173]]
-        text = "f0/0"
-        x = -12.1016051551
-        y = -14.9998709547
-        interface = R16 f0/0
-    [[NOTE 174]]
-        text = "1"
-        x = 16.6986218231
-        y = -19.3059227135
-        interface = SWTelServer 1
-    [[NOTE 175]]
-        text = "2"
-        x = 71.9001524518
-        y = -0.583995341545
-        interface = SWTelServer 2
-    [[NOTE 176]]
-        text = "3"
-        x = 72.8078630965
-        y = 30.4264809006
-        interface = SWTelServer 3
-    [[NOTE 177]]
-        text = "4"
-        x = 5.03039752495
-        y = 41.9153106293
-        interface = SWTelServer 4
-    [[NOTE 178]]
-        text = "1"
-        x = 16.6986218231
-        y = -19.3059227135
-        interface = SWTelServer 1
-    [[NOTE 179]]
-        text = "3"
-        x = 72.8078630965
-        y = 30.4264809006
-        interface = SWTelServer 3
-    [[NOTE 180]]
-        text = "2"
-        x = 71.9001524518
-        y = -0.583995341545
-        interface = SWTelServer 2
-    [[NOTE 181]]
-        text = "4"
-        x = 5.03039752495
-        y = 41.9153106293
-        interface = SWTelServer 4
+    [[NOTE 47]]
+        text = "10.94.5.176/28"
+        x = -690.000000002
+        y = 333.500000001
+    [[NOTE 48]]
+        text = "205.129.31.0/26"
+        x = -655.000000001
+        y = 418.500000001
+    [[NOTE 49]]
+        text = "205.129.31.132/30"
+        x = -149.0
+        y = 312.500000001
+    [[NOTE 50]]
+        text = ".169"
+        x = -688.663130374
+        y = -361.418830922
+    [[NOTE 51]]
+        text = ".193"
+        x = -312.482322782
+        y = -468.899061662
+    [[NOTE 52]]
+        text = "10.15.65.32/27"
+        x = 187.755880017
+        y = 80.6944801963
+    [[NOTE 53]]
+        text = "10.15.65.0/27"
+        x = -765.030662743
+        y = -551.727488787
+    [[NOTE 54]]
+        text = "10.94.5.144/28"
+        x = 174.104689145
+        y = 213.909162929
+    [[NOTE 55]]
+        text = ".153"
+        x = 668.665655691
+        y = 100.499566724
+    [[NOTE 56]]
+        text = ".114"
+        x = -159.0
+        y = 418.500000001
+    [[NOTE 57]]
+        text = ".192"
+        x = -72.0660171781
+        y = -450.514285351
+    [[NOTE 58]]
+        text = ".181"
+        x = 223.504617358
+        y = -451.928498913
+    [[NOTE 59]]
+        text = ".81"
+        x = -471.000000001
+        y = 214.5
     [[Cloud DNSRoot]]
         x = 185.016810667
         y = -253.811183183
@@ -1314,22 +708,11 @@ version = 0.8.6
         x = -518.969823101
         y = -244.634253301
         z = 1.0
-    [[NOTE 182]]
-        text = "nio_linux_eth:tap1"
-        x = -7.19866735841
-        y = 34.4005928179
-        interface = HostA nio_linux_eth:tap1
     [[Cloud HostA]]
         symbol = Host
         x = 264.484848099
         y = -357.597546471
         z = 1.0
-        connections = SWRedD:5:nio_linux_eth:tap1
-    [[NOTE 183]]
-        text = "nio_linux_eth:tap3"
-        x = -16.5009532064
-        y = 6.30108272618
-        interface = HostC nio_linux_eth:tap3
     [[Cloud HostC]]
         symbol = Host
         x = -260.188383543
@@ -1337,13 +720,11 @@ version = 0.8.6
         hx = 8.57706756337
         hy = -23.5857864376
         z = 1.0
-        connections = SWRedP:4:nio_linux_eth:tap3
     [[Cloud HostB]]
         symbol = Host
         x = 243.271644663
         y = 312.739682095
         z = 1.0
-        connections = SWRedJ:4:nio_linux_eth:tap2
     [[Cloud DNS2]]
         x = -722.908296378
         y = -161.887301628
