@@ -112,7 +112,7 @@ portDNSRoot=31000
 IPFisicaTelServer=$servers
 miIPVirtualTelServer=10.94.6.183
 IPVirtualTelServer=10.94.6.182
-maskTelServer=255.255.255.240
+maskTelServer=255.255.255.192
 portTelServer=32000
 
 #config webServer  sub red Q
