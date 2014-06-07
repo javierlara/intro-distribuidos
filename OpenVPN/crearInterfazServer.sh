@@ -83,50 +83,50 @@ portHost2=27000
 #config host 3 sub red P
 IPhost3=$IPhost
 miIPVirtual3=10.15.65.100
-IPVirtualHost3=10.15.65.99
+IPVirtualHost3=10.15.65.101
 mask3=255.255.255.224
 portHost3=28000
 
-#config dns 1
+#config dns 1  sub red n
 IPFisicaDNS1=$IPDNS1
-miIPVirtualDNS1=10.43.9.46
+miIPVirtualDNS1=10.94.5.171
 IPVirtualDNS1=10.94.5.161
 maskDNS1=255.255.255.240
 portDNS1=29000
 
-#config dns 2
+#config dns 2  sub red b
 IPFisicaDNS2=$IPDNS2
-miIPVirtualDNS2=__10.94.5.194__
+miIPVirtualDNS2=10.94.6.130
 IPVirtualDNS2=10.94.6.129
 maskDNS2=255.255.255.192
 portDNS2=30000
 
-#config dns root
+#config dns root sub red r
 IPFisicaDNSRoot=$IPDNSRoot
 miIPVirtualDNSRoot=10.94.6.194
 IPVirtualDNSRoot=10.94.6.193
 maskDNSRoot=255.255.255.192
 portDNSRoot=31000
 
-#config telServer
+#config telServer sub red B
 IPFisicaTelServer=$servers
-miIPVirtualTelServer=10.94.5.128
-IPVirtualTelServer=10.43.9.65
+miIPVirtualTelServer=10.94.6.183
+IPVirtualTelServer=10.94.6.182
 maskTelServer=255.255.255.240
 portTelServer=32000
 
-#config webServer
+#config webServer  sub red Q
 IPFisicaWebServer=$servers
-miIPVirtualWebServer=10.15.65.135
-IPVirtualWebServer=10.15.65.136
+miIPVirtualWebServer=205.129.31.10
+IPVirtualWebServer=205.129.31.11
 maskWebServer=255.255.255.192
 portWebServer=33000
 
-#config FTPServer
+#config FTPServer  sub red G
 IPFisicaFTPServer=$servers
-miIPVirtualFTPServer=205.129.31.10
-IPVirtualFTPServer=205.129.31.11
-maskFTPServer=255.255.255.192
+miIPVirtualFTPServer=10.43.9.1
+IPVirtualFTPServer=10.43.9.2
+maskFTPServer=255.255.255.255
 portFTPServer=34000
 
 

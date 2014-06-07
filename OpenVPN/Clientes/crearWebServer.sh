@@ -14,8 +14,8 @@ else
 	exit 1
 fi
 
-miIPVirtualWebServer=10.15.65.136
-miIPVirtualDestinoWebServer=10.15.65.135
+miIPVirtualWebServer=205.129.31.11
+miIPVirtualDestinoWebServer=205.129.31.10
 maskWebbServer=255.255.255.192
 miPortWebServer=33000
 
