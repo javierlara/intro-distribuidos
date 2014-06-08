@@ -30,5 +30,7 @@ sleep 3
 
 subredes="10.15.65.0/27 10.94.6.128/26 10.94.65.128/25 10.43.9.0/24 205.129.31.128/30 10.15.65.32/27 10.94.5.144/28 205.129.31.132/30 10.15.65.64/27 10.94.5.160/28 10.94.5.176/28 10.15.65.96/27 205.129.31.0/26 10.94.6.192/26 10.94.5.128/28 205.129.31.64/30"
 for subred in $subredes; do
-    sudo route add -net $subred gw 10.94.5.242 $interfaces
+    sudo route add -net $subred gw 10.94.5.244 $interfaces
 done
+
+#sudo route add -net 0.0.0.0 gw 10.94.5.244 tap1 #Host A ver esto
