@@ -1,6 +1,6 @@
 #!/bin/sh
 
-interfaces="tap9"
+interfaces="tap7"
 
 BASEDIR=$(dirname $0)
 serverIp=`cat ${BASEDIR}/../serverIp.conf`
@@ -14,10 +14,10 @@ else
 	exit 1
 fi
 
-miIPVirtualC=10.43.9.2
-miIPVirtualDestinoC=10.43.9.1
-maskC=255.255.255.255
-miPortC=34000
+miIPVirtualC=10.94.6.182
+miIPVirtualDestinoC=10.94.6.183
+maskC=255.255.255.192
+miPortC=32000
 
 sudo openvpn --rmtun --dev $interfaces
 
@@ -29,5 +29,5 @@ sleep 3
 
 subredes="10.15.65.0/27 10.94.6.128/26 10.94.65.128/25 10.43.9.0/24 205.129.31.128/30 10.15.65.32/27 10.94.5.144/28 205.129.31.132/30 10.15.65.64/27 10.94.5.160/28 10.94.5.176/28 10.15.65.96/27 205.129.31.0/26 10.94.6.192/26 10.94.5.128/28 205.129.31.64/30"
 for subred in $subredes; do
-    sudo route add -net $subred gw 10.43.9.254 $interfaces
+    sudo route add -net $subred gw 10.94.6.170 $interfaces
 done

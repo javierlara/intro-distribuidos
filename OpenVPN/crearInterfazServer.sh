@@ -115,6 +115,13 @@ IPVirtualTelServer=10.94.6.182
 maskTelServer=255.255.255.192
 portTelServer=32000
 
+#config telServer sub red S
+IPFisicaTelServer2=$servers
+miIPVirtualTelServer2=10.94.5.131
+IPVirtualTelServer2=10.94.5.130
+maskTelServer2=255.255.255.240
+portTelServer2=35000
+
 #config webServer  sub red Q
 IPFisicaWebServer=$servers
 miIPVirtualWebServer=205.129.31.10
@@ -161,6 +168,11 @@ sudo ifconfig tap6 promisc
 sudo tunctl -t tap7
 exec sudo openvpn --port $portTelServer --remote $IPFisicaTelServer --dev tap7 --ifconfig $miIPVirtualTelServer $maskTelServer $IPVirtualTelServer & 
 sudo ifconfig tap7 promisc
+
+#sevidor telServer2
+sudo tunctl -t tap10
+exec sudo openvpn --port $portTelServer2 --remote $IPFisicaTelServer2 --dev tap10 --ifconfig $miIPVirtualTelServer2 $maskTelServer2 $IPVirtualTelServer2 & 
+sudo ifconfig tap10 promisc
 
 #sevidor WebServer
 sudo tunctl -t tap8
