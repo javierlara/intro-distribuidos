@@ -16,7 +16,7 @@ fi
 
 miIPVirtualC=10.43.9.2
 miIPVirtualDestinoC=10.43.9.1
-maskC=255.255.255.255
+maskC=255.255.255.0
 miPortC=34000
 
 sudo openvpn --rmtun --dev $interfaces

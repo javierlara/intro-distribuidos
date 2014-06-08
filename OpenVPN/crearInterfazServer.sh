@@ -78,7 +78,7 @@ portHost1=26000
 IPhost2=$IPhost
 miIPVirtual2=10.94.5.148
 IPVirtualHost2=10.94.5.149
-mask2=255.255.255.224
+mask2=255.255.255.240
 portHost2=27000
 
 #config host 3 sub red P
@@ -134,7 +134,7 @@ portWebServer=33000
 IPFisicaFTPServer=$servers
 miIPVirtualFTPServer=10.43.9.1
 IPVirtualFTPServer=10.43.9.2
-maskFTPServer=255.255.255.255
+maskFTPServer=255.255.255.0
 portFTPServer=34000
 
 
