@@ -1,0 +1,1 @@
+192.168.0.43# solo una linea sin espacio ni enter al final con la ip fisica del host donde esta el Telnet webServer y FTP server . SACAR el comentario en el archivos sin sample

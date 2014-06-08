@@ -60,6 +60,7 @@ chequeoIPValida $IPDNSRoot "DNS root"
 
 #toma la ip fisica para los servidores FTP TelNet y webServer
 serversConfig="servers.conf"
+chequeoArchivo $serversConfig
 servers=`cat $serversConfig`
 chequeoIPValida $servers "los servers FTP telNet y webServer"
 
