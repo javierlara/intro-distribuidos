@@ -138,49 +138,39 @@ maskFTPServer=255.255.255.0
 portFTPServer=34000
 
 
-sudo tunctl -t tap1
+
 exec sudo openvpn --port $portHost1 --remote $IPhost1 --dev tap1 --ifconfig $miIPVirtual1 $mask1 $IPVirtualHost1 & 
-sudo ifconfig tap1 promisc
 
-sudo tunctl -t tap2
+
 exec sudo openvpn --port $portHost2 --remote $IPhost2 --dev tap2 --ifconfig $miIPVirtual2 $mask2 $IPVirtualHost2 & 
-sudo ifconfig tap2 promisc
 
-sudo tunctl -t tap3
+
 exec sudo openvpn --port $portHost3 --remote $IPhost3 --dev tap3 --ifconfig $miIPVirtual3 $mask3 $IPVirtualHost3 & 
-sudo ifconfig tap3 promisc
 
 # DNS 1
-sudo tunctl -t tap4
+
 exec sudo openvpn --port $portDNS1 --remote $IPFisicaDNS1 --dev tap4 --ifconfig $miIPVirtualDNS1 $maskDNS1 $IPVirtualDNS1 & 
-sudo ifconfig tap4 promisc
 
 # DNS 2
-sudo tunctl -t tap5
+
 exec sudo openvpn --port $portDNS2 --remote $IPFisicaDNS2 --dev tap5 --ifconfig $miIPVirtualDNS2 $maskDNS2 $IPVirtualDNS2 & 
-sudo ifconfig tap5 promisc
 
 # DNS Root
-sudo tunctl -t tap6
+
 exec sudo openvpn --port $portDNSRoot --remote $IPFisicaDNSRoot --dev tap6 --ifconfig $miIPVirtualDNSRoot $maskDNSRoot $IPVirtualDNSRoot & 
-sudo ifconfig tap6 promisc
 
 #sevidor telServer
-sudo tunctl -t tap7
+
 exec sudo openvpn --port $portTelServer --remote $IPFisicaTelServer --dev tap7 --ifconfig $miIPVirtualTelServer $maskTelServer $IPVirtualTelServer & 
-sudo ifconfig tap7 promisc
 
 #sevidor telServer2
-sudo tunctl -t tap10
+
 exec sudo openvpn --port $portTelServer2 --remote $IPFisicaTelServer2 --dev tap10 --ifconfig $miIPVirtualTelServer2 $maskTelServer2 $IPVirtualTelServer2 & 
-sudo ifconfig tap10 promisc
 
 #sevidor WebServer
-sudo tunctl -t tap8
+
 exec sudo openvpn --port $portWebServer --remote $IPFisicaWebServer --dev tap8 --ifconfig $miIPVirtualWebServer $maskWebServer $IPVirtualWebServer & 
-sudo ifconfig tap8 promisc
 
 #sevidor FTP Server
-sudo tunctl -t tap9
+
 exec sudo openvpn --port $portFTPServer --remote $IPFisicaFTPServer --dev tap9 --ifconfig $miIPVirtualFTPServer $maskFTPServer $IPVirtualFTPServer & 
-sudo ifconfig tap9 promisc
