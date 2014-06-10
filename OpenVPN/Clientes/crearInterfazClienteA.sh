@@ -49,11 +49,11 @@ sudo openvpn --rmtun --dev $interfaces
 
 
 sudo ifconfig $interfaces promisc
-#echo "nameserver 10.134.13.66" > /etc/resolv.conf
+echo "nameserver 10.94.5.161" > /etc/resolv.conf
 sudo  openvpn --remote $serverIp --port $miPortA --dev $interfaces --ifconfig $miIPVirtualA $maskA $miIPVirtualDestinoA &
 sleep 3
 
-subredes="10.94.6.128/25 10.94.5.128/25 10.15.65.0/24 205.129.31.0/26 205.129.31.128/25"
+subredes="10.94.6.128/25 10.94.5.128/25 10.15.65.0/24 205.129.31.0/26 205.129.31.128/25 10.43.9.0/24"
 
  for subred in $subredes; do
      sudo route add -net $subred gw 10.94.5.244 $interfaces
