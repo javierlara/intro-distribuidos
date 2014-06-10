@@ -1,0 +1,40 @@
+$TTL    86400
+@       IN      SOA     nsroot.baires.dc.fi.uba.ar. root. (
+                          1        ; Serial
+                          604800       ; Refresh after 3 hours
+                          86400       ; Retry after 1 hour
+                          1w       ; Expire after 1 week
+                          1h )     ; Negative caching TTL  
+;
+
+@       IN      NS      nsroot.baires.dc.fi.uba.ar.
+4.31.129.205    IN   PTR   nsroot.baires.dc.fi.uba.ar.
+
+5.31.129.205  IN   PTR ns1.matanza.baires.dc.fi.uba.ar.
+
+; sofia
+; MANERA COMPLICADA LO DEJO COMO EJEMPLO
+;160/28   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
+;162   IN  CNAME  162.160/28
+;161   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
+162   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
+163   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
+164   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
+172    IN  NS ns1.matanza.baires.dc.fi.uba.ar.
+173    IN  NS ns1.matanza.baires.dc.fi.uba.ar.
+
+;MACARENA
+
+177   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
+178   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
+179    IN  NS ns1.matanza.baires.dc.fi.uba.ar.
+180    IN  NS ns1.matanza.baires.dc.fi.uba.ar.
+183   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
+
+
+
+
+
+
+
+

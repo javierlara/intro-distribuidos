@@ -1,0 +1,29 @@
+options {
+	directory "/var/cache/bind";
+      
+        listen-on { 0.0.0.0/0;
+    //      127.0.0.1;
+// DNS 1 real 10.94.5.161
+       //  205.129.31.5; 
+        };
+
+	
+	forwarders {
+// real dns root 10.94.6.193 205.129.31.4;
+             10.94.6.193; // DNS ROOT
+	};
+allow-recursion{
+  127.0.0.1;
+  205.129.31.4;
+};
+
+	//========================================================================
+	// If BIND logs error messages about the root key being expired,
+	// you will need to update your keys.  See https://www.isc.org/bind-keys
+	//========================================================================
+//	dnssec-validation auto;
+
+	auth-nxdomain no;    # conform to RFC1035
+
+};
+
