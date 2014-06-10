@@ -138,39 +138,29 @@ maskFTPServer=255.255.255.0
 portFTPServer=34000
 
 
-
 exec sudo openvpn --port $portHost1 --remote $IPhost1 --dev tap1 --ifconfig $miIPVirtual1 $mask1 $IPVirtualHost1 & 
 
-
 exec sudo openvpn --port $portHost2 --remote $IPhost2 --dev tap2 --ifconfig $miIPVirtual2 $mask2 $IPVirtualHost2 & 
-
 
 exec sudo openvpn --port $portHost3 --remote $IPhost3 --dev tap3 --ifconfig $miIPVirtual3 $mask3 $IPVirtualHost3 & 
 
 # DNS 1
-
 exec sudo openvpn --port $portDNS1 --remote $IPFisicaDNS1 --dev tap4 --ifconfig $miIPVirtualDNS1 $maskDNS1 $IPVirtualDNS1 & 
 
 # DNS 2
-
 exec sudo openvpn --port $portDNS2 --remote $IPFisicaDNS2 --dev tap5 --ifconfig $miIPVirtualDNS2 $maskDNS2 $IPVirtualDNS2 & 
 
 # DNS Root
-
 exec sudo openvpn --port $portDNSRoot --remote $IPFisicaDNSRoot --dev tap6 --ifconfig $miIPVirtualDNSRoot $maskDNSRoot $IPVirtualDNSRoot & 
 
 #sevidor telServer
-
 exec sudo openvpn --port $portTelServer --remote $IPFisicaTelServer --dev tap7 --ifconfig $miIPVirtualTelServer $maskTelServer $IPVirtualTelServer & 
 
 #sevidor telServer2
-
 exec sudo openvpn --port $portTelServer2 --remote $IPFisicaTelServer2 --dev tap10 --ifconfig $miIPVirtualTelServer2 $maskTelServer2 $IPVirtualTelServer2 & 
 
 #sevidor WebServer
-
 exec sudo openvpn --port $portWebServer --remote $IPFisicaWebServer --dev tap8 --ifconfig $miIPVirtualWebServer $maskWebServer $IPVirtualWebServer & 
 
 #sevidor FTP Server
-
 exec sudo openvpn --port $portFTPServer --remote $IPFisicaFTPServer --dev tap9 --ifconfig $miIPVirtualFTPServer $maskFTPServer $IPVirtualFTPServer & 
