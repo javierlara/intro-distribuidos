@@ -1,0 +1,35 @@
+$TTL	604800
+@	IN	SOA	ns1.matanza.baires.dc.fi.uba.ar. root. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	        IN	NS ns1.matanza.baires.dc.fi.uba.ar.
+
+;REV SOFIA
+
+;161  IN PTR ns1.matanza.baires.dc.fi.uba.ar.
+162  IN PTR sofia1.matanza.baires.dc.fi.uba.ar.
+163  IN PTR sofia2.matanza.baires.dc.fi.uba.ar.
+164  IN PTR sofia3.matanza.baires.dc.fi.uba.ar.
+172  IN PTR r15-2-sofia.matanza.baires.dc.fi.uba.ar.
+173 IN PTR r16-0-sofia.matanza.baires.dc.fi.uba.ar.
+
+;REV MACARENA
+
+177  IN PTR macarena1.matanza.baires.dc.fi.uba.ar.
+178  IN PTR macarena2.matanza.baires.dc.fi.uba.ar.
+179 IN PTR macarena3.matanza.baires.dc.fi.uba.ar.
+183    IN PTR  r16-1-macarena.matanza.baires.dc.fi.uba.ar.
+
+
+
+
+
+
+
+
+
+
