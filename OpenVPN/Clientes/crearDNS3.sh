@@ -19,7 +19,7 @@ if [ ! -f "$serverConfig" ]; then
 fi
 # limipo los taps
 echo "Limipiando taps"
-exec ${BASEDIR}/../borrarInterfaces.sh
+${BASEDIR}/../borrarInterfaces.sh
 
 echo "Iniciando DNS Root"
 interfaces="tap6"

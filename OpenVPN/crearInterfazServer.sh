@@ -97,8 +97,8 @@ portDNS1=29000
 
 #config dns 2  sub red b
 IPFisicaDNS2=$IPDNS2
-miIPVirtualDNS2=10.99.6.130 #esto esta mal hay q cambiarlo
-IPVirtualDNS2=10.99.6.129 #esto esta mal hay q cambiarlo
+miIPVirtualDNS2=10.94.6.130 #esto esta mal hay q cambiarlo
+IPVirtualDNS2=10.94.6.129 #esto esta mal hay q cambiarlo
 maskDNS2=255.255.255.192
 portDNS2=30000
 
@@ -126,7 +126,7 @@ portTelServer2=35000
 #config webServer  sub red Q
 IPFisicaWebServer=$servers
 miIPVirtualWebServer=205.129.31.10
-IPVirtualWebServer=205.129.31.11
+IPVirtualWebServer=205.129.31.1
 maskWebServer=255.255.255.192
 portWebServer=33000
 

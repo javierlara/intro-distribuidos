@@ -21,7 +21,7 @@ fi
 
 # limipo los taps
 echo "Limipiando taps"
-exec ${BASEDIR}/../borrarInterfaces.sh
+${BASEDIR}/../borrarInterfaces.sh
 
 echo "Iniciando Web Server"
 
@@ -39,7 +39,7 @@ else
 	exit 1
 fi
 
-miIPVirtualWebServer=205.129.31.11
+miIPVirtualWebServer=205.129.31.1
 miIPVirtualDestinoWebServer=205.129.31.10
 maskWebbServer=255.255.255.192
 miPortWebServer=33000

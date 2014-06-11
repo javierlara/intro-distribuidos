@@ -22,7 +22,7 @@ fi
 
 # limipo los taps
 echo "Limipiando taps"
-exec ${BASEDIR}/../borrarInterfaces.sh
+${BASEDIR}/../borrarInterfaces.sh
 
 echo "Iniciando cliente B"
 
