@@ -13,6 +13,7 @@ if ! type "openvpn" > /dev/null; then
 	exit 1
 fi
 BASEDIR=$(dirname $0)
+serverConfig="${BASEDIR}/../serverIp.conf"
 
 serverConfig="${BASEDIR}/../serverIp.conf"
 if [ ! -f "$serverConfig" ]; then
