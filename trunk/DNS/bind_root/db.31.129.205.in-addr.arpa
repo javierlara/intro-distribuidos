@@ -8,11 +8,12 @@ $TTL    86400
 ;
 
 @       IN      NS      nsroot.baires.dc.fi.uba.ar.
-4.31.129.205    IN   PTR   nsroot.baires.dc.fi.uba.ar.
+193.6.94.10     IN   PTR   nsroot.baires.dc.fi.uba.ar.
 
-5.31.129.205  IN   PTR ns1.matanza.baires.dc.fi.uba.ar.
+161.5.94.10  IN   PTR ns1.matanza.baires.dc.fi.uba.ar.
 
 ; kitana rev
+
 
 1   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
 2   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
@@ -22,6 +23,10 @@ $TTL    86400
 11  IN  NS ns1.matanza.baires.dc.fi.uba.ar.
 52  IN  NS ns1.matanza.baires.dc.fi.uba.ar.
 53  IN  NS ns1.matanza.baires.dc.fi.uba.ar.
+
+;carolina
+133 IN  NS ns1.laplata.baires.dc.fi.uba.ar. 
+134 IN  NS ns1.laplata.baires.dc.fi.uba.ar.
 
 
 

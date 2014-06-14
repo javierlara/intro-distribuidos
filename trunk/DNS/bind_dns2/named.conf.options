@@ -1,28 +1,26 @@
 options {
-	directory "/etc/bind";
+	directory "/var/cache/bind";
       
-        listen-on { 0.0.0.0/0;
-         10.94.6.129;
+        listen-on {  0.0.0.0/0;
+      //    127.0.0.1;
+// DNS 2 real 10.94.5.161
+      10.94.5.161; 
         };
 
-	
+	dnssec-validation no;
 	forwarders {
-             10.94.6.193;  // DNS ROOT
+// real dns root 10.94.6.193
+               10.94.6.193; // DNS ROOT
 	};
-recursion yes;
-/*
-allow-recursion{
-  127.0.0.1;
-  10.94.6.193; 
-};
-*/
+recursion yes; 
+//ver si tiene que ser recursivos
 	//========================================================================
 	// If BIND logs error messages about the root key being expired,
 	// you will need to update your keys.  See https://www.isc.org/bind-keys
 	//========================================================================
 //	dnssec-validation auto;
 
-	//auth-nxdomain no;    # conform to RFC1035
+	auth-nxdomain no;    # conform to RFC1035
 
 };
 

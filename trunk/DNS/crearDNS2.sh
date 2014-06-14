@@ -21,7 +21,7 @@ chequeoPrograma(){
 		exit 1
 	fi
 }
-start_bind9 (){
+start_bind9() {
 	echo "Starting bind9"
 	/etc/init.d/bind9 restart
 
@@ -41,6 +41,6 @@ chequeoDirectorio $bindPath
 	    rm -R "$bindPath*"
 	fi
 
-cp bind_dns1/* $bindPath
+cp bind_dns2/* $bindPath
 
 start_bind9

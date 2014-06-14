@@ -1,6 +1,6 @@
-zone "matanza.baires.dc.fi.uba.ar" in {
+zone "laplata.baires.dc.fi.uba.ar" in {
   type master;
-  file "/etc/bind/db.matanza";
+  file "/etc/bind/db.laplata";
 };
 
 
@@ -9,10 +9,12 @@ zone "31.129.205.in-addr.arpa" in {
   file "/etc/bind/db.31.129.205.in-addr.arpa";
 };
 
+
 zone "10.in-addr.arpa" in {
   type master;
   file "/etc/bind/db.10.in-addr.arpa";
 };
+
 
 
 

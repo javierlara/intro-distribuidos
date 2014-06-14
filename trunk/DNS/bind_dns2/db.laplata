@@ -1,0 +1,70 @@
+;
+; BIND data file for matanza.baires.dc.fi.uba.ar
+;
+$TTL    3h
+$ORIGIN laplata.baires.dc.fi.uba.ar.
+@       IN      SOA     ns2.laplata.baires.dc.fi.uba.ar. root.baires.dc.fi.uba.ar. (
+                          1        ; Serial
+                          3h       ; Refresh after 3 hours
+                          1h       ; Retry after 1 hour
+                          1h       ; Expire after 1 week
+                          600 )     ; Negative caching TTL of 1 day
+;
+@       IN      NS      ns2.laplata.baires.dc.fi.uba.ar.
+;real de dns2 es 10.94.6.129
+ns2.laplata.baires.dc.fi.uba.ar.	IN      A    10.94.6.129
+
+;CAROLINA  red K
+
+r13-2-carolina IN    A    205.129.31.133
+
+;YESICA red l
+
+yesica1       IN    A   10.15.65.65
+yesica2       IN    A   10.15.65.66
+yesica3       IN    A   10.15.65.67
+
+r13-1-yesica      IN    A   10.15.65.80
+r14-1-yesica      IN    A   10.15.65.81
+
+;PATRICIA    red j
+
+patricia1  IN    A  10.94.5.145
+patricia2  IN    A  10.94.5.146
+patricia3  IN    A  10.94.5.147
+hostb       IN    A  10.94.5.148
+
+r11-0-patricia  IN  A  10.94.5.153
+r9-1-patricia  IN A  10.94.5.154
+r8-1-patricia  IN A  10.94.5.155
+
+;LUCILA red G
+ftpserver   IN  A  10.43.9.1
+lucila1   IN  A  10.43.9.3
+lucila2   IN  A  10.43.9.4
+lucila3   IN  A  10.43.9.5
+
+r8-2-lucila  IN  A  10.43.9.245
+r13-0-lucila  IN  A  10.43.9.246
+r14-0-lucila  IN  A  10.43.9.247
+r7-0-lucila  IN  A  10.43.9.248
+
+;CECILIA red I
+r9-0-cecilia IN A 10.15.65.57
+r10-2-cecilia IN A 10.15.65.56
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
