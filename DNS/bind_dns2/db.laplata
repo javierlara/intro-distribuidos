@@ -25,38 +25,34 @@ r13-2-carolina IN     A   205.129.31.133
 r10-tunnel  IN    A      205.129.31.65
 r11-tunnel  IN    A      205.129.31.66
 
-
-;YESICA red l
-
+;YESICA RED L
 yesica1       IN    A   10.15.65.65
 yesica2       IN    A   10.15.65.66
 yesica3       IN    A   10.15.65.67
-
 r13-1-yesica      IN    A   10.15.65.80
 r14-1-yesica      IN    A   10.15.65.81
 
-;PATRICIA    red j
+;PATRICIA RED J
 
-patricia1  IN    A  10.94.5.145
-patricia2  IN    A  10.94.5.146
-patricia3  IN    A  10.94.5.147
-hostb       IN    A  10.94.5.148
-
-r11-0-patricia  IN  A  10.94.5.153
+patricia1      IN A  10.94.5.145
+patricia2      IN A  10.94.5.146
+patricia3      IN A  10.94.5.147
+hostb          IN A  10.94.5.148
+hostb-prima    IN A  10.94.5.149
+r11-0-patricia IN A  10.94.5.153
 r9-1-patricia  IN A  10.94.5.154
 r8-1-patricia  IN A  10.94.5.155
 
 ;LUCILA red G
-ftpserver   IN  A  10.43.9.1
-lucila1   IN  A  10.43.9.3
-lucila2   IN  A  10.43.9.4
-lucila3   IN  A  10.43.9.5
-
+ftpserver    IN  A  10.43.9.1
+lucila1      IN  A  10.43.9.3
+lucila2      IN  A  10.43.9.4
+lucila3      IN  A  10.43.9.5
 r8-2-lucila  IN  A  10.43.9.245
-r13-0-lucila  IN  A  10.43.9.246
-r14-0-lucila  IN  A  10.43.9.247
+r13-0-lucila IN  A  10.43.9.246
+r14-0-lucila IN  A  10.43.9.247
 r7-0-lucila  IN  A  10.43.9.248
 
 ;CECILIA red I
-r9-0-cecilia IN A 10.15.65.57
+r9-0-cecilia  IN A 10.15.65.57
 r10-2-cecilia IN A 10.15.65.56

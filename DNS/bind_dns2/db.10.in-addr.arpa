@@ -33,42 +33,39 @@ $TTL	604800
 114.65.15  IN NS nsroot.baires.dc.fi.uba.ar.
 115.65.15  IN NS nsroot.baires.dc.fi.uba.ar.
 116.65.15  IN NS nsroot.baires.dc.fi.uba.ar.
-
-
-;YESICA RED L
-
-65.65.15  IN PTR yesica1.laplata.baires.dc.fi.uba.ar.
-66.65.15   IN PTR yesica2.laplata.baires.dc.fi.uba.ar.
-67.65.15   IN PTR yesica3.laplata.baires.dc.fi.uba.ar.
-
-80.65.15  IN PTR r13-1-yesica.laplata.baires.dc.fi.uba.ar.
-81.65.15   IN PTR r14-1-yesica.laplata.baires.dc.fi.uba.ar.
  
 ;PATRICIA RED J 
-
 145.5.94  IN PTR patricia1.laplata.baires.dc.fi.uba.ar.
 146.5.94  IN PTR patricia2.laplata.baires.dc.fi.uba.ar.
 147.5.94  IN PTR patricia3.laplata.baires.dc.fi.uba.ar.
 148.5.94  IN PTR hostb.laplata.baires.dc.fi.uba.ar.
-
-153.5.94   IN PTR r11-0-patricia.laplata.baires.dc.fi.uba.ar.
+149.5.94  IN PTR hostb-prima.laplata.baires.dc.fi.uba.ar.
+153.5.94  IN PTR r11-0-patricia.laplata.baires.dc.fi.uba.ar.
 154.5.94  IN PTR r9-1-patricia.laplata.baires.dc.fi.uba.ar.
 155.5.94  IN PTR r8-1-patricia.laplata.baires.dc.fi.uba.ar.
 
-;LUCILA
+;YESICA RED L
+65.65.15  IN PTR yesica1.laplata.baires.dc.fi.uba.ar.
+66.65.15  IN PTR yesica2.laplata.baires.dc.fi.uba.ar.
+67.65.15  IN PTR yesica3.laplata.baires.dc.fi.uba.ar.
+80.65.15  IN PTR r13-1-yesica.laplata.baires.dc.fi.uba.ar.
+81.65.15  IN PTR r14-1-yesica.laplata.baires.dc.fi.uba.ar.
 
-1.9.43  IN PTR ftpserver.laplata.baires.dc.fi.uba.ar.
-3.9.43  IN PTR lucila1.laplata.baires.dc.fi.uba.ar.
-4.9.43  IN PTR lucila2.laplata.baires.dc.fi.uba.ar.
-5.9.43  IN PTR lucila3.laplata.baires.dc.fi.uba.ar.
-
-
+;LUCILA RED G
+1.9.43    IN PTR ftpserver.laplata.baires.dc.fi.uba.ar.
+3.9.43    IN PTR lucila1.laplata.baires.dc.fi.uba.ar.
+4.9.43    IN PTR lucila2.laplata.baires.dc.fi.uba.ar.
+5.9.43    IN PTR lucila3.laplata.baires.dc.fi.uba.ar.
 245.9.43  IN PTR r8-2-lucila.laplata.baires.dc.fi.uba.ar.
 246.9.43  IN PTR r13-0-lucila.laplata.baires.dc.fi.uba.ar.
 247.9.43  IN PTR r14-0-lucila.laplata.baires.dc.fi.uba.ar.
-248.9.43 IN PTR r7-0-lucila.laplata.baires.dc.fi.uba.ar.
+248.9.43  IN PTR r7-0-lucila.laplata.baires.dc.fi.uba.ar.
 
-;lorena
+;CECILIA RED I
+57.65.15  IN PTR r9-0-cecilia.laplata.baires.dc.fi.uba.ar.
+56.65.15  IN PTR r10-2-cecilia.laplata.baires.dc.fi.uba.ar.
+
+;LORENO
 
 193.5.94  IN PTR lorena1.varela.baires.dc.fi.uba.ar.
 194.5.94  IN PTR hosta.varela.baires.dc.fi.uba.ar.
@@ -94,11 +91,6 @@ $TTL	604800
 129.6.94       IN   PTR   telnet-tap7-marta.varela.baires.dc.fi.uba.ar.
 130.6.94       IN   PTR   dns2-marta.varela.baires.dc.fi.uba.ar.
 131.6.94       IN   PTR   dns2-prima-marta.varela.baires.dc.fi.uba.ar.
-
-;CECILIA
-
-57.65.15  IN      PTR     r9-0-cecilia.laplata.baires.dc.fi.uba.ar.
-56.65.15  IN      PTR     r10-2-cecilia.laplata.baires.dc.fi.uba.ar.
 
 ;MELISA
 25.65.15  IN      PTR     r2-1-melisa.varela.baires.dc.fi.uba.ar.
