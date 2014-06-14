@@ -97,7 +97,7 @@ portDNS1=29000
 
 #config dns 2  sub red b
 IPFisicaDNS2=$IPDNS2
-miIPVirtualDNS2=10.94.6.130 #esto esta mal hay q cambiarlo
+miIPVirtualDNS2=10.94.6.134 #esto esta mal hay q cambiarlo
 IPVirtualDNS2=10.94.6.129 #esto esta mal hay q cambiarlo
 maskDNS2=255.255.255.192
 portDNS2=30000

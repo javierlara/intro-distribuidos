@@ -22,7 +22,7 @@ fi
 
 # limipo los taps
 echo "Limipiando taps"
-${BASEDIR}/../borrarInterfaces.sh
+#${BASEDIR}/../borrarInterfaces.sh
 
 echo "Iniciando TelServer S"
 interfaces="tap10"
