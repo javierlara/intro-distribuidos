@@ -1,10 +1,10 @@
 autostart = False
-version = 0.8.4
+version = 0.8.6
 [127.0.0.1:7202]
     workingdir = /tmp
     udp = 10200
     [[3640]]
-        image = /home/lara/FIUBA/Introducción a los Sistemas Distribuidos/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        image = /media/mariano/9157fded-6e37-416a-b9bc-3091437ac8b2/FIUBA/[75.43] Intro. a los sistemas distribuidos/Programas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x604eb200
         sparsemem = True
         chassis = 3640
@@ -35,7 +35,7 @@ version = 0.8.4
     workingdir = /tmp
     udp = 10300
     [[3640]]
-        image = /home/lara/FIUBA/Introducción a los Sistemas Distribuidos/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        image = /media/mariano/9157fded-6e37-416a-b9bc-3091437ac8b2/FIUBA/[75.43] Intro. a los sistemas distribuidos/Programas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x604eb200
         sparsemem = True
         chassis = 3640
@@ -79,8 +79,8 @@ version = 0.8.4
         f0/0 = R10 f1/0
         slot1 = NM-1FE-TX
         f1/0 = R11 f1/0
-        x = 706.999133449
-        y = 107.311616458
+        x = 944.587011928
+        y = 93.1694808343
         z = 1.0
         hx = -4.56249999999
         hy = -24.9999999999
@@ -104,7 +104,7 @@ version = 0.8.4
     workingdir = /tmp
     udp = 10000
     [[3640]]
-        image = /home/lara/FIUBA/Introducción a los Sistemas Distribuidos/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        image = /media/mariano/9157fded-6e37-416a-b9bc-3091437ac8b2/FIUBA/[75.43] Intro. a los sistemas distribuidos/Programas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x604eb200
         sparsemem = True
         chassis = 3640
@@ -119,34 +119,6 @@ version = 0.8.4
         f1/0 = SWRedC 1
         x = -118.355339059
         y = -465.386868353
-        z = 1.0
-    [[ROUTER R5]]
-        model = 3640
-        console = 2124
-        aux = 2624
-        cnfg = configs/R5.cfg
-        slot0 = NM-1FE-TX
-        f0/0 = SWRedS 2
-        slot1 = NM-1FE-TX
-        f1/0 = SWRedD 1
-        x = -122.036579927
-        y = -305.279220615
-        z = 1.0
-    [[ROUTER R6]]
-        model = 3640
-        console = 2125
-        aux = 2625
-        cnfg = configs/R6.cfg
-        slot0 = NM-1FE-TX
-        f0/0 = SWRedS 3
-        slot1 = NM-1FE-TX
-        f1/0 = SWRedD 3
-        slot2 = NM-1FE-TX
-        f2/0 = SWRedR 1
-        slot3 = NM-1FE-TX
-        f3/0 = SWRedH 2
-        x = -28.2548339959
-        y = -203.473088066
         z = 1.0
     [[ROUTER R2]]
         model = 3640
@@ -196,15 +168,16 @@ version = 0.8.4
         2 = access 1 R2 f0/0
         3 = access 1 R3 f0/0
         4 = access 1 nio_linux_eth:tap7
+        5 = access 1 nio_linux_eth:tap5
         x = -737.013852075
-        y = -446.953318807
+        y = -450.953318807
         z = 1.0
         hx = 14.6992942812
         hy = -29.0380592228
     [[ETHSW SWRedA]]
         1 = access 1 R2 f1/0
-        x = -1011.40663761
-        y = -498.904545572
+        x = -997.264501986
+        y = -419.708586079
         z = 1.0
     [[ETHSW SWRedS]]
         1 = access 1 R3 f2/0
@@ -227,7 +200,7 @@ version = 0.8.4
     workingdir = /tmp
     udp = 10600
     [[3640]]
-        image = /home/lara/FIUBA/Introducción a los Sistemas Distribuidos/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        image = /media/mariano/9157fded-6e37-416a-b9bc-3091437ac8b2/FIUBA/[75.43] Intro. a los sistemas distribuidos/Programas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x604eb200
         sparsemem = True
         chassis = 3640
@@ -256,11 +229,48 @@ version = 0.8.4
         x = -913.694659667
         y = -313.941125497
         z = 1.0
+[127.0.0.1:7207]
+    workingdir = /tmp
+    udp = 10700
+    [[3640]]
+        image = /media/mariano/9157fded-6e37-416a-b9bc-3091437ac8b2/FIUBA/[75.43] Intro. a los sistemas distribuidos/Programas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        idlepc = 0x604eb200
+        sparsemem = True
+        ghostios = True
+        chassis = 3640
+    [[ROUTER R5]]
+        model = 3640
+        console = 2025
+        aux = 2525
+        cnfg = configs/R5.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = SWRedS 2
+        slot1 = NM-1FE-TX
+        f1/0 = SWRedD 1
+        x = -122.036579927
+        y = -305.279220615
+        z = 1.0
+    [[ROUTER R6]]
+        model = 3640
+        console = 2021
+        aux = 2521
+        cnfg = configs/R6.cfg
+        slot0 = NM-1FE-TX
+        f0/0 = SWRedS 3
+        slot1 = NM-1FE-TX
+        f1/0 = SWRedD 3
+        slot2 = NM-1FE-TX
+        f2/0 = SWRedR 1
+        slot3 = NM-1FE-TX
+        f3/0 = SWRedH 2
+        x = -28.2548339959
+        y = -203.473088066
+        z = 1.0
 [127.0.0.1:7204]
     workingdir = /tmp
     udp = 10400
     [[3640]]
-        image = /home/lara/FIUBA/Introducción a los Sistemas Distribuidos/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        image = /media/mariano/9157fded-6e37-416a-b9bc-3091437ac8b2/FIUBA/[75.43] Intro. a los sistemas distribuidos/Programas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x604eb200
         sparsemem = True
         chassis = 3640
@@ -448,7 +458,7 @@ version = 0.8.4
     workingdir = /tmp
     udp = 10500
     [[3640]]
-        image = /home/lara/FIUBA/Introducción a los Sistemas Distribuidos/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
+        image = /media/mariano/9157fded-6e37-416a-b9bc-3091437ac8b2/FIUBA/[75.43] Intro. a los sistemas distribuidos/Programas/archivos_dynamips/IOS/c3640-js-mz.124-10.bin
         idlepc = 0x604eb200
         sparsemem = True
         chassis = 3640
@@ -471,357 +481,421 @@ version = 0.8.4
     m11 = 0.5
     m22 = 0.5
     [[NOTE 1]]
-        text = "Sede La Matanza"
-        x = 62.2253967444
-        y = 686.121499812
+        text = ".2"
+        x = 910.645886431
+        y = 72.5273452108
+        color = "#313739"
     [[NOTE 2]]
-        text = "Sede La Plata"
-        x = 704.278354061
-        y = 273.171139599
-    [[NOTE 3]]
-        text = "Sede Florencio Varela"
-        x = 316.485281374
-        y = -143.529437251
-    [[NOTE 4]]
-        text = ".56"
-        x = 412.836182544
-        y = 72.2903679019
-        color = "#313739"
-    [[NOTE 5]]
-        text = ".248"
-        x = -459.000000001
-        y = 45.5000000001
-        color = "#313739"
-    [[NOTE 6]]
-        text = ".41"
-        x = -566.0
-        y = 55.5
-        color = "#313739"
-    [[NOTE 7]]
-        text = "205.129.31.128/30"
-        x = -134.0
-        y = -34.5
-        color = "#313739"
-    [[NOTE 8]]
-        text = ".133"
-        x = -113.0
-        y = 258.500000001
-        color = "#313739"
-    [[NOTE 9]]
-        text = ".173"
-        x = -867.284271249
-        y = 607.803607232
-        color = "#313739"
-    [[NOTE 10]]
-        text = ".155"
-        x = -127.0
-        y = 54.5000000001
-        color = "#313739"
-    [[NOTE 11]]
-        text = ".34"
-        x = -564.0
-        y = 13.5
-        color = "#313739"
-    [[NOTE 12]]
-        text = ".193"
-        x = -432.482322782
-        y = -468.899061662
-        color = "#313739"
-    [[NOTE 13]]
-        text = ".33"
-        x = -919.999999999
-        y = -272.5
-        color = "#313739"
-    [[NOTE 14]]
-        text = ".246"
-        x = -157.0
-        y = 197.5
-        color = "#313739"
-    [[NOTE 15]]
-        text = "10.43.9.0/24"
-        x = -367.029437252
-        y = 84.9852813745
-        color = "#313739"
-    [[NOTE 16]]
-        text = ".172"
-        x = -809.544155879
-        y = 413.08787848
-        color = "#313739"
-    [[NOTE 17]]
-        text = ".154"
-        x = 65.0000000001
-        y = 30.5000000001
-        color = "#313739"
-    [[NOTE 18]]
-        text = ".53"
-        x = -458.544155878
-        y = 557.95079349
-        color = "#313739"
-    [[NOTE 19]]
-        text = ".80"
-        x = -193.0
-        y = 221.500000001
-        color = "#313739"
-    [[NOTE 20]]
-        text = ".134"
-        x = 4.16652224111
-        y = 499.838095118
-        color = "#313739"
-    [[NOTE 21]]
-        text = "10.94.5.160/28"
-        x = -999.053823871
-        y = 520.004617359
-        color = "#313739"
-    [[NOTE 22]]
-        text = ".130"
-        x = -160.0
-        y = 9.50000000005
-        color = "#313739"
-    [[NOTE 23]]
-        text = "183.44.30.4/30"
-        x = 575.796031282
-        y = 163.709632098
-        color = "#313739"
-    [[NOTE 24]]
-        text = "205.129.31.0/26"
-        x = -650.715728754
-        y = 569.494949367
-        color = "#313739"
-    [[NOTE 25]]
-        text = ".81"
-        x = -471.000000001
-        y = 214.5
-        color = "#313739"
-    [[NOTE 26]]
-        text = ".243"
-        x = -57.9238815543
-        y = -323.235064737
-        color = "#313739"
-    [[NOTE 27]]
-        text = "10.15.65.128/25"
-        x = -326.970562749
-        y = -495.404545572
-        color = "#313739"
-    [[NOTE 28]]
-        text = ".136"
-        x = -57.0365799269
-        y = -216.960894757
-        color = "#313739"
-    [[NOTE 29]]
-        text = ".5"
-        x = 682.118974497
-        y = 208.596933726
-        color = "#313739"
-    [[NOTE 30]]
-        text = ".129"
-        x = -61.0000000001
-        y = -158.5
-        color = "#313739"
-    [[NOTE 31]]
-        text = "10.94.6.128/26"
-        x = -749.047906685
-        y = -499.775649277
-        color = "#313739"
-    [[NOTE 32]]
-        text = "183.44.30.0/30"
-        x = 601.227488786
-        y = 54.3370490964
-        color = "#313739"
-    [[NOTE 33]]
-        text = ".42"
-        x = -766.201010127
-        y = 340.460461481
-        color = "#313739"
-    [[NOTE 34]]
-        text = ".138"
-        x = -397.595021154
-        y = -184.345671068
-        color = "#313739"
-    [[NOTE 35]]
-        text = ".168"
-        x = -840.71190361
-        y = -328.566017179
-        color = "#313739"
-    [[NOTE 36]]
-        text = ".224"
-        x = 42.6862915011
-        y = -188.049206511
-        color = "#313739"
-    [[NOTE 37]]
         text = "R1-R7: 15.55.200.32/30\nR1-R15: 15.55.200.36/30\nR7-R15: 15.55.200.40/30"
         x = -869.656854248
         y = 14.0096679918
         color = "#313739"
-    [[NOTE 38]]
-        text = ".6"
-        x = 726.617928477
-        y = 161.539538519
+    [[NOTE 3]]
+        text = ".138"
+        x = -397.595021154
+        y = -184.345671068
         color = "#313739"
-    [[NOTE 39]]
-        text = ".2"
-        x = 673.058007952
-        y = 126.267460581
-        color = "#313739"
-    [[NOTE 40]]
-        text = ".192"
-        x = -160.066017178
-        y = -474.514285351
-        color = "#313739"
-    [[NOTE 41]]
-        text = ".114"
-        x = -68.4903320082
-        y = 545.779220614
-        color = "#313739"
-    [[NOTE 42]]
-        text = ".153"
-        x = 584.665655691
-        y = 256.499566724
-        color = "#313739"
-    [[NOTE 43]]
-        text = ".37"
-        x = -875.999999999
-        y = -272.5
-        color = "#313739"
-    [[NOTE 44]]
-        text = ".57"
-        x = 120.0
-        y = 3.50000000003
-        color = "#313739"
-    [[NOTE 45]]
-        text = ".25"
-        x = -903.87633381
-        y = -481.886868353
-        color = "#313739"
-    [[NOTE 46]]
-        text = ".247"
-        x = -489.000000001
-        y = 162.5
-        color = "#313739"
-    [[NOTE 47]]
-        text = ".183"
-        x = -818.254833998
-        y = 580.69090886
-        color = "#313739"
-    [[NOTE 48]]
-        text = "10.94.5.192/26"
-        x = 23.8215908223
-        y = -318.291847199
-        color = "#313739"
-    [[NOTE 49]]
-        text = "10.94.5.144/28"
-        x = 174.104689145
-        y = 213.909162929
-        color = "#313739"
-    [[NOTE 50]]
-        text = ".169"
-        x = -820.663130374
-        y = -465.418830922
-        color = "#313739"
-    [[NOTE 51]]
-        text = ".245"
-        x = 113.504617358
-        y = -423.928498913
-        color = "#313739"
-    [[NOTE 52]]
-        text = "10.15.65.0/27"
-        x = -1025.03066274
-        y = -547.727488787
-        color = "#313739"
-    [[NOTE 53]]
-        text = "10.15.65.64/27"
-        x = -370.000000001
-        y = 262.500000001
-        color = "#313739"
-    [[NOTE 54]]
-        text = ".245"
-        x = -202.0
-        y = 88.5000000002
-        color = "#313739"
-    [[NOTE 55]]
-        text = "205.129.31.132/30"
-        x = -24.5492065112
-        y = 352.097979747
-        color = "#313739"
-    [[NOTE 56]]
-        text = ".170"
-        x = -552.862048459
-        y = -472.514285351
-        color = "#313739"
-    [[NOTE 57]]
-        text = ".116"
-        x = -719.65685425
-        y = 358.833044484
-        color = "#313739"
-    [[NOTE 58]]
-        text = "10.94.6.192/26"
-        x = 141.539105244
-        y = -189.049206512
-        color = "#313739"
-    [[NOTE 59]]
-        text = "10.94.5.128/28"
-        x = -284.582827846
-        y = -200.077164467
-        color = "#313739"
-    [[NOTE 60]]
-        text = ".52"
-        x = -747.514718628
-        y = 615.519335985
-        color = "#313739"
-    [[NOTE 61]]
-        text = ".134"
-        x = -485.837661842
-        y = -427.632034357
-        color = "#313739"
-    [[NOTE 62]]
-        text = ".135"
-        x = -158.333044483
-        y = -299.193434177
-        color = "#313739"
-    [[NOTE 63]]
-        text = ".241"
-        x = -53.857864376
-        y = -442.673664918
-        color = "#313739"
-    [[NOTE 64]]
-        text = ".1"
-        x = 537.281312656
-        y = 54.7806999104
-        color = "#313739"
-    [[NOTE 65]]
-        text = "10.15.65.96/27"
-        x = -335.301515192
-        y = 429.281745932
-        color = "#313739"
-    [[NOTE 66]]
-        text = ".242"
-        x = 33.6862915011
-        y = -233.772077939
-        color = "#313739"
-    [[NOTE 67]]
-        text = "10.94.5.176/28"
-        x = -838.36753237
-        y = 520.117315731
-        color = "#313739"
-    [[NOTE 68]]
-        text = ".38"
-        x = -814.201010127
-        y = 349.146752982
-        color = "#313739"
-    [[NOTE 69]]
-        text = "10.15.65.32/27"
-        x = 187.755880017
-        y = 80.6944801963
-        color = "#313739"
-    [[NOTE 70]]
+    [[NOTE 4]]
         text = ".115"
         x = -354.946176132
         y = 545.264501989
         color = "#313739"
+    [[NOTE 5]]
+        text = ".135"
+        x = -158.333044483
+        y = -299.193434177
+        color = "#313739"
+    [[NOTE 6]]
+        text = "205.129.31.0/26"
+        x = -650.715728754
+        y = 569.494949367
+        color = "#313739"
+    [[NOTE 7]]
+        text = "10.43.9.0/24"
+        x = -367.029437252
+        y = 84.9852813745
+        color = "#313739"
+    [[NOTE 8]]
+        text = "10.15.65.96/27"
+        x = -335.301515192
+        y = 429.281745932
+        color = "#313739"
+    [[NOTE 9]]
+        text = ".168"
+        x = -840.71190361
+        y = -328.566017179
+        color = "#313739"
+    [[NOTE 10]]
+        text = "183.44.30.0/30"
+        x = 725.678282275
+        y = 54.3370490964
+        color = "#313739"
+    [[NOTE 11]]
+        text = ".242"
+        x = 33.6862915011
+        y = -233.772077939
+        color = "#313739"
+    [[NOTE 12]]
+        text = ".5"
+        x = 682.118974497
+        y = 208.596933726
+        color = "#313739"
+    [[NOTE 13]]
+        text = ".193"
+        x = -432.482322782
+        y = -468.899061662
+        color = "#313739"
+    [[NOTE 14]]
+        text = ".33"
+        x = -919.999999999
+        y = -272.5
+        color = "#313739"
+    [[NOTE 15]]
+        text = ".170"
+        x = -552.862048459
+        y = -472.514285351
+        color = "#313739"
+    [[NOTE 16]]
+        text = ".34"
+        x = -564.0
+        y = 13.5
+        color = "#313739"
+    [[NOTE 17]]
+        text = "Sede La Plata"
+        x = 704.278354061
+        y = 273.171139599
+    [[NOTE 18]]
+        text = "10.15.65.128/25"
+        x = -326.970562749
+        y = -495.404545572
+        color = "#313739"
+    [[NOTE 19]]
+        text = ".246"
+        x = -157.0
+        y = 197.5
+        color = "#313739"
+    [[NOTE 20]]
+        text = ".245"
+        x = -202.0
+        y = 88.5000000002
+        color = "#313739"
+    [[NOTE 21]]
+        text = "10.94.5.192/26"
+        x = 15.8215908223
+        y = -354.291847199
+        color = "#313739"
+    [[NOTE 22]]
+        text = "Sede Florencio Varela"
+        x = 316.485281374
+        y = -143.529437251
+    [[NOTE 23]]
+        text = "Patricia"
+        x = 232.0
+        y = 155.5
+    [[NOTE 24]]
+        text = "Carolina"
+        x = -132.0
+        y = 347.5
+    [[NOTE 25]]
+        text = "Macarena"
+        x = -823.072293301
+        y = 547.5285707
+    [[NOTE 26]]
+        text = "Milena"
+        x = -325.269119346
+        y = 476.817892581
+    [[NOTE 27]]
+        text = "Yesica"
+        x = -342.0
+        y = 239.5
+    [[NOTE 28]]
+        text = "Sofia"
+        x = -954.0
+        y = 469.5
+    [[NOTE 29]]
+        text = "Sabrina"
+        x = -260.215295477
+        y = -235.945742855
+    [[NOTE 30]]
+        text = "Kitana"
+        x = -605.283404696
+        y = 592.783404696
+    [[NOTE 31]]
+        text = "Cleopatra"
+        x = 155.563491861
+        y = -216.146752982
+    [[NOTE 32]]
+        text = ".155"
+        x = -127.0
+        y = 54.5000000001
+        color = "#313739"
+    [[NOTE 33]]
+        text = "Melisa"
+        x = -998.434775035
+        y = -391.509234716
+    [[NOTE 34]]
+        text = "Marta"
+        x = -711.592062561
+        y = -500.930590953
+    [[NOTE 35]]
+        text = "Vanesa"
+        x = -308.0
+        y = -414.5
+    [[NOTE 36]]
+        text = "Lorena"
+        x = 74.0
+        y = -332.5
+    [[NOTE 37]]
+        text = "Lucila"
+        x = -344.0
+        y = 123.5
+    [[NOTE 38]]
+        text = "Carmen"
+        x = -78.0
+        y = -6.5
+    [[NOTE 39]]
+        text = "Cecilia"
+        x = 216.0
+        y = 59.5
+    [[NOTE 40]]
+        text = ".38"
+        x = -814.201010127
+        y = 349.146752982
+        color = "#313739"
+    [[NOTE 41]]
+        text = "205.129.31.132/30"
+        x = -24.5492065112
+        y = 352.097979747
+        color = "#313739"
+    [[NOTE 42]]
+        text = ".42"
+        x = -766.201010127
+        y = 340.460461481
+        color = "#313739"
+    [[NOTE 43]]
+        text = "10.94.6.192/26"
+        x = 141.539105244
+        y = -189.049206512
+        color = "#313739"
+    [[NOTE 44]]
+        text = ".129"
+        x = -61.0000000001
+        y = -158.5
+        color = "#313739"
+    [[NOTE 45]]
+        text = ".80"
+        x = -193.0
+        y = 221.500000001
+        color = "#313739"
+    [[NOTE 46]]
+        text = ".53"
+        x = -458.544155878
+        y = 557.95079349
+        color = "#313739"
+    [[NOTE 47]]
+        text = ".241"
+        x = -53.857864376
+        y = -442.673664918
+        color = "#313739"
+    [[NOTE 48]]
+        text = ".130"
+        x = -160.0
+        y = 9.50000000005
+        color = "#313739"
+    [[NOTE 49]]
+        text = ".153"
+        x = 584.665655691
+        y = 256.499566724
+        color = "#313739"
+    [[NOTE 50]]
+        text = ".6"
+        x = 938.749962833
+        y = 144.568975771
+        color = "#313739"
+    [[NOTE 51]]
+        text = ".173"
+        x = -867.284271249
+        y = 607.803607232
+        color = "#313739"
+    [[NOTE 52]]
+        text = ".133"
+        x = -113.0
+        y = 258.500000001
+        color = "#313739"
+    [[NOTE 53]]
+        text = "205.129.31.128/30"
+        x = -134.0
+        y = -34.5
+        color = "#313739"
+    [[NOTE 54]]
+        text = ".56"
+        x = 412.836182544
+        y = 72.2903679019
+        color = "#313739"
+    [[NOTE 55]]
+        text = ".1"
+        x = 537.281312656
+        y = 54.7806999104
+        color = "#313739"
+    [[NOTE 56]]
+        text = "10.94.5.160/28"
+        x = -999.053823871
+        y = 520.004617359
+        color = "#313739"
+    [[NOTE 57]]
+        text = ".114"
+        x = -68.4903320082
+        y = 545.779220614
+        color = "#313739"
+    [[NOTE 58]]
+        text = ".37"
+        x = -875.999999999
+        y = -272.5
+        color = "#313739"
+    [[NOTE 59]]
+        text = "10.94.5.144/28"
+        x = 174.104689145
+        y = 213.909162929
+        color = "#313739"
+    [[NOTE 60]]
+        text = "10.15.65.32/27"
+        x = 187.755880017
+        y = 80.6944801963
+        color = "#313739"
+    [[NOTE 61]]
+        text = ".248"
+        x = -459.000000001
+        y = 45.5000000001
+        color = "#313739"
+    [[NOTE 62]]
+        text = "10.15.65.0/27"
+        x = -1025.03066274
+        y = -411.962986799
+        color = "#313739"
+    [[NOTE 63]]
+        text = ".81"
+        x = -471.000000001
+        y = 214.5
+        color = "#313739"
+    [[NOTE 64]]
+        text = "10.94.5.176/28"
+        x = -838.36753237
+        y = 520.117315731
+        color = "#313739"
+    [[NOTE 65]]
+        text = ".134"
+        x = -485.837661842
+        y = -427.632034357
+        color = "#313739"
+    [[NOTE 66]]
+        text = "10.94.6.128/26"
+        x = -755.047906685
+        y = -447.775649277
+        color = "#313739"
+    [[NOTE 67]]
+        text = ".183"
+        x = -778.656854252
+        y = 594.833044484
+        color = "#313739"
+    [[NOTE 68]]
+        text = "10.15.65.64/27"
+        x = -370.000000001
+        y = 262.500000001
+        color = "#313739"
+    [[NOTE 69]]
+        text = ".25"
+        x = -903.87633381
+        y = -481.886868353
+        color = "#313739"
+    [[NOTE 70]]
+        text = ".192"
+        x = -160.066017178
+        y = -474.514285351
+        color = "#313739"
+    [[NOTE 71]]
+        text = ".169"
+        x = -820.663130374
+        y = -465.418830922
+        color = "#313739"
+    [[NOTE 72]]
+        text = ".247"
+        x = -489.000000001
+        y = 162.5
+        color = "#313739"
+    [[NOTE 73]]
+        text = ".136"
+        x = -57.0365799269
+        y = -216.960894757
+        color = "#313739"
+    [[NOTE 74]]
+        text = ".245"
+        x = 113.504617358
+        y = -423.928498913
+        color = "#313739"
+    [[NOTE 75]]
+        text = ".57"
+        x = 120.0
+        y = 3.50000000003
+        color = "#313739"
+    [[NOTE 76]]
+        text = ".134"
+        x = 4.16652224111
+        y = 499.838095118
+        color = "#313739"
+    [[NOTE 77]]
+        text = ".41"
+        x = -566.0
+        y = 55.5
+        color = "#313739"
+    [[NOTE 78]]
+        text = "Sede La Matanza"
+        x = 62.2253967444
+        y = 686.121499812
+    [[NOTE 79]]
+        text = ".172"
+        x = -809.544155879
+        y = 413.08787848
+        color = "#313739"
+    [[NOTE 80]]
+        text = ".154"
+        x = 65.0000000001
+        y = 30.5000000001
+        color = "#313739"
+    [[NOTE 81]]
+        text = ".224"
+        x = 42.6862915011
+        y = -188.049206511
+        color = "#313739"
+    [[NOTE 82]]
+        text = ".243"
+        x = -57.9238815543
+        y = -323.235064737
+        color = "#313739"
+    [[NOTE 83]]
+        text = ".116"
+        x = -719.65685425
+        y = 358.833044484
+        color = "#313739"
+    [[NOTE 84]]
+        text = "10.94.5.128/28"
+        x = -284.582827846
+        y = -200.077164467
+        color = "#313739"
+    [[NOTE 85]]
+        text = "183.44.30.4/30"
+        x = 773.785930014
+        y = 208.964466094
+        color = "#313739"
+    [[NOTE 86]]
+        text = ".52"
+        x = -747.514718628
+        y = 629.661471609
+        color = "#313739"
     [[Cloud TelNetServer]]
         x = -595.94038585
         y = -349.320544802
-        hx = 31.4924896247
-        hy = 22.1715728753
+        hx = 33.4924896247
+        hy = 18.1715728753
         z = 1.0
         connections = SWRedB:4:nio_linux_eth:tap7 SWRedS:5:nio_linux_eth:tap10
     [[Cloud FTPServer]]
@@ -859,10 +933,11 @@ version = 0.8.4
         connections = SWRedR:3:nio_linux_eth:tap6
     [[Cloud DNS2]]
         x = -770.908296378
-        y = -333.887301628
+        y = -337.887301628
         hx = 60.46875
         hy = 23.0
         z = 1.0
+        connections = SWRedB:5:nio_linux_eth:tap5
     [[Cloud DNS1]]
         x = -1038.99033201
         y = 333.568542495
@@ -879,19 +954,19 @@ version = 0.8.4
         connections = SWRedQ:3:nio_linux_eth:tap8
     [[SHAPE 1]]
         type = rectangle
+        x = -590.0
+        y = -79.0
+        width = 1422.0
+        height = 390.0
+    [[SHAPE 2]]
+        type = rectangle
         x = -1063.4885989
         y = 319.612265096
         width = 1275.62063326
         height = 410.121933088
-    [[SHAPE 2]]
-        type = rectangle
-        x = -600.0
-        y = -85.9999999999
-        width = 1422.0
-        height = 392.0
     [[SHAPE 3]]
         type = rectangle
-        x = -1074.0
-        y = -554.0
-        width = 1568.0
-        height = 444.0
+        x = -1077.97301373
+        y = -540.60303038
+        width = 1581.0
+        height = 424.0
