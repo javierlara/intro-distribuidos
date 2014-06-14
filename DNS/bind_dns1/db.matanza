@@ -11,12 +11,12 @@ $ORIGIN matanza.baires.dc.fi.uba.ar.
                           600 )     ; Negative caching TTL of 1 day
 ;
 @       IN      NS      ns1.matanza.baires.dc.fi.uba.ar.
-;real de dns1 es 10.94.5.161   205.129.31.5
-ns1.matanza.baires.dc.fi.uba.ar.	IN      A      10.94.5.161
+;real de dns1 es 10.94.5.161
+ns1.matanza.baires.dc.fi.uba.ar.	IN      A     10.94.5.161
 
 ;KITANA
 
-kitana1       IN    A    205.129.31.1
+webserver       IN    A    205.129.31.1
 kitana2        IN    A    205.129.31.2
 kitana3         IN    A    205.129.31.3
 kitana4         IN    A    205.129.31.4
@@ -47,7 +47,7 @@ macarena3     IN    A     10.94.5.179
 r16-1-macarena    IN    A    10.94.5.183
 
 
-
-
+;carolina
+r12-1-carolina    IN    A   205.129.31.134
 
 

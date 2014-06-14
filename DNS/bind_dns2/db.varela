@@ -1,0 +1,41 @@
+;
+; BIND data file for matanza.baires.dc.fi.uba.ar
+;
+$TTL    3h
+$ORIGIN varela.baires.dc.fi.uba.ar.
+@       IN      SOA     ns2.varela.baires.dc.fi.uba.ar. root.baires.dc.fi.uba.ar. (
+                          1        ; Serial
+                          3h       ; Refresh after 3 hours
+                          1h       ; Retry after 1 hour
+                          1h       ; Expire after 1 week
+                          600 )     ; Negative caching TTL of 1 day
+;
+@       IN      NS      ns2.varela.baires.dc.fi.uba.ar.
+;real de dns2 es 10.94.6.129
+ns2.varela.baires.dc.fi.uba.ar. IN      A    10.94.6.129
+
+;LORENA
+
+lorena1   IN    A   10.94.5.193
+hosta  IN    A   10.94.5.194
+lorena2   IN    A   10.94.5.196
+lorena3   IN    A   10.94.5.197
+
+r4-0-lorena   IN    A   10.94.5.241
+r6-1-lorena   IN    A   10.94.5.242
+r5-0-lorena   IN    A   10.94.5.243
+r4-0-lorena   IN    A   10.94.5.244
+;cleopatra
+r6-2-cleopatra    IN    A   10.94.6.224
+r10-0-cleopatra    IN    A   10.94.6.225
+root-cleopatra    IN    A   10.94.6.193
+cleopatra2    IN    A   10.94.6.194
+
+;marta
+
+r2-0-marta    IN      A       10.94.6.162
+r1-0-marta    IN      A       10.94.6.169
+r3-0-marta    IN      A       10.94.6.170
+dns2-marta    IN      A       10.94.6.129
+telnet-marta    IN      A       10.94.6.182
+

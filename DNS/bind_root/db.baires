@@ -10,19 +10,18 @@ $TTL    86400
 @       IN      NS      nsroot.baires.dc.fi.uba.ar
 
 ; ip del dns root real 10.94.6.193
-nsroot.baires.dc.fi.uba.ar	IN      A       205.129.31.4
+nsroot.baires.dc.fi.uba.ar	IN      A   10.94.6.193
 
 ;ip del dns1 real  10.94.5.161
 matanza       IN      NS      ns1.matanza.baires.dc.fi.uba.ar
-ns1.matanza.baires.dc.fi.uba.ar  IN      A       205.129.31.5
+ns1.matanza.baires.dc.fi.uba.ar  IN      A      10.94.5.161
 
 ;ip del dns2 real  10.94.6.129
 laplata       IN      NS      ns2.laplata.baires.dc.fi.uba.ar
-varela       IN      NS      ns2.laplata.baires.dc.fi.uba.ar
+varela       IN      NS      ns2.varela.baires.dc.fi.uba.ar
 
-ns2.laplata.baires.dc.fi.uba.ar  IN      A       10.94.6.129
-
-
+ns2.laplata.baires.dc.fi.uba.ar  IN      A      10.94.6.129
+ns2.varela.baires.dc.fi.uba.ar  IN      A      10.94.6.129
 
 
 

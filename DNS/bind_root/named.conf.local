@@ -8,17 +8,12 @@ zone "31.129.205.in-addr.arpa" {
 	file "/etc/bind/db.31.129.205.in-addr.arpa";
 };
 
-zone "5.94.10.in-addr.arpa" {
+zone "10.in-addr.arpa" {
 	type master;
-	file "/etc/bind/db.5.94.10.in-addr.arpa";
+	file "/etc/bind/db.10.in-addr.arpa";
       
 };
 
-zone "65.15.10.in-addr.arpa" {
-	type master;
-	file "/etc/bind/db.65.15.10.in-addr.arpa";
-      
-};
 
 
 
