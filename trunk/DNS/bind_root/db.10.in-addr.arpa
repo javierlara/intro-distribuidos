@@ -51,30 +51,32 @@ $TTL    86400
 145.5.94   IN  NS ns2.laplata.baires.dc.fi.uba.ar.
 146.5.94   IN  NS ns2.laplata.baires.dc.fi.uba.ar.
 147.5.94   IN  NS ns2.laplata.baires.dc.fi.uba.ar.
-
-153.5.94    IN  NS ns2.laplata.baires.dc.fi.uba.ar.
-154.5.94  IN  NS ns2.laplata.baires.dc.fi.uba.ar.
+148.5.94   IN  NS ns2.laplata.baires.dc.fi.uba.ar.
+149.5.94   IN  NS ns2.laplata.baires.dc.fi.uba.ar.
+153.5.94   IN  NS ns2.laplata.baires.dc.fi.uba.ar.
+154.5.94   IN  NS ns2.laplata.baires.dc.fi.uba.ar.
 155.5.94   IN  NS ns2.laplata.baires.dc.fi.uba.ar.
 
 ;YESICA RED L
 65.65.15  IN  NS ns2.laplata.baires.dc.fi.uba.ar.
 66.65.15  IN  NS ns2.laplata.baires.dc.fi.uba.ar.
 67.65.15  IN  NS ns2.laplata.baires.dc.fi.uba.ar.
-
 80.65.15  IN  NS ns2.laplata.baires.dc.fi.uba.ar.
 81.65.15  IN  NS ns2.laplata.baires.dc.fi.uba.ar.
 
-;LUCILA
-
-1.9.43  IN  NS ns2.laplata.baires.dc.fi.uba.ar.
-3.9.43  IN  NS ns2.laplata.baires.dc.fi.uba.ar.
-4.9.43  IN  NS ns2.laplata.baires.dc.fi.uba.ar.
-5.9.43  IN  NS ns2.laplata.baires.dc.fi.uba.ar.
-
+;LUCILA RED G
+1.9.43    IN  NS ns2.laplata.baires.dc.fi.uba.ar.
+3.9.43    IN  NS ns2.laplata.baires.dc.fi.uba.ar.
+4.9.43    IN  NS ns2.laplata.baires.dc.fi.uba.ar.
+5.9.43    IN  NS ns2.laplata.baires.dc.fi.uba.ar.
 245.9.43  IN  NS ns2.laplata.baires.dc.fi.uba.ar.
 246.9.43  IN  NS ns2.laplata.baires.dc.fi.uba.ar.
 247.9.43  IN  NS ns2.laplata.baires.dc.fi.uba.ar.
 248.9.43  IN  NS ns2.laplata.baires.dc.fi.uba.ar.
+
+;CECILIA RED I
+57.65.15  IN  NS ns2.laplata.baires.dc.fi.uba.ar.
+56.65.15  IN  NS ns2.laplata.baires.dc.fi.uba.ar.
 
 ;lorena
 193.5.94   IN  NS ns2.varela.baires.dc.fi.uba.ar.
