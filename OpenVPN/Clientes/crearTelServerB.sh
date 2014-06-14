@@ -12,8 +12,7 @@ if ! type "openvpn" > /dev/null; then
 	echo "se tiene que instalar la función openvpn"
 	exit 1
 fi
-BASEDIR=$(dirname $0)
-serverConfig="${BASEDIR}/../serverIp.conf"
+serverConfig="serverIp.conf"
 if [ ! -f "$serverConfig" ]; then
     echo "El archivo $serverConfig no existe, copiar el $serverConfig.sample a $serverConfig y poner la IP fisica del modelo"
     exit 1
@@ -21,7 +20,7 @@ fi
 
 # limipo los taps
 echo "Limipiando taps"
-${BASEDIR}/../borrarInterfaces.sh
+#${BASEDIR}/../borrarInterfaces.sh
 
 echo "Iniciando telServer B"
 interfaces="tap7"
