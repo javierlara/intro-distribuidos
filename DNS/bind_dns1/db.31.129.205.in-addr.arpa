@@ -8,16 +8,21 @@ $TTL	604800
 ;
 @	        IN	NS ns1.matanza.baires.dc.fi.uba.ar.
 
-
-; kitana
-1   IN PTR kitana1.matanza.baires.dc.fi.uba.ar.
+; KITANA RED Q
+1   IN PTR apache.matanza.baires.dc.fi.uba.ar.
 2   IN PTR kitana2.matanza.baires.dc.fi.uba.ar.
 3   IN PTR kitana3.matanza.baires.dc.fi.uba.ar.
-52 IN PTR r16-2-kitana.matanza.baires.dc.fi.uba.ar.
-53 IN PTR r17-1-kitana.matanza.baires.dc.fi.uba.ar.
+52  IN PTR r16-2-kitana.matanza.baires.dc.fi.uba.ar.
+53  IN PTR r17-1-kitana.matanza.baires.dc.fi.uba.ar.
 
+; CARMEN RED H
+129 IN PTR nsroot.baires.dc.fi.uba.ar.
+130 IN PTR nsroot.baires.dc.fi.uba.ar.
 
+; CAROLINA RED K
+133 IN NS  nsroot.baires.dc.fi.uba.ar.
+134 IN PTR r12-1-carolina.matanza.baires.dc.fi.uba.ar.
 
-
-
-
+; TUNEL GRE
+65  IN     NS      nsroot.baires.dc.fi.uba.ar.
+66  IN     NS      nsroot.baires.dc.fi.uba.ar.

@@ -8,23 +8,33 @@ $TTL	604800
 ;
 @	        IN	NS ns1.matanza.baires.dc.fi.uba.ar.
 
-;REV SOFIA
+; SOFIA RED N
 
-;161  IN PTR ns1.matanza.baires.dc.fi.uba.ar.
 162.5.94  IN PTR sofia1.matanza.baires.dc.fi.uba.ar.
 163.5.94  IN PTR sofia2.matanza.baires.dc.fi.uba.ar.
 164.5.94 IN PTR sofia3.matanza.baires.dc.fi.uba.ar.
 172.5.94  IN PTR r15-2-sofia.matanza.baires.dc.fi.uba.ar.
 173.5.94 IN PTR r16-0-sofia.matanza.baires.dc.fi.uba.ar.
 
-;REV MACARENA
+; MACARENA RED O
 
-177.5.94  IN PTR macarena1.matanza.baires.dc.fi.uba.ar.
+177.5.94 IN PTR macarena1.matanza.baires.dc.fi.uba.ar.
 178.5.94 IN PTR macarena2.matanza.baires.dc.fi.uba.ar.
 179.5.94 IN PTR macarena3.matanza.baires.dc.fi.uba.ar.
-183.5.94    IN PTR  r16-1-macarena.matanza.baires.dc.fi.uba.ar.
+183.5.94 IN PTR r16-1-macarena.matanza.baires.dc.fi.uba.ar.
 
-;DIRECC DNS2 LAS MANDO AL ROOT
+;MILENA RED P
+
+97.65.15  IN PTR milena1.matanza.baires.dc.fi.uba.ar.
+98.65.15  IN PTR milena2.matanza.baires.dc.fi.uba.ar.
+99.65.15  IN PTR milena3.matanza.baires.dc.fi.uba.ar.
+100.65.15 IN PTR milena-hostc-prima.matanza.baires.dc.fi.uba.ar.
+101.65.15 IN PTR milena-hostc.matanza.baires.dc.fi.uba.ar.
+114.65.15 IN PTR r12-0-milena.matanza.baires.dc.fi.uba.ar.
+115.65.15 IN PTR r17-0-milena.matanza.baires.dc.fi.uba.ar.
+116.65.15 IN PTR r15-0-milena.matanza.baires.dc.fi.uba.ar.
+
+; PATRICIA RED J
 145.5.94 IN  NS nsroot.baires.dc.fi.uba.ar
 146.5.94 IN  NS nsroot.baires.dc.fi.uba.ar
 147.5.94 IN  NS nsroot.baires.dc.fi.uba.ar
@@ -33,7 +43,7 @@ $TTL	604800
 154.5.94 IN  NS nsroot.baires.dc.fi.uba.ar
 155.5.94 IN  NS nsroot.baires.dc.fi.uba.ar
 
-;YESICA
+;YESICA RED L
 65.65.15  IN  NS nsroot.baires.dc.fi.uba.ar
 66.65.15  IN  NS nsroot.baires.dc.fi.uba.ar
 67.65.15  IN  NS nsroot.baires.dc.fi.uba.ar
@@ -52,21 +62,11 @@ $TTL	604800
 247.9.43   IN  NS nsroot.baires.dc.fi.uba.ar
 248.9.43   IN  NS nsroot.baires.dc.fi.uba.ar
 
-;milena
 
-97.65.15  IN PTR milena1.matanza.baires.dc.fi.uba.ar.
-98.65.15  IN PTR milena2.matanza.baires.dc.fi.uba.ar.
-99.65.15  IN PTR milena3.matanza.baires.dc.fi.uba.ar.
-100.65.15  IN PTR milena-hostc-prima.matanza.baires.dc.fi.uba.ar.
-101.65.15  IN PTR milena-hostc.matanza.baires.dc.fi.uba.ar.
-114.65.15 IN PTR r12-0-milena.matanza.baires.dc.fi.uba.ar.
-115.65.15 IN PTR r17-0-milena.matanza.baires.dc.fi.uba.ar.
-116.65.15 IN PTR r15-0-milena.matanza.baires.dc.fi.uba.ar.
 
 ;cleopatra
 
 224.6.94  IN   NS    nsroot.baires.dc.fi.uba.ar
-225.6.94  IN   NS    nsroot.baires.dc.fi.uba.ar
 193.6.94  IN   NS    nsroot.baires.dc.fi.uba.ar
 194.6.94  IN   NS    nsroot.baires.dc.fi.uba.ar
 
@@ -77,6 +77,16 @@ $TTL	604800
 169.6.94       IN   NS   nsroot.baires.dc.fi.uba.ar
 170.6.94       IN   NS   nsroot.baires.dc.fi.uba.ar
 129.6.94       IN   NS   nsroot.baires.dc.fi.uba.ar
+
+130.6.94       IN   NS   nsroot.baires.dc.fi.uba.ar
+131.6.94       IN   NS   nsroot.baires.dc.fi.uba.ar
+
 182.6.94       IN   NS   nsroot.baires.dc.fi.uba.ar
 
+;SABRINA red S
 
+130.5.94       IN   NS   nsroot.baires.dc.fi.uba.ar
+134.5.94       IN   NS   nsroot.baires.dc.fi.uba.ar
+135.5.94       IN   NS   nsroot.baires.dc.fi.uba.ar
+136.5.94       IN   NS   nsroot.baires.dc.fi.uba.ar
+137.5.94       IN   NS   nsroot.baires.dc.fi.uba.ar

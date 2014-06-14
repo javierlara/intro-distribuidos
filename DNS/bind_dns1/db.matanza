@@ -14,40 +14,35 @@ $ORIGIN matanza.baires.dc.fi.uba.ar.
 ;real de dns1 es 10.94.5.161
 ns1.matanza.baires.dc.fi.uba.ar.	IN      A     10.94.5.161
 
-;KITANA
-
-webserver       IN    A    205.129.31.1
-kitana2        IN    A    205.129.31.2
-kitana3         IN    A    205.129.31.3
-kitana4         IN    A    205.129.31.4
-r16-2-kitana        IN    A  205.129.31.52
-r17-1-kitana       IN    A   205.129.31.53
-
-;SOFIA
-sofia1        IN    A    10.94.5.162
-sofia2        IN    A    10.94.5.163
-sofia3        IN    A   10.94.5.164
-r15-2-sofia    IN    A   10.94.5.172
-r16-0-sofia    IN    A   10.94.5.173
-
-;MILENA
-milena1     IN    A      10.15.65.97
-milena2     IN    A    10.15.65.98	
-milena3    IN    A    10.15.65.99
-milena-hostc-prima    IN    A    10.15.65.100
-milena-hostc    IN    A    10.15.65.101
-r12-0-milena    IN    A   10.15.65.114
-r17-0-milena    IN    A   10.15.65.115
-r15-0-milena    IN    A   10.15.65.116
-
-;MACARENA
-macarena1     IN    A      10.94.5.177
-macarena2       IN    A    10.94.5.178
-macarena3     IN    A     10.94.5.179
-r16-1-macarena    IN    A    10.94.5.183
-
-
-;carolina
+; CAROLINA RED K
 r12-1-carolina    IN    A   205.129.31.134
 
+; KITANA Q
+apache        IN    A   205.129.31.1
+kitana2       IN    A   205.129.31.2
+kitana3       IN    A   205.129.31.3
+r16-2-kitana  IN    A   205.129.31.52
+r17-1-kitana  IN    A   205.129.31.53
 
+;SOFIA
+sofia1        IN    A   10.94.5.162
+sofia2        IN    A   10.94.5.163
+sofia3        IN    A   10.94.5.164
+r15-2-sofia   IN    A   10.94.5.172
+r16-0-sofia   IN    A   10.94.5.173
+
+;MILENA
+milena1               IN    A   10.15.65.97
+milena2               IN    A   10.15.65.98	
+milena3    	          IN    A   10.15.65.99
+milena-hostc-prima    IN    A   10.15.65.100
+milena-hostc          IN    A   10.15.65.101
+r12-0-milena          IN    A   10.15.65.114
+r17-0-milena          IN    A   10.15.65.115
+r15-0-milena          IN    A   10.15.65.116
+
+;MACARENA
+macarena1             IN    A    10.94.5.177
+macarena2             IN    A    10.94.5.178
+macarena3             IN    A    10.94.5.179
+r16-1-macarena        IN    A    10.94.5.183

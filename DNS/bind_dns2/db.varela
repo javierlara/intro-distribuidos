@@ -11,8 +11,11 @@ $ORIGIN varela.baires.dc.fi.uba.ar.
                           600 )     ; Negative caching TTL of 1 day
 ;
 @       IN      NS      ns2.varela.baires.dc.fi.uba.ar.
-;real de dns2 es 10.94.6.129
-ns2.varela.baires.dc.fi.uba.ar. IN      A    10.94.6.129
+;real de dns2 es 10.94.6.130
+ns2.varela.baires.dc.fi.uba.ar. IN      A    10.94.6.130
+
+;CARMEN RED H
+r6-3-carmen    IN     A   205.129.31.129
 
 ;LORENA
 
@@ -29,17 +32,30 @@ vrrp-lorena   IN    A   10.94.5.244
 
 ;cleopatra
 r6-2-cleopatra    IN    A   10.94.6.224
-r10-0-cleopatra    IN    A   10.94.6.225
 root-cleopatra    IN    A   10.94.6.193
 cleopatra2    IN    A   10.94.6.194
 
 ;marta
 
-r2-0-marta    IN      A       10.94.6.162
-r1-0-marta    IN      A       10.94.6.169
-r3-0-marta    IN      A       10.94.6.170
-dns2-marta    IN      A       10.94.6.129
-telnet-marta    IN      A       10.94.6.182
+r2-0-marta          IN      A       10.94.6.162
+r1-0-marta          IN      A       10.94.6.169
+r3-0-marta          IN      A       10.94.6.170
+telnet-tap7-marta   IN      A       10.94.6.130
+dns2-marta   		IN      A       10.94.6.130
+dns2-prima-marta    IN      A       10.94.6.131
 
 ;melisa 
 r2-1-melisa  IN  A  10.15.65.25
+
+;SABRINA red S
+
+telnet-tap10-sabrina IN A 10.94.5.130
+r3-2-sabrina  IN  A  10.94.5.134
+r5-0-sabrina  IN  A  10.94.5.135
+r6-0-sabrina  IN  A  10.94.5.136
+vrrp-sabrina  IN  A  10.94.5.137
+
+;VANESA red C
+
+r4-1-vanesa IN   A    10.15.65.192
+r3-1-vanesa IN   A    10.15.65.193

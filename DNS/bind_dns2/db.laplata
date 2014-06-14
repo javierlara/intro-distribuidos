@@ -11,12 +11,20 @@ $ORIGIN laplata.baires.dc.fi.uba.ar.
                           600 )     ; Negative caching TTL of 1 day
 ;
 @       IN      NS      ns2.laplata.baires.dc.fi.uba.ar.
-;real de dns2 es 10.94.6.129
-ns2.laplata.baires.dc.fi.uba.ar.	IN      A    10.94.6.129
+;real de dns2 es 10.94.6.130
+ns2.laplata.baires.dc.fi.uba.ar.	IN      A    10.94.6.130
 
-;CAROLINA  red K
+;CARMEN  RED H
+r8-0-patricia  IN     A   205.129.31.130
 
-r13-2-carolina IN    A    205.129.31.133
+;CAROLINA RED K
+
+r13-2-carolina IN     A   205.129.31.133
+
+;TUNEL GRE
+r10-tunnel  IN    A      205.129.31.65
+r11-tunnel  IN    A      205.129.31.66
+
 
 ;YESICA red l
 
@@ -52,19 +60,3 @@ r7-0-lucila  IN  A  10.43.9.248
 ;CECILIA red I
 r9-0-cecilia IN A 10.15.65.57
 r10-2-cecilia IN A 10.15.65.56
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
