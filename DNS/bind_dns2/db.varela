@@ -17,14 +17,16 @@ ns2.varela.baires.dc.fi.uba.ar. IN      A    10.94.6.129
 ;LORENA
 
 lorena1   IN    A   10.94.5.193
-hosta  IN    A   10.94.5.194
-lorena2   IN    A   10.94.5.196
-lorena3   IN    A   10.94.5.197
+hosta     IN    A   10.94.5.194
+lorena2   IN    A   10.94.5.195
+lorena3   IN    A   10.94.5.196
+lorena4   IN    A   10.94.5.197
 
 r4-0-lorena   IN    A   10.94.5.241
 r6-1-lorena   IN    A   10.94.5.242
 r5-0-lorena   IN    A   10.94.5.243
-r4-0-lorena   IN    A   10.94.5.244
+vrrp-lorena   IN    A   10.94.5.244
+
 ;cleopatra
 r6-2-cleopatra    IN    A   10.94.6.224
 r10-0-cleopatra    IN    A   10.94.6.225
@@ -39,3 +41,5 @@ r3-0-marta    IN      A       10.94.6.170
 dns2-marta    IN      A       10.94.6.129
 telnet-marta    IN      A       10.94.6.182
 
+;melisa 
+r2-1-melisa  IN  A  10.15.65.25

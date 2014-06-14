@@ -76,16 +76,14 @@ $TTL	604800
 ;lorena
 
 193.5.94  IN PTR lorena1.varela.baires.dc.fi.uba.ar.
-194.5.94  IN PTR lorena1.varela.baires.dc.fi.uba.ar.
-195.5.94  IN PTR lorena1.varela.baires.dc.fi.uba.ar.
-196.5.94  IN PTR lorena1.varela.baires.dc.fi.uba.ar.
-197.5.94  IN PTR lorena1.varela.baires.dc.fi.uba.ar.
+194.5.94  IN PTR hosta.varela.baires.dc.fi.uba.ar.
+195.5.94  IN PTR lorena2.varela.baires.dc.fi.uba.ar.
+196.5.94  IN PTR lorena3.varela.baires.dc.fi.uba.ar.
+197.5.94  IN PTR lorena4.varela.baires.dc.fi.uba.ar.
 241.5.94  IN PTR r4-0-lorena.varela.baires.dc.fi.uba.ar.
 242.5.94  IN PTR r6-1-lorena.varela.baires.dc.fi.uba.ar.
 243.5.94  IN PTR r5-0-lorena.varela.baires.dc.fi.uba.ar.
 244.5.94  IN PTR vrrp-lorena.varela.baires.dc.fi.uba.ar.
-
-
 
 ;cleopatra
 
@@ -94,6 +92,11 @@ $TTL	604800
 193.6.94  IN   PTR    root-cleopatra.varela.baires.dc.fi.uba.ar.
 194.6.94  IN   PTR    cleopatra2.varela.baires.dc.fi.uba.ar.
 
+;cleopatra
+r6-2-cleopatra    IN    A   10.94.6.224
+r10-0-cleopatra    IN    A   10.94.6.225
+root-cleopatra    IN    A   10.94.6.193
+cleopatra2    IN    A   10.94.6.194
 
 ;marta
 
@@ -105,5 +108,8 @@ $TTL	604800
 
 ;CECILIA
 
-57.65.15  IN      PTR     r9-0-cecilia.baires.dc.fi.uba.ar.
-56.65.15  IN      PTR     r10-2-cecilia.baires.dc.fi.uba.ar.
+57.65.15  IN      PTR     r9-0-cecilia.laplata.baires.dc.fi.uba.ar.
+56.65.15  IN      PTR     r10-2-cecilia.laplata.baires.dc.fi.uba.ar.
+
+;MELISA
+25.65.15  IN      PTR     r2-1-melisa.varela.baires.dc.fi.uba.ar.
