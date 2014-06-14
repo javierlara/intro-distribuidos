@@ -8,33 +8,30 @@ $TTL    86400
 ;
 
 @       IN      NS      nsroot.baires.dc.fi.uba.ar.
-193.6.94.10     IN   PTR   nsroot.baires.dc.fi.uba.ar.
 
-161.5.94.10  IN   PTR ns1.matanza.baires.dc.fi.uba.ar.
+193.6.94.10  IN   PTR  nsroot.baires.dc.fi.uba.ar.
 
-; kitana rev
+161.5.94.10  IN   PTR  ns1.matanza.baires.dc.fi.uba.ar.
 
+130.6.94.10  IN   PTR  ns2.laplata.baires.dc.fi.uba.ar.
 
-1   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
-2   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
-3   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
-4   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
-10  IN  NS ns1.matanza.baires.dc.fi.uba.ar.
-11  IN  NS ns1.matanza.baires.dc.fi.uba.ar.
-52  IN  NS ns1.matanza.baires.dc.fi.uba.ar.
-53  IN  NS ns1.matanza.baires.dc.fi.uba.ar.
+130.6.94.10  IN   PTR   ns2.varela.baires.dc.fi.uba.ar.
 
-;carolina
-133 IN  NS ns1.laplata.baires.dc.fi.uba.ar. 
-134 IN  NS ns1.laplata.baires.dc.fi.uba.ar.
+; KITANA RED Q
+1   IN     NS      ns1.matanza.baires.dc.fi.uba.ar.
+2   IN     NS      ns1.matanza.baires.dc.fi.uba.ar.
+3   IN     NS      ns1.matanza.baires.dc.fi.uba.ar.
+52  IN     NS      ns1.matanza.baires.dc.fi.uba.ar.
+53  IN     NS      ns1.matanza.baires.dc.fi.uba.ar.
 
+; CARMEN RED H
+129 IN     PTR     ns2.varela.baires.dc.fi.uba.ar.
+130 IN     PTR     ns2.laplata.baires.dc.fi.uba.ar.
 
+; CAROLINA RED K
+133 IN     NS      ns2.laplata.baires.dc.fi.uba.ar.
+134 IN     NS      ns1.matanza.baires.dc.fi.uba.ar.
 
-
-
- 
-
-
-
-
-
+; TUNEL GRE
+65  IN     NS      ns2.laplata.baires.dc.fi.uba.ar.
+66  IN     NS      ns2.laplata.baires.dc.fi.uba.ar.

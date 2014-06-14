@@ -9,34 +9,45 @@ $TTL    86400
 
 @       IN      NS      nsroot.baires.dc.fi.uba.ar.
 
-193.6.94.10    IN   PTR   nsroot.baires.dc.fi.uba.ar.
+193.6.94.10  IN   PTR   nsroot.baires.dc.fi.uba.ar.
 
-161.5.94.10 IN   PTR ns1.matanza.baires.dc.fi.uba.ar.
+161.5.94.10  IN   PTR   ns1.matanza.baires.dc.fi.uba.ar.
 
-129.6.94.10  IN   PTR ns2.laplata.baires.dc.fi.uba.ar.
+130.6.94.10  IN   PTR   ns2.laplata.baires.dc.fi.uba.ar.
 
-; sofia
+130.6.94.10  IN   PTR   ns2.varela.baires.dc.fi.uba.ar.
+
+; sofia RED N
 ; MANERA COMPLICADA LO DEJO COMO EJEMPLO
 ;160/28   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
 ;162   IN  CNAME  162.160/28
 ;161   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
-162.5.94   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
-163.5.94   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
-164.5.94   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
-172.5.94    IN  NS ns1.matanza.baires.dc.fi.uba.ar.
-173.5.94    IN  NS ns1.matanza.baires.dc.fi.uba.ar.
 
-;MACARENA
+162.5.94  IN      NS      ns1.matanza.baires.dc.fi.uba.ar.
+163.5.94  IN      NS      ns1.matanza.baires.dc.fi.uba.ar.
+164.5.94  IN      NS      ns1.matanza.baires.dc.fi.uba.ar.
+172.5.94  IN      NS      ns1.matanza.baires.dc.fi.uba.ar.
+173.5.94  IN      NS      ns1.matanza.baires.dc.fi.uba.ar.
+
+;MACARENA RED O
 
 177.5.94   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
 178.5.94   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
-179.5.94    IN  NS ns1.matanza.baires.dc.fi.uba.ar.
-180.5.94    IN  NS ns1.matanza.baires.dc.fi.uba.ar.
+179.5.94   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
 183.5.94   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
 
-;PATRICIA
+; MILENA RED P
 
+97.65.15   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
+98.65.15   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
+99.65.15   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
+100.65.15  IN  NS ns1.matanza.baires.dc.fi.uba.ar.
+101.65.15  IN  NS ns1.matanza.baires.dc.fi.uba.ar.
+114.65.15  IN  NS ns1.matanza.baires.dc.fi.uba.ar.
+115.65.15  IN  NS ns1.matanza.baires.dc.fi.uba.ar.
+116.65.15  IN  NS ns1.matanza.baires.dc.fi.uba.ar.
 
+;PATRICIA RED J
 145.5.94   IN  NS ns2.laplata.baires.dc.fi.uba.ar.
 146.5.94   IN  NS ns2.laplata.baires.dc.fi.uba.ar.
 147.5.94   IN  NS ns2.laplata.baires.dc.fi.uba.ar.
@@ -45,19 +56,7 @@ $TTL    86400
 154.5.94  IN  NS ns2.laplata.baires.dc.fi.uba.ar.
 155.5.94   IN  NS ns2.laplata.baires.dc.fi.uba.ar.
 
-
-; MILENA REV
-
-97.65.15   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
-98.65.15   IN  NS ns1.matanza.baires.dc.fi.uba.ar.
-99.65.15  IN  NS ns1.matanza.baires.dc.fi.uba.ar.
-100.65.15  IN  NS ns1.matanza.baires.dc.fi.uba.ar.
-101.65.15  IN  NS ns1.matanza.baires.dc.fi.uba.ar.
-114.65.15  IN  NS ns1.matanza.baires.dc.fi.uba.ar.
-115.65.15  IN  NS ns1.matanza.baires.dc.fi.uba.ar.
-116.65.15  IN  NS ns1.matanza.baires.dc.fi.uba.ar.
-
-;YESI
+;YESICA RED L
 65.65.15  IN  NS ns2.laplata.baires.dc.fi.uba.ar.
 66.65.15  IN  NS ns2.laplata.baires.dc.fi.uba.ar.
 67.65.15  IN  NS ns2.laplata.baires.dc.fi.uba.ar.
@@ -90,7 +89,6 @@ $TTL    86400
 ;cleopatra
 
 224.6.94  IN   NS    ns2.varela.baires.dc.fi.uba.ar.
-225.6.94  IN   NS    ns2.varela.baires.dc.fi.uba.ar.
 193.6.94  IN   NS    ns2.varela.baires.dc.fi.uba.ar.
 194.6.94  IN   NS    ns2.varela.baires.dc.fi.uba.ar.
 
@@ -102,9 +100,10 @@ $TTL    86400
 129.6.94       IN   NS   ns2.varela.baires.dc.fi.uba.ar.
 182.6.94       IN   NS   ns2.varela.baires.dc.fi.uba.ar.
 
+;SABRINA red S
 
-
-
-
-
-
+130.5.94  IN      PTR     ns2.varela.baires.dc.fi.uba.ar.
+134.5.94  IN      PTR     ns2.varela.baires.dc.fi.uba.ar.
+135.5.94  IN      PTR     ns2.varela.baires.dc.fi.uba.ar.
+136.5.94  IN      PTR     ns2.varela.baires.dc.fi.uba.ar.
+137.5.94  IN      PTR     ns2.varela.baires.dc.fi.uba.ar.

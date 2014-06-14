@@ -8,18 +8,21 @@ $TTL	604800
 ;
 @	        IN	NS ns1.matanza.baires.dc.fi.uba.ar.
 
-
-; CAROLINA
-
-1  IN      NS      nsroot.baires.dc.fi.uba.ar.
-2  IN      NS      nsroot.baires.dc.fi.uba.ar.
-3  IN      NS      nsroot.baires.dc.fi.uba.ar.
-
+; KITANA RED Q
+1   IN     NS      nsroot.baires.dc.fi.uba.ar.
+2   IN     NS      nsroot.baires.dc.fi.uba.ar.
+3   IN     NS      nsroot.baires.dc.fi.uba.ar.
 52  IN     NS      nsroot.baires.dc.fi.uba.ar.
 53  IN     NS      nsroot.baires.dc.fi.uba.ar.
 
-129 IN     PTR     r6-3-carmen.laplata.baires.dc.fi.uba.ar.
+; CARMEN RED H
+129 IN     PTR     r6-3-carmen.varela.baires.dc.fi.uba.ar.
 130 IN     PTR     r8-0-patricia.laplata.baires.dc.fi.uba.ar.
 
+;CAROLINA RED K
 133 IN     PTR     r13-2-carolina.laplata.baires.dc.fi.uba.ar.
-134 IN     PTR     r12-1-carolina.laplata.baires.dc.fi.uba.ar.
+134 IN     NS      nsroot.baires.dc.fi.uba.ar.
+
+; TUNEL GRE
+65  IN     NS      r10-tunnel.laplata.baires.dc.fi.uba.ar.
+66  IN     NS      r11-tunnel.laplata.baires.dc.fi.uba.ar.
