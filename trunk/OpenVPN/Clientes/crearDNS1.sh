@@ -12,7 +12,8 @@ if ! type "openvpn" > /dev/null; then
 	echo "se tiene que instalar la función openvpn"
 	exit 1
 fi
-serverConfig="serverIp.conf"
+BASEDIR=$(dirname $0)
+serverConfig="${BASEDIR}/../serverIp.conf"
 if [ ! -f "$serverConfig" ]; then
     echo "El archivo $serverConfig no existe, copiar el $serverConfig.sample a $serverConfig y poner la IP fisica del modelo"
     exit 1
