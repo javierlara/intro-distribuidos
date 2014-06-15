@@ -41,7 +41,10 @@ chequeoDirectorio $bindPath
 	    rm -R "$bindPath*"
 	    sudo rm /etc/bind/db.* /etc/bind/named.* /etc/bind/bind.keys /etc/bind/rndc.key /etc/bind/zones.*
 	fi
-
+echo "limpiando cache .."
+sudo /etc/init.d/dns-clean
+sudo rndc flush
+echo "fin limpiando"
 cp bind_dns1/* $bindPath
 
 start_bind9

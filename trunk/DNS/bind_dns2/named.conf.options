@@ -7,7 +7,7 @@ options {
       10.94.6.130; 
         };
 
-	dnssec-validation no;
+	//dnssec-validation no;
 	forwarders {
 // real dns root
                10.94.6.193; // DNS ROOT
