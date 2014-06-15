@@ -35,55 +35,70 @@ $TTL	604800
 116.65.15 IN PTR r15-0-milena.matanza.baires.dc.fi.uba.ar.
 
 ; PATRICIA RED J
-145.5.94 IN  NS nsroot.baires.dc.fi.uba.ar
-146.5.94 IN  NS nsroot.baires.dc.fi.uba.ar
-147.5.94 IN  NS nsroot.baires.dc.fi.uba.ar
-148.5.94 IN  NS nsroot.baires.dc.fi.uba.ar
-149.5.94 IN  NS nsroot.baires.dc.fi.uba.ar
-153.5.94 IN  NS nsroot.baires.dc.fi.uba.ar
-154.5.94 IN  NS nsroot.baires.dc.fi.uba.ar
-155.5.94 IN  NS nsroot.baires.dc.fi.uba.ar
+145.5.94 IN  NS nsroot.baires.dc.fi.uba.ar.
+146.5.94 IN  NS nsroot.baires.dc.fi.uba.ar.
+147.5.94 IN  NS nsroot.baires.dc.fi.uba.ar.
+148.5.94 IN  NS nsroot.baires.dc.fi.uba.ar.
+149.5.94 IN  NS nsroot.baires.dc.fi.uba.ar.
+153.5.94 IN  NS nsroot.baires.dc.fi.uba.ar.
+154.5.94 IN  NS nsroot.baires.dc.fi.uba.ar.
+155.5.94 IN  NS nsroot.baires.dc.fi.uba.ar.
 
 ;YESICA RED L
-65.65.15  IN  NS nsroot.baires.dc.fi.uba.ar
-66.65.15  IN  NS nsroot.baires.dc.fi.uba.ar
-67.65.15  IN  NS nsroot.baires.dc.fi.uba.ar
-80.65.15  IN  NS nsroot.baires.dc.fi.uba.ar
-81.65.15  IN  NS nsroot.baires.dc.fi.uba.ar
+65.65.15  IN  NS nsroot.baires.dc.fi.uba.ar.
+66.65.15  IN  NS nsroot.baires.dc.fi.uba.ar.
+67.65.15  IN  NS nsroot.baires.dc.fi.uba.ar.
+80.65.15  IN  NS nsroot.baires.dc.fi.uba.ar.
+81.65.15  IN  NS nsroot.baires.dc.fi.uba.ar.
 
 ;LUCILA RED G
-1.9.43   IN  NS nsroot.baires.dc.fi.uba.ar
-3.9.43   IN  NS nsroot.baires.dc.fi.uba.ar
-4.9.43   IN  NS nsroot.baires.dc.fi.uba.ar
-5.9.43   IN  NS nsroot.baires.dc.fi.uba.ar
-245.9.43 IN  NS nsroot.baires.dc.fi.uba.ar
-246.9.43 IN  NS nsroot.baires.dc.fi.uba.ar
-247.9.43 IN  NS nsroot.baires.dc.fi.uba.ar
-248.9.43 IN  NS nsroot.baires.dc.fi.uba.ar
+1.9.43   IN  NS nsroot.baires.dc.fi.uba.ar.
+3.9.43   IN  NS nsroot.baires.dc.fi.uba.ar.
+4.9.43   IN  NS nsroot.baires.dc.fi.uba.ar.
+5.9.43   IN  NS nsroot.baires.dc.fi.uba.ar.
+245.9.43 IN  NS nsroot.baires.dc.fi.uba.ar.
+246.9.43 IN  NS nsroot.baires.dc.fi.uba.ar.
+247.9.43 IN  NS nsroot.baires.dc.fi.uba.ar.
+248.9.43 IN  NS nsroot.baires.dc.fi.uba.ar.
 
 ;CECILIA RED I
-57.65.15  IN   NS nsroot.baires.dc.fi.uba.ar
-56.65.15  IN   NS nsroot.baires.dc.fi.uba.ar
+57.65.15  IN   NS nsroot.baires.dc.fi.uba.ar.
+56.65.15  IN   NS nsroot.baires.dc.fi.uba.ar.
 
 ;LORENA RED D
+193.5.94  IN NS nsroot.baires.dc.fi.uba.ar.
+194.5.94  IN NS nsroot.baires.dc.fi.uba.ar.
+195.5.94  IN NS nsroot.baires.dc.fi.uba.ar.
+196.5.94  IN NS nsroot.baires.dc.fi.uba.ar.
+197.5.94  IN NS nsroot.baires.dc.fi.uba.ar.
+241.5.94  IN NS nsroot.baires.dc.fi.uba.ar.
+242.5.94  IN NS nsroot.baires.dc.fi.uba.ar.
+243.5.94  IN NS nsroot.baires.dc.fi.uba.ar.
+244.5.94  IN NS nsroot.baires.dc.fi.uba.ar.
 
-;CLEOPATRA
-224.6.94  IN   NS    nsroot.baires.dc.fi.uba.ar
-193.6.94  IN   NS    nsroot.baires.dc.fi.uba.ar
-194.6.94  IN   NS    nsroot.baires.dc.fi.uba.ar
+;CLEOPATRA RED R
+224.6.94  IN   NS nsroot.baires.dc.fi.uba.ar.
+193.6.94  IN   NS nsroot.baires.dc.fi.uba.ar.
+194.6.94  IN   NS nsroot.baires.dc.fi.uba.ar.
 
-;MARTA
-162.6.94  IN   NS   nsroot.baires.dc.fi.uba.ar
-169.6.94  IN   NS   nsroot.baires.dc.fi.uba.ar
-170.6.94  IN   NS   nsroot.baires.dc.fi.uba.ar
-129.6.94  IN   NS   nsroot.baires.dc.fi.uba.ar
-30.6.94   IN   NS   nsroot.baires.dc.fi.uba.ar
-31.6.94   IN   NS   nsroot.baires.dc.fi.uba.ar
-182.6.94  IN   NS   nsroot.baires.dc.fi.uba.ar
+;MARTA RED B
+168.6.94       IN   NS   nsroot.baires.dc.fi.uba.ar.
+169.6.94       IN   NS   nsroot.baires.dc.fi.uba.ar.
+170.6.94       IN   NS   nsroot.baires.dc.fi.uba.ar.
+129.6.94       IN   NS   nsroot.baires.dc.fi.uba.ar.
+130.6.94       IN   NS   nsroot.baires.dc.fi.uba.ar.
+131.6.94       IN   NS   nsroot.baires.dc.fi.uba.ar.
+
+;MELISA RED A
+25.65.15  IN   NS   nsroot.baires.dc.fi.uba.ar.
 
 ;SABRINA red S
-130.5.94  IN   NS   nsroot.baires.dc.fi.uba.ar
-134.5.94  IN   NS   nsroot.baires.dc.fi.uba.ar
-135.5.94  IN   NS   nsroot.baires.dc.fi.uba.ar
-136.5.94  IN   NS   nsroot.baires.dc.fi.uba.ar
-137.5.94  IN   NS   nsroot.baires.dc.fi.uba.ar
+130.5.94  IN   NS   nsroot.baires.dc.fi.uba.ar.
+134.5.94  IN   NS   nsroot.baires.dc.fi.uba.ar.
+135.5.94  IN   NS   nsroot.baires.dc.fi.uba.ar.
+136.5.94  IN   NS   nsroot.baires.dc.fi.uba.ar.
+137.5.94  IN   NS   nsroot.baires.dc.fi.uba.ar.
+
+;VANESA RED C
+192.65.15 IN      NS     nsroot.baires.dc.fi.uba.ar.
+193.65.15 IN      NS     nsroot.baires.dc.fi.uba.ar.

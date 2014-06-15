@@ -33,8 +33,8 @@ $TTL	604800
 114.65.15  IN NS nsroot.baires.dc.fi.uba.ar.
 115.65.15  IN NS nsroot.baires.dc.fi.uba.ar.
 116.65.15  IN NS nsroot.baires.dc.fi.uba.ar.
- 
-;PATRICIA RED J 
+
+;PATRICIA RED J
 145.5.94  IN PTR patricia1.laplata.baires.dc.fi.uba.ar.
 146.5.94  IN PTR patricia2.laplata.baires.dc.fi.uba.ar.
 147.5.94  IN PTR patricia3.laplata.baires.dc.fi.uba.ar.
@@ -62,41 +62,37 @@ $TTL	604800
 248.9.43  IN PTR r7-0-lucila.laplata.baires.dc.fi.uba.ar.
 
 ;CECILIA RED I
-57.65.15  IN PTR r9-0-cecilia.laplata.baires.dc.fi.uba.ar.
 56.65.15  IN PTR r10-2-cecilia.laplata.baires.dc.fi.uba.ar.
+57.65.15  IN PTR r9-0-cecilia.laplata.baires.dc.fi.uba.ar.
 
-;LORENO
-
+;LORENA RED D
 193.5.94  IN PTR lorena1.varela.baires.dc.fi.uba.ar.
 194.5.94  IN PTR hosta.varela.baires.dc.fi.uba.ar.
-195.5.94  IN PTR lorena2.varela.baires.dc.fi.uba.ar.
+195.5.94  IN PTR hosta-prima.varela.baires.dc.fi.uba.ar.
 196.5.94  IN PTR lorena3.varela.baires.dc.fi.uba.ar.
 197.5.94  IN PTR lorena4.varela.baires.dc.fi.uba.ar.
 241.5.94  IN PTR r4-0-lorena.varela.baires.dc.fi.uba.ar.
 242.5.94  IN PTR r6-1-lorena.varela.baires.dc.fi.uba.ar.
-243.5.94  IN PTR r5-0-lorena.varela.baires.dc.fi.uba.ar.
+243.5.94  IN PTR r5-1-lorena.varela.baires.dc.fi.uba.ar.
 244.5.94  IN PTR vrrp-lorena.varela.baires.dc.fi.uba.ar.
 
-;cleopatra
-
+;CLEOPATRA RED R
 224.6.94  IN   PTR    r6-2-cleopatra.varela.baires.dc.fi.uba.ar.
 193.6.94  IN   PTR    root-cleopatra.varela.baires.dc.fi.uba.ar.
 194.6.94  IN   PTR    cleopatra2.varela.baires.dc.fi.uba.ar.
 
-;marta
-
-162.6.94       IN   PTR   r2-0-marta.varela.baires.dc.fi.uba.ar.
-169.6.94       IN   PTR   r1-0-marta.varela.baires.dc.fi.uba.ar.
+;MARTA RED B
+168.6.94       IN   PTR   r1-0-marta.varela.baires.dc.fi.uba.ar.
+169.6.94       IN   PTR   r2-0-marta.varela.baires.dc.fi.uba.ar.
 170.6.94       IN   PTR   r3-0-marta.varela.baires.dc.fi.uba.ar.
 129.6.94       IN   PTR   telnet-tap7-marta.varela.baires.dc.fi.uba.ar.
 130.6.94       IN   PTR   dns2-marta.varela.baires.dc.fi.uba.ar.
 131.6.94       IN   PTR   dns2-prima-marta.varela.baires.dc.fi.uba.ar.
 
-;MELISA
+;MELISA RED A
 25.65.15  IN      PTR     r2-1-melisa.varela.baires.dc.fi.uba.ar.
 
 ;SABRINA red S
-
 130.5.94  IN      PTR     telnet-tap10-sabrina.varela.baires.dc.fi.uba.ar.
 134.5.94  IN      PTR     r3-2-sabrina.varela.baires.dc.fi.uba.ar.
 135.5.94  IN      PTR     r5-0-sabrina.varela.baires.dc.fi.uba.ar.
@@ -104,6 +100,5 @@ $TTL	604800
 137.5.94  IN      PTR     vrrp-sabrina.varela.baires.dc.fi.uba.ar.
 
 ;VANESA red C
-
 192.65.15 IN      PTR     r4-1-vanesa.varela.baires.dc.fi.uba.ar.
 193.65.15 IN      PTR     r3-1-vanesa.varela.baires.dc.fi.uba.ar.
