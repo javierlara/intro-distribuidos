@@ -21,7 +21,8 @@ chequeoPrograma(){
 		exit 1
 	fi
 }
-function start_bind9 {
+
+start_bind9() {
 	echo "Starting bind9"
 	/etc/init.d/bind9 restart
 
@@ -37,8 +38,9 @@ function start_bind9 {
 
 bindPath="/etc/bind/"
 chequeoDirectorio $bindPath
-	if [ -d "$bindPath*" ]; then
+	if [ -d "$bindPath" ]; then
 	    rm -R "$bindPath*"
+	    sudo rm /etc/bind/db.* /etc/bind/named.* /etc/bind/bind.keys /etc/bind/rndc.key /etc/bind/zones.*
 	fi
 
 cp bind_root/* $bindPath
