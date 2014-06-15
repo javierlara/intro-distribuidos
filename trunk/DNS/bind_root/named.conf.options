@@ -1,27 +1,27 @@
 options {
 	directory "var/cache/bind";
 
-      
+  listen-on { 0.0.0.0/0;
+	            127.0.0.1;
+              10.94.5.161; // DNS1
+              10.94.6.130; // DNS2
+  };
 
-        listen-on { 0.0.0.0/0;
-	 127.0.0.1;
-          10.94.5.161; // DNS1
- 10.94.6.130; // DNS2
+  allow-query {
+    any;
+  };
 
-        };
 	dnssec-validation no;
 
-forwarders{
- 10.94.5.161; 
- 10.94.6.130; 
+  forwarders{
+    10.94.5.161;
+    10.94.6.130;
+  };
 
-
-};
-forward first;
-
+  forward first;
 	auth-nxdomain no;    # conform to RFC1035
-recursion yes;
+  recursion yes;
 
-//	listen-on-v6 { any; };
+  //-on-v6 { any; };
 };
 
