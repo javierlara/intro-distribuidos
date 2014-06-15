@@ -59,3 +59,9 @@ vrrp-sabrina  IN  A  10.94.5.137
 
 r4-1-vanesa IN   A    10.15.65.192
 r3-1-vanesa IN   A    10.15.65.193
+
+;fr-r1-15
+r1-fr-r15 IN A 15.55.200.37
+
+;fr-r1-r7
+r1-fr-r7 IN A 15.55.200.33
