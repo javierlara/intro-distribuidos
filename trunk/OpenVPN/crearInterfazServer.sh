@@ -111,8 +111,8 @@ portDNSRoot=31000
 
 #config telServer sub red B
 IPFisicaTelServer=$servers
-miIPVirtualTelServer=10.94.6.183
-IPVirtualTelServer=10.94.6.182
+miIPVirtualTelServer=10.94.6.139
+IPVirtualTelServer=10.94.6.129
 maskTelServer=255.255.255.192
 portTelServer=32000
 

@@ -3,13 +3,13 @@ options {
       
         listen-on {  0.0.0.0/0;
       //    127.0.0.1;
-// DNS 2 real 10.94.5.161
-      10.94.5.161; 
+// DNS 2 real 
+      10.94.6.130; 
         };
 
 	dnssec-validation no;
 	forwarders {
-// real dns root 10.94.6.193
+// real dns root
                10.94.6.193; // DNS ROOT
 	};
 recursion yes; 

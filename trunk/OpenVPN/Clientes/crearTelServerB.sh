@@ -37,8 +37,8 @@ else
 	exit 1
 fi
 
-miIPVirtualC=10.94.6.182
-miIPVirtualDestinoC=10.94.6.183
+miIPVirtualC=10.94.6.129
+miIPVirtualDestinoC=10.94.6.139
 maskC=255.255.255.192
 miPortC=32000
 
@@ -46,9 +46,9 @@ sudo openvpn --rmtun --dev $interfaces
 
 
 sudo ifconfig $interfaces promisc
-echo "nameserver 10.94.5.161" > /etc/resolv.conf
+echo "nameserver 10.94.6.130" > /etc/resolv.conf
 sudo  openvpn --remote $serverIp --port $miPortC --dev $interfaces --ifconfig $miIPVirtualC $maskC $miIPVirtualDestinoC &
-sleep 3
+sleep 5
 
 subredes="10.94.6.128/25 10.94.5.128/25 10.15.65.0/24 205.129.31.0/26 205.129.31.128/25 10.43.9.0/24 15.55.200.32/30 15.55.200.36/30 15.55.200.40/30 205.129.31.64/30"
 for subred in $subredes; do
