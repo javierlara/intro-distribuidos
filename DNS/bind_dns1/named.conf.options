@@ -2,7 +2,7 @@ options {
 	directory "/etc/bind";
 
         listen-on { 0.0.0.0/0;
-         10.94.6.130;
+         10.94.5.161;
         };
 
 
