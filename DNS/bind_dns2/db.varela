@@ -17,38 +17,36 @@ ns2.varela.baires.dc.fi.uba.ar. IN      A    10.94.6.130
 ;CARMEN RED H
 r6-3-carmen    IN     A   205.129.31.129
 
-;LORENA
+;LORENA RED D
 
 lorena1   IN    A   10.94.5.193
 hosta     IN    A   10.94.5.194
-lorena2   IN    A   10.94.5.195
+hosta-prima   IN    A   10.94.5.195
 lorena3   IN    A   10.94.5.196
 lorena4   IN    A   10.94.5.197
 
 r4-0-lorena   IN    A   10.94.5.241
 r6-1-lorena   IN    A   10.94.5.242
-r5-0-lorena   IN    A   10.94.5.243
+r5-1-lorena   IN    A   10.94.5.243
 vrrp-lorena   IN    A   10.94.5.244
 
-;cleopatra
+;CLEOPATRA RED R
 r6-2-cleopatra    IN    A   10.94.6.224
 root-cleopatra    IN    A   10.94.6.193
 cleopatra2    IN    A   10.94.6.194
 
-;marta
-
-r2-0-marta          IN      A       10.94.6.162
-r1-0-marta          IN      A       10.94.6.169
+;MARTA RED B
+r1-0-marta          IN      A       10.94.6.168
+r2-0-marta          IN      A       10.94.6.169
 r3-0-marta          IN      A       10.94.6.170
-telnet-tap7-marta   IN      A       10.94.6.130
+telnet-tap7-marta   IN      A       10.94.6.129
 dns2-marta   		IN      A       10.94.6.130
 dns2-prima-marta    IN      A       10.94.6.131
 
-;melisa 
+;MELISA RED A
 r2-1-melisa  IN  A  10.15.65.25
 
 ;SABRINA red S
-
 telnet-tap10-sabrina IN A 10.94.5.130
 r3-2-sabrina  IN  A  10.94.5.134
 r5-0-sabrina  IN  A  10.94.5.135

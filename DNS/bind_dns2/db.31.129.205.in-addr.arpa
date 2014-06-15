@@ -24,5 +24,5 @@ $TTL	604800
 134 IN     NS      nsroot.baires.dc.fi.uba.ar.
 
 ; TUNEL GRE
-65  IN     NS      r10-tunnel.laplata.baires.dc.fi.uba.ar.
-66  IN     NS      r11-tunnel.laplata.baires.dc.fi.uba.ar.
+65  IN     PTR      r10-tunnel.laplata.baires.dc.fi.uba.ar.
+66  IN     PTR      r11-tunnel.laplata.baires.dc.fi.uba.ar.
