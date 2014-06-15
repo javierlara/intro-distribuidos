@@ -46,3 +46,9 @@ macarena1             IN    A    10.94.5.177
 macarena2             IN    A    10.94.5.178
 macarena3             IN    A    10.94.5.179
 r16-1-macarena        IN    A    10.94.5.183
+
+;fr-r1-15
+r15-fr-r1 IN A 15.55.200.38
+
+;fr-r7-15
+r15-fr-r7 IN A 15.55.200.42
