@@ -1,5 +1,5 @@
 $TTL    86400
-@       IN      SOA     nsroot.baires.dc.fi.uba.ar. root. (
+@       IN      SOA     nsroot.baires.dc.fi.uba.ar. root.baires.dc.fi.uba.ar. (
                           1        ; Serial
                           604800       ; Refresh after 3 hours
                           86400       ; Retry after 1 hour

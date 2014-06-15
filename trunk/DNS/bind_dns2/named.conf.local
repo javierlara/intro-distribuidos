@@ -18,6 +18,7 @@ zone "10.in-addr.arpa" in {
   file "/etc/bind/db.10.in-addr.arpa";
 };
 
-
-
-
+zone "200.55.15.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.200.55.15.in-addr.arpa";
+};
