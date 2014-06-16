@@ -16,6 +16,7 @@ ns1.matanza.baires.dc.fi.uba.ar.	IN      A     10.94.5.161
 
 ; CAROLINA RED K
 r12-1-carolina    IN    A   205.129.31.134
+r13-2-carolina    IN    A   205.129.31.133
 
 ; KITANA Q
 apache        IN    A   205.129.31.1
