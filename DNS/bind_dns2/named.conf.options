@@ -1,5 +1,5 @@
 options {
-	directory "/var/cache/bind";
+	directory "/etc/bind";
       
         listen-on {  0.0.0.0/0;
       //    127.0.0.1;
