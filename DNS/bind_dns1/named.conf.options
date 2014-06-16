@@ -7,15 +7,10 @@ options {
 
 
 	forwarders {
-             10.94.6.193;  // DNS ROOT
+    10.94.6.193;  // DNS ROOT
 	};
-recursion yes;
-/*
-allow-recursion{
-  127.0.0.1;
-  10.94.6.193;
-};
-*/
+  recursion yes;
+
 	//========================================================================
 	// If BIND logs error messages about the root key being expired,
 	// you will need to update your keys.  See https://www.isc.org/bind-keys
