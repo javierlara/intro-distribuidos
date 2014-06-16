@@ -12,7 +12,8 @@ if ! type "openvpn" > /dev/null; then
 	echo "se tiene que instalar la función openvpn"
 	exit 1
 fi
-serverConfig="serverIp.conf"
+BASEDIR=$(dirname $0)
+serverConfig="${BASEDIR}/../serverIp.conf"
 if [ ! -f "$serverConfig" ]; then
     echo "El archivo $serverConfig no existe, copiar el $serverConfig.sample a $serverConfig y poner la IP fisica del modelo"
     exit 1
@@ -50,7 +51,36 @@ echo "nameserver 10.94.6.130" > /etc/resolv.conf
 sudo  openvpn --remote $serverIp --port $miPortC --dev $interfaces --ifconfig $miIPVirtualC $maskC $miIPVirtualDestinoC &
 sleep 5
 
+
+IF1="tap7" #name of the first interface
+IF2="tap10" #name of the second interface
+IP1="10.94.6.129" #IP address associated with $IF1
+IP2="10.94.5.130" #IP address associated with $IF2
+P1="10.94.6.170" #IP address of the gateway at Provider 1
+P2="10.94.5.134" #IP address of the gateway at provider 2
+B_NET="10.94.6.128/26" #IP network $P1 is in
+S_NET="10.94.5.128/28" #the IP network $P2 is in
+chmod 666 /etc/iproute2/rt_tables
+echo 2 tablab >> /etc/iproute2/rt_tables
+echo 3 tablas >> /etc/iproute2/rt_tables
+
 subredes="10.94.6.128/25 10.94.5.128/25 10.15.65.0/24 205.129.31.0/26 205.129.31.128/25 10.43.9.0/24 15.55.200.32/30 15.55.200.36/30 15.55.200.40/30 205.129.31.64/30"
 for subred in $subredes; do
-    sudo route add -net $subred gw 10.94.6.170 $interfaces
+    #sudo route add -net $subred gw 10.94.6.170 $interfaces
+    ip route add $subred via $P1 tab 2
+    ip route add $subred via $P2 tab 3
 done
+ip route add $B_NET dev $IF1 src $IP1 tab 2
+
+# Se agregan reglas por defecto
+ip rule add table main prio 32766
+ip rule add table default prio 32767
+
+# Se agregan las reglas del telnet
+ip rule add from $IP1 lookup tablab prio 1001
+ip rule add to $IP1 lookup tablab prio 1002
+ip rule add from $IP2 lookup tablas prio 1003
+ip rule add to $IP2 lookup tablas prio 1004
+
+ip rule add table tablab prio 1101
+ip rule add table tablas prio 1102
