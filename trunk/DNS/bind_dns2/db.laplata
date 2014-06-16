@@ -17,10 +17,6 @@ ns2.laplata.baires.dc.fi.uba.ar.	IN      A    10.94.6.130
 ;CARMEN  RED H
 r8-0-patricia  IN     A   205.129.31.130
 
-;CAROLINA RED K
-
-r13-2-carolina IN     A   205.129.31.133
-
 ;TUNEL GRE
 r10-tunnel  IN    A      205.129.31.65
 r11-tunnel  IN    A      205.129.31.66
