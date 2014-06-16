@@ -14,8 +14,8 @@ $TTL  604800
 
 ;fr-r1-15
 37 IN PTR r1-fr-r15.varela.baires.dc.fi.uba.ar.
-38 IN NS nsroot.baires.dc.fi.uba.ar
+38 IN NS nsroot.baires.dc.fi.uba.ar.
 
 ;fr-r7-15
 41 IN PTR r7-fr-r15.laplata.baires.dc.fi.uba.ar.
-42 IN NS nsroot.baires.dc.fi.uba.ar
+42 IN NS nsroot.baires.dc.fi.uba.ar.
