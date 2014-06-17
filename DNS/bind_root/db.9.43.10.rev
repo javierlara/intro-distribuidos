@@ -1,0 +1,23 @@
+$ORIGIN 9.43.10.IN-ADDR.ARPA.
+@       IN      SOA     nsroot.baires.dc.fi.uba.ar. root.baires.dc.fi.uba.ar. (
+                          1        ; Serial
+                          604800       ; Refresh after 3 hours
+                          86400       ; Retry after 1 hour
+                          1w       ; Expire after 1 week
+                          1h )     ; Negative caching TTL  
+;
+
+@       IN      NS      nsroot.baires.dc.fi.uba.ar.
+
+;          LAPLATA
+
+;LUCILA RED G
+0/24   IN  NS  ns2.laplata.baires.dc.fi.uba.ar.;
+1    IN CNAME  1.0/24
+3    IN CNAME  3.0/24
+4    IN CNAME  4.0/24
+5    IN CNAME  5.0/24
+245  IN CNAME  245.0/24
+246  IN CNAME  246.0/24
+247  IN CNAME  247.0/24
+248  IN CNAME  248.0/24

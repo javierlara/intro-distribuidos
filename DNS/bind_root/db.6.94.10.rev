@@ -1,0 +1,29 @@
+$ORIGIN 6.94.10.IN-ADDR.ARPA.
+@       IN      SOA     nsroot.baires.dc.fi.uba.ar. root.baires.dc.fi.uba.ar. (
+                          1        ; Serial
+                          604800       ; Refresh after 3 hours
+                          86400       ; Retry after 1 hour
+                          1w       ; Expire after 1 week
+                          1h )     ; Negative caching TTL  
+;
+
+@       IN      NS      nsroot.baires.dc.fi.uba.ar.
+
+;               VARELA
+
+;CLEOPATRA RED R
+192/26   IN  NS  ns2.varela.baires.dc.fi.uba.ar.;
+224  IN   CNAME 224.192/26
+193  IN   CNAME 193.192/26
+194  IN   CNAME 194.192/26
+
+;MARTA RED B
+128/26   IN  NS  ns2.varela.baires.dc.fi.uba.ar.;
+168  IN   CNAME 168.128/26
+169  IN   CNAME 169.128/26
+170  IN   CNAME 170.128/26
+129  IN   CNAME 129.128/26
+130  IN   CNAME 130.128/26
+131  IN   CNAME 131.128/26
+
+

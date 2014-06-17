@@ -19,6 +19,18 @@ zone "5.94.10.in-addr.arpa" in {
   allow-transfer {none;};
 };
 
+zone "6.94.10.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.6.94.10.rev";
+  allow-transfer {none;};
+};
+
+zone "9.43.10.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.9.43.10.rev";
+  allow-transfer {none;};
+};
+
 zone "65.15.10.in-addr.arpa" in {
   type master;
   file "/etc/bind/db.65.15.10.rev";
