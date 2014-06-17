@@ -1,0 +1,20 @@
+$TTL  604800
+@ IN  SOA ns2.laplata.baires.dc.fi.uba.ar. root.baires.dc.fi.uba.ar. (
+            2   ; Serial
+       604800   ; Refresh
+        86400   ; Retry
+      2419200   ; Expire
+       604800 ) ; Negative Cache TTL
+;
+@         IN  NS ns2.laplata.baires.dc.fi.uba.ar.
+
+;LORENA RED D
+193 IN PTR lorena1.varela.baires.dc.fi.uba.ar.
+194 IN PTR hosta.varela.baires.dc.fi.uba.ar.
+195 IN PTR hosta-prima.varela.baires.dc.fi.uba.ar.
+196 IN PTR lorena3.varela.baires.dc.fi.uba.ar.
+197 IN PTR lorena4.varela.baires.dc.fi.uba.ar.
+241 IN PTR r4-0-lorena.varela.baires.dc.fi.uba.ar.
+242 IN PTR r6-1-lorena.varela.baires.dc.fi.uba.ar.
+243 IN PTR r5-1-lorena.varela.baires.dc.fi.uba.ar.
+244 IN PTR vrrp-lorena.varela.baires.dc.fi.uba.ar.
