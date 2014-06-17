@@ -1,5 +1,5 @@
 $ORIGIN 31.129.205.IN-ADDR.ARPA.
-@       IN      SOA     nsroot.baires.dc.fi.uba.ar. root. (
+@       IN      SOA     nsroot.baires.dc.fi.uba.ar. root.baires.dc.fi.uba.ar. (
                           1        ; Serial
                           604800       ; Refresh after 3 hours
                           86400       ; Retry after 1 hour
@@ -9,22 +9,14 @@ $ORIGIN 31.129.205.IN-ADDR.ARPA.
 
 @       IN      NS      nsroot.baires.dc.fi.uba.ar.
 
-193.6.94.10  IN   PTR  nsroot.baires.dc.fi.uba.ar.
-
-161.5.94.10  IN   PTR  ns1.matanza.baires.dc.fi.uba.ar.
-
-130.6.94.10  IN   PTR  ns2.laplata.baires.dc.fi.uba.ar.
-
-130.6.94.10  IN   PTR   ns2.varela.baires.dc.fi.uba.ar.
-
 ; KITANA RED Q
-128/30   IN  NS  ns1.matanza.baires.dc.fi.uba.ar.
+0/26   IN  NS  ns1.matanza.baires.dc.fi.uba.ar.
 
-1    IN CNAME 1.128/30
-2    IN CNAME 2.128/30
-3    IN CNAME 3.128/30
-52   IN CNAME 52.128/30
-53   IN CNAME 53.128/30
+1    IN CNAME 1.0/26
+2    IN CNAME 2.0/26
+3    IN CNAME 3.0/26
+52   IN CNAME 52.0/26
+53   IN CNAME 53.0/26
 
 ; CAROLINA RED K
 132/30   IN  NS  ns1.matanza.baires.dc.fi.uba.ar.

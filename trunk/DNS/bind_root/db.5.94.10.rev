@@ -1,3 +1,4 @@
+$ORIGIN 5.94.10.IN-ADDR.ARPA.
 @       IN      SOA     nsroot.baires.dc.fi.uba.ar. root.baires.dc.fi.uba.ar. (
                           1        ; Serial
                           604800       ; Refresh after 3 hours
@@ -9,9 +10,15 @@
 @       IN      NS      nsroot.baires.dc.fi.uba.ar.
 
 ; SOFIA RED N
-162.5.94.10   IN PTR laconcha.de.tu.matanza.baires.dc.fi.uba.ar.
-163.5.94.10   IN CNAME 163.160/28.5.94.10.in-addr.arpa.
-164.5.94.10   IN CNAME 164.160/28.5.94.10.in-addr.arpa.
-172.5.94.10   IN CNAME 172.160/28.5.94.10.in-addr.arpa.
-173.5.94.10   IN CNAME 173.160/28.5.94.10.in-addr.arpa.
+160/28   IN  NS  ns1.matanza.baires.dc.fi.uba.ar.;
+162   IN CNAME 162.160/28
+163   IN CNAME 163.160/28
+164   IN CNAME 164.160/28
+172   IN CNAME 172.160/28
+173   IN CNAME 173.160/28
+
+
+; MACARENA RED O
+176/28   IN  NS  ns1.matanza.baires.dc.fi.uba.ar.;
+183      IN CNAME 183.176/28
 
