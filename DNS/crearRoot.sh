@@ -24,7 +24,7 @@ chequeoPrograma(){
 
 start_bind9() {
 	echo "Starting bind9"
-	/etc/init.d/bind9 restart
+	sudo /etc/init.d/bind9 restart
 
 	if [ "$?" != "0" ];then 
 		exit_conf "3" "Error iniciando bind9"
