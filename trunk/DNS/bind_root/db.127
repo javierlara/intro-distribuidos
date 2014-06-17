@@ -7,11 +7,3 @@
 ;
 
 @       IN      NS      nsroot.baires.dc.fi.uba.ar.
-
-; SOFIA RED N
-162.5.94.10   IN PTR laconcha.de.tu.matanza.baires.dc.fi.uba.ar.
-163.5.94.10   IN CNAME 163.160/28.5.94.10.in-addr.arpa.
-164.5.94.10   IN CNAME 164.160/28.5.94.10.in-addr.arpa.
-172.5.94.10   IN CNAME 172.160/28.5.94.10.in-addr.arpa.
-173.5.94.10   IN CNAME 173.160/28.5.94.10.in-addr.arpa.
-
