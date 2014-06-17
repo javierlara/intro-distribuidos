@@ -1,14 +1,19 @@
 options {
 	directory "/etc/bind";
 
-        listen-on { 0.0.0.0/0;
-         10.94.5.161;
-        };
+    listen-on {
+      127.0.0.1;
+      10.94.5.161;
+    };
 
+  	forwarders {
+      10.94.6.193;  // DNS ROOT
+  	};
 
-	forwarders {
-    10.94.6.193;  // DNS ROOT
-	};
+    allow-query {
+      any;
+    };
+
   recursion yes;
 
 	//========================================================================
@@ -17,7 +22,11 @@ options {
 	//========================================================================
 //	dnssec-validation auto;
 
-	//auth-nxdomain no;    # conform to RFC1035
+	auth-nxdomain no;    # conform to RFC1035
+
+  dnssec-validation no;
+
+  //listen-on-v6 { any; };  
 
 };
 
