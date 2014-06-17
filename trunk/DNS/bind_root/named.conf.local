@@ -13,6 +13,12 @@ zone "varela.baires.dc.fi.uba.ar" {
   forwarders { 10.94.6.130; };
 };
 
+zone "200.55.15.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.200.55.15.rev";
+  allow-transfer{none;};
+};
+
 zone "5.94.10.in-addr.arpa" in {
   type master;
   file "/etc/bind/db.5.94.10.rev";
@@ -42,3 +48,4 @@ zone "31.129.205.in-addr.arpa" in {
   file "/etc/bind/db.31.129.205.rev";
   allow-transfer{none;};
 };
+
