@@ -1,0 +1,16 @@
+$TTL  604800
+@ IN  SOA ns1.matanza.baires.dc.fi.uba.ar. root.baires.dc.fi.uba.ar. (
+            2   ; Serial
+       604800   ; Refresh
+        86400   ; Retry
+      2419200   ; Expire
+       604800 ) ; Negative Cache TTL
+;
+@         IN  NS ns1.matanza.baires.dc.fi.uba.ar.
+
+; MILENA RED P
+100 IN PTR milena-hostc-prima.matanza.baires.dc.fi.uba.ar.
+101 IN PTR milena-hostc.matanza.baires.dc.fi.uba.ar.
+114 IN PTR r12-0-milena.matanza.baires.dc.fi.uba.ar.
+115 IN PTR r17-0-milena.matanza.baires.dc.fi.uba.ar.
+116 IN PTR r15-0-milena.matanza.baires.dc.fi.uba.ar.

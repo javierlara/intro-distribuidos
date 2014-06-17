@@ -14,12 +14,7 @@ zone "varela.baires.dc.fi.uba.ar" in {
   forwarders { 10.94.6.193; };
 };
 
-zone "in-addr.arpa" in {
-  type forward;
-  forwarders { 10.94.6.193; };
-};
-
-zone "128/30.31.129.205.in-addr.arpa" in {
+zone "0/26.31.129.205.in-addr.arpa" in {
   type master;
   file "/etc/bind/db.kitana.rev";
 };
@@ -29,17 +24,32 @@ zone "132/30.31.129.205.in-addr.arpa" in {
   file "/etc/bind/db.carolina.rev";
 };
 
-zone "205.in-addr.arpa" in {
+zone "160/28.5.94.10.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.sofia.rev";
+};
+
+zone "96/27.65.15.10.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.milena.rev";
+};
+
+zone "176/28.5.94.10.in-addr.arpa" in {
+  type master;
+  file "/etc/bind/db.macarena.rev";
+};
+
+zone "31.129.205.in-addr.arpa" in {
   type forward;
   forwarders { 10.94.6.193; };
 };
 
-zone "10.in-addr.arpa" in {
+zone "5.94.10.in-addr.arpa" in {
   type master;
-  file "/etc/bind/db.10.in-addr.arpa";
+  file "/etc/bind/db.5.94.10.rev";
 };
 
-zone "200.55.15.in-addr.arpa" in {
+zone "65.15.10.in-addr.arpa" in {
   type master;
-  file "/etc/bind/db.200.55.15.in-addr.arpa";
+  file "/etc/bind/db.65.15.10.rev";
 };
