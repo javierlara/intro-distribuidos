@@ -53,3 +53,9 @@ zone "65.15.10.in-addr.arpa" in {
   type master;
   file "/etc/bind/db.65.15.10.rev";
 };
+
+
+#zone "in-addr.arpa" in {
+#  type forward;
+#  forwarders { 10.94.6.193; };
+#};
