@@ -30,7 +30,7 @@ zone "64/27.65.15.10.in-addr.arpa" {
   file "/etc/bind/db.yesica.rev";
 };
 
-zone "9.43.10.in-addr.arpa" {
+zone "0/24.9.43.10.in-addr.arpa" {
   type master;
   file "/etc/bind/db.lucila.rev";
 };
@@ -75,9 +75,17 @@ zone "0/27.65.15.10.in-addr.arpa" {
   file "/etc/bind/db.melisa.rev";
 };
 
-zone "55.15.15.in-addr.arpa" {
+zone "32/30.200.55.15.in-addr.arpa" {
   type master;
-  file "/etc/bind/db.framerelay.rev";
+  file "/etc/bind/db.framerelay32.rev";
+};
+zone "36/30.200.55.15.in-addr.arpa" {
+  type master;
+  file "/etc/bind/db.framerelay36.rev";
+};
+zone "40/30.200.55.15.in-addr.arpa" {
+  type master;
+  file "/etc/bind/db.framerelay40.rev";
 };
 
 zone "in-addr.arpa" in {
