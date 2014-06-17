@@ -64,7 +64,7 @@ chmod 666 /etc/iproute2/rt_tables
 echo 2 tablab >> /etc/iproute2/rt_tables
 echo 3 tablas >> /etc/iproute2/rt_tables
 
-subredes="10.94.6.128/25 10.94.5.128/25 10.15.65.0/24 205.129.31.0/26 205.129.31.128/25 10.43.9.0/24 15.55.200.32/30 15.55.200.36/30 15.55.200.40/30 205.129.31.64/30"
+subredes="183.44.3.0/29 10.94.6.128/25 10.94.5.128/25 10.15.65.0/24 205.129.31.0/26 205.129.31.128/25 10.43.9.0/24 15.55.200.32/30 15.55.200.36/30 15.55.200.40/30 205.129.31.64/30"
 for subred in $subredes; do
     #sudo route add -net $subred gw 10.94.6.170 $interfaces
     ip route add $subred via $P1 tab 2
